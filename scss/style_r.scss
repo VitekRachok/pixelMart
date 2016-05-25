@@ -1,0 +1,17 @@
+
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+.navbar-default{
+	border: 0;
+	background-color: #ffffff;
+
+	.nav-center{
+		text-align: center;
+	}
+}
+
+
+@import "media-query.scss";
