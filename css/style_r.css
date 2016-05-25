@@ -4,11 +4,14 @@
   src: url("../fonts/PFAgoraSlabPro-Regular.eot");
   src: local("☺"), url("../fonts/PFAgoraSlabPro-Regular.woff") format("woff"), url("../fonts/PFAgoraSlabPro-Regular.ttf") format("truetype"), url("../fonts/PFAgoraSlabPro-Regular.svg") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  height: 3000px; }
+  height: 3000px;
+}
 
 .navbar {
   border: 0;
@@ -16,60 +19,81 @@ html, body {
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
-  font-family: Conv_PFAgoraSlabPro-Regular; }
-  .navbar .scroll-block {
-    position: relative;
-    width: 180px;
-    float: left;
-    background-image: url("../images/gradient.jpg");
-    background-position-x: 0%;
-    background-size: 100%; }
-    .navbar .scroll-block img {
-      float: right; }
-  .navbar .nav-center {
-    text-align: center;
-    line-height: 90px; }
+  font-family: Conv_PFAgoraSlabPro-Regular;
+}
+
+.navbar .scroll-block {
+  position: relative;
+  width: 180px;
+  float: left;
+  background-image: url("../images/gradient.jpg");
+  background-position-x: 0%;
+  background-size: 100%;
+}
+
+.navbar .scroll-block img {
+  float: right;
+}
+
+.navbar .nav-center {
+  text-align: center;
+  line-height: 90px;
+}
 
 .right-header-block {
-  float: right; }
-  .right-header-block .contacts {
-    float: left;
-    margin-top: 25px; }
-    .right-header-block .contacts .phone {
-      color: #53585a;
-      display: block;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 18px; }
-    .right-header-block .contacts .phone:hover {
-      text-decoration: none; }
-    .right-header-block .contacts .city {
-      color: #939697;
-      font-size: 14px; }
-  .right-header-block .like-header {
-    float: left;
-    width: 55px;
-    text-align: center;
-    line-height: 90px;
-    text-indent: 20px; }
-  .right-header-block .trash {
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
-    text-align: center;
-    background-image: url("../images/nava.jpg");
-    float: right;
-    color: #ffffff;
-    font-size: 22px; }
+  float: right;
+}
+
+.right-header-block .contacts {
+  float: left;
+  margin-top: 25px;
+}
+
+.right-header-block .contacts .phone {
+  color: #53585a;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.right-header-block .contacts .phone:hover {
+  text-decoration: none;
+}
+
+.right-header-block .contacts .city {
+  color: #939697;
+  font-size: 14px;
+}
+
+.right-header-block .like-header {
+  float: left;
+  width: 55px;
+  text-align: center;
+  line-height: 90px;
+  text-indent: 20px;
+}
+
+.right-header-block .trash {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  background-image: url("../images/nava.jpg");
+  float: right;
+  color: #ffffff;
+  font-size: 22px;
+}
 
 @media (min-width: 768px) {
   .nav-center {
-    float: none; }
-    .nav-center li {
-      float: none;
-      display: inline-block; }
-
+    float: none;
+  }
+  .nav-center li {
+    float: none;
+    display: inline-block;
+  }
   .collapse {
-    float: left; } }
-
-/*# sourceMappingURL=style_r.css.map */
+    float: left;
+  }
+}

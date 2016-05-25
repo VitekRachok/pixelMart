@@ -1,4 +1,5 @@
 body {
+  font-family: "Conv_PFAgoraSlabPro-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #53585a;
@@ -7,6 +8,10 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+.carousel-row {
+  margin-top: 90px;
 }
 
 .carousel-row .carousel-item {
@@ -28,6 +33,35 @@ body {
 
 .carousel-row .carousel-inner img {
   margin-bottom: 15px;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 auto 15px;
+}
+
+.carousel-row .carousel-inner h3 {
+  font-family: 'PFAgoraSlabPro-Thin';
+  color: #fff;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+.carousel-row .carousel-inner button {
+  font-family: 'PFAgoraSlabPro-Light';
+  text-transform: uppercase;
+  color: #1c2423;
+  width: 120px;
+  height: 40px;
+  padding: 10px 0;
+  background-color: #edbb00;
+  border-color: #edbb00;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.carousel-row .carousel-inner button:hover {
+  background-color: #ffd021;
+  border-color: #ffd021;
 }
 
 .carousel-row .upload-btn, .carousel-row .order-btn {
@@ -99,6 +133,7 @@ body {
 
 .carousel-row .toggle-row {
   margin-top: -15px;
+  z-index: 2;
 }
 
 .carousel-row .carousel-toggle {
@@ -112,9 +147,6 @@ body {
   border-bottom: 1px solid #e2eaec;
   border-right: 1px solid #e2eaec;
   cursor: pointer;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 
 .carousel-row .carousel-toggle:last-child {
@@ -140,8 +172,70 @@ body {
   font-size: 14px;
 }
 
+.carousel-row .carousel-toggle a {
+  display: block;
+  text-decoration: none;
+  height: 50px;
+  width: 240px;
+  padding: 12px 0;
+  border: 1px solid #e2eaec;
+  border-radius: 5px;
+  font-size: 18px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.carousel-row .carousel-toggle a:hover {
+  border-color: #00baff;
+  background-color: #fff;
+}
+
+.carousel-row .owl-prev, .carousel-row .owl-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 32px;
+  height: 103px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.carousel-row .owl-prev:hover, .carousel-row .owl-next:hover {
+  opacity: 0.6;
+}
+
+.carousel-row .owl-prev {
+  background: url(../images/slider-arrow-left.png) no-repeat center center;
+  left: 30px;
+}
+
+.carousel-row .owl-next {
+  background: url(../images/slider-arrow-right.png) no-repeat center center;
+  right: 30px;
+}
+
 .no-padding {
   padding: 0;
+}
+
+@font-face {
+  font-family: 'PFAgoraSlabPro-Thin';
+  src: url("../fonts/PFAgoraSlabPro-Thin.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFAgoraSlabPro-Light';
+  src: url("../fonts/PFAgoraSlabPro-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media (min-width: 1300px) {
