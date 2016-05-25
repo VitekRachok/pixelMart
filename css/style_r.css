@@ -15,8 +15,7 @@ html, body {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
-  font-family: Conv_PFAgoraSlabPro-Regular; }
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05); }
   .navbar .scroll-block {
     position: relative;
     width: 180px;
@@ -34,25 +33,31 @@ html, body {
   float: right; }
   .right-header-block .contacts {
     float: left;
-    margin-top: 25px; }
+    margin-top: 25px;
+    margin-right: 10px; }
     .right-header-block .contacts .phone {
       color: #53585a;
       display: block;
       font-size: 18px;
       font-weight: 700;
       line-height: 18px; }
-    .right-header-block .contacts .phone:hover {
-      text-decoration: none; }
+      .right-header-block .contacts .phone:hover {
+        text-decoration: none; }
     .right-header-block .contacts .city {
       color: #939697;
       font-size: 14px; }
   .right-header-block .like-header {
+    position: relative;
     float: left;
     width: 55px;
     text-align: center;
-    line-height: 90px;
-    text-indent: 20px; }
+    line-height: 90px; }
+    .right-header-block .like-header .glyphicon {
+      color: #fc1d1b; }
+    .right-header-block .like-header span {
+      display: inline; }
   .right-header-block .trash {
+    position: relative;
     width: 90px;
     height: 90px;
     line-height: 90px;
