@@ -1,10 +1,18 @@
-html,
-body {
-  margin: 0; }
+html, body {
+  margin: 0;
+  padding: 0; }
 
-.hello {
-  color: red; }
-  .hello .test {
-    color: green; }
+.navbar-default {
+  border: 0;
+  background-color: #ffffff; }
+  .navbar-default .nav-center {
+    text-align: center; }
+
+@media (min-width: 768px) {
+  .nav-center {
+    float: none; }
+    .nav-center li {
+      float: none;
+      display: inline-block; } }
 
 /*# sourceMappingURL=style_r.css.map */
