@@ -1,24 +1,9 @@
-body {
-  font-weight: normal;
-  font-size: 16px;
-  color: #53585a;
-  min-width: 320px;
-  position: relative;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
-
 .carousel-row .carousel-item {
   height: 567px;
 }
 
 .carousel-row .carousel-item.carousel-item1 {
   background: url(../images/slide1-bg.jpg) no-repeat center center;
-}
-
-.carousel-row .carousel-item.carousel-item2 {
-  background: url(../images/slide2-bg.jpg) no-repeat center center;
 }
 
 .carousel-row .carousel-inner {
@@ -137,21 +122,8 @@ body {
 
 .carousel-row .carousel-toggle p {
   margin-bottom: 25px;
-  font-size: 14px;
 }
 
 .no-padding {
   padding: 0;
-}
-
-@media (min-width: 1300px) {
-  .container {
-    width: 1230px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  *, button:focus {
-    outline: none !important;
-  }
 }

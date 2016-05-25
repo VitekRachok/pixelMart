@@ -1,2 +1,87 @@
-.test
-	color: red
+.carousel-row
+	.carousel-item
+		height: 567px
+		&.carousel-item1
+			background: url(../images/slide1-bg.jpg) no-repeat center center
+		&.carousel-item2
+			background: url(../images/slide2-bg.jpg) no-repeat center center
+	.carousel-inner
+		padding: 60px 0 88px
+		text-align: center
+		img
+			margin-bottom: 15px
+	.upload-btn, .order-btn
+		display: inline-block
+	.upload-btn
+		position: relative
+		width: 280px
+		height: 60px
+		background-color: #fff
+		border-radius: 5px
+		margin-right: 10px
+		float: right
+		+transition(all $duration ease)
+		&:hover
+			background-color: darken(#fff, 7%)
+		input
+			opacity: 0
+		label
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			margin-bottom: 0
+			color: #53585a
+			padding-left: 53px
+			line-height: 60px
+			font-size: 20px
+			cursor: pointer
+			background: url(../images/icon-photo.png) no-repeat 20px center
+	.order-btn
+		margin-left: 10px
+		float: left
+		button
+			width: 280px
+			height: 60px
+			border-radius: 5px
+			background-color: #00baff
+			border: 1px solid #00baff
+			color: #fff
+			font-size: 20px
+			+transition(all $duration ease)
+			&:hover
+				background-color: darken(#00baff, 3%)
+				border-color: darken(#00baff, 3%)
+			&:focus
+				box-shadow: none
+	.toggle-row
+		margin-top: -15px
+	.carousel-toggle
+		width: 25%
+		float: left
+		text-align: center
+		color: #53585a
+		height: 210px
+		padding: 35px 30px 25px
+		background-color: #fff
+		border-bottom: 1px solid #e2eaec
+		border-right: 1px solid #e2eaec
+		cursor: pointer
+		+transition(all $duration ease)
+		&:last-child
+			border-right: none
+		&:hover
+			background-color: darken(#fff, 3%)
+		&.active
+			color: #fff
+			background: url(../images/carousel-button.png) no-repeat center center
+		h2
+			margin: 0 0 15px 0
+			font-size: 20px
+		p
+			margin-bottom: 25px
+			font-size: 14px
+
+.no-padding
+	padding: 0
