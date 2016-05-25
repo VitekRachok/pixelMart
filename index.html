@@ -14,8 +14,7 @@
 	<link rel="stylesheet" href="css/style_n.css">
 </head>
 <body>
-	<div class="hello"><span class="test">Hello!</span></div> 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="row">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -26,7 +25,9 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<img src="images/logo_mini.png" alt="logo-mini">
+					<div class="scroll-block">
+						<img src="images/top.png" alt="logo">
+					</div>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav nav-center">
@@ -37,6 +38,18 @@
 						<li><a href="#">Постеры</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
+				<div class="right-header-block">
+					<div class="contacts">
+						<a class="phone" href="tel:8 800 660 90 60">8 800 660 90 60</a>
+						<span class="city">Новосибирск</span>
+					</div>
+					<div class="like-header">
+						<span class="like">1</span>
+					</div>
+					<div class="trash">
+						<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+					</div>
+				</div>
 			</div>
 			
 		</div><!-- /.container-fluid -->
@@ -145,7 +158,8 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+	<script src="libs/jquery/custom.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 </body>

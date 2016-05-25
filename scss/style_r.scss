@@ -1,17 +1,95 @@
-
+@font-face {
+	font-family: 'Conv_PFAgoraSlabPro-Regular';
+	src: url('../fonts/PFAgoraSlabPro-Regular.eot');
+	src: local('☺'), url('../fonts/PFAgoraSlabPro-Regular.woff') format('woff'), url('../fonts/PFAgoraSlabPro-Regular.ttf') format('truetype'), url('../fonts/PFAgoraSlabPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 html,body{
 	margin: 0;
 	padding: 0;
+	height: 3000px;
 }
-.navbar-default{
+.navbar{
 	border: 0;
 	background-color: #ffffff;
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.05);
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.05);
+	font-family: Conv_PFAgoraSlabPro-Regular;
+
+	.scroll-block{
+		position: relative;
+		width: 180px;
+		float: left;
+		background-image: url('../images/gradient.jpg');
+		background-position-x: 0%;
+		background-size: 100%;
+
+		& img{
+			float: right;
+		}
+	}
 
 	.nav-center{
 		text-align: center;
+		line-height: 90px;
 	}
 }
+
+.right-header-block{
+	float: right;
+
+
+	.contacts{
+		float: left;
+		margin-top: 25px;
+
+		.phone{
+			color: #53585a;
+			display: block;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 18px;
+		}
+		.phone:hover{
+			text-decoration: none;
+		}
+
+		.city{
+			color: #939697;
+			font-size: 14px;
+		}
+
+	}
+
+	.like-header{
+		float: left;
+		width: 55px;
+		text-align: center;
+		line-height: 90px;
+		text-indent: 20px;
+	}
+	.trash{
+		width: 90px;
+		height: 90px;
+		line-height: 90px;
+		text-align: center;
+		background-image: url('../images/nava.jpg');
+		float: right;
+		color: #ffffff;
+		font-size: 22px;
+	}
+}
+
+
+
+
+
+
+
+
 
 
 @import "media-query.scss";
