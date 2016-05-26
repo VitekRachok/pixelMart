@@ -25,5 +25,13 @@ $large: 1200px;
 	.navbar-collapse{
 		clear: right;
 	}
+	.why-we-item .estimate{
+		text-align: center !important;
+	}
 
+}
+@media (max-width: $large) {
+	.why-we-item span{
+		text-align: center !important;
+	}
 }

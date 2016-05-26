@@ -11,11 +11,22 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'PFAgoraSlabPro-Bold';
+  src: url("../fonts/PFAgoraSlabPro-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 @mixin list-reset {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	text-align: center;
+}
+@mixin transition($transition, $val){
+	-webkit-transition: $val $transition;
+	-o-transition: $val $transition;
+	transition: $val $transition;
 }
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
@@ -45,11 +56,11 @@ html,body{
 
 .right-header-block{
 	float: right;
-	.contacts{
+	.contacts-header{
 		float: left;
 		margin-top: 25px;
 		margin-right: 10px;
-		.phone{
+		.phone-header{
 			color: #53585a;
 			display: block;
 			font-size: 18px;
@@ -114,7 +125,7 @@ html,body{
 	.search-items-header{
 		margin-bottom: 40px;
 		font-size: 36px;
-		font-family: PFAgoraSlabPro-Light;
+		font-family: 'PFAgoraSlabPro-Light';
 	}
 	.search-items-input{
 		
@@ -249,7 +260,7 @@ html,body{
 .q-leader-wrap{
 	.q-leader-header{
 		font-size: 36px;
-		font-family: PFAgoraSlabPro-Light;
+		font-family: 'PFAgoraSlabPro-Light';
 		margin-bottom: 10px;
 	}
 	.q-leader-description{
@@ -263,14 +274,112 @@ html,body{
 			margin-top: 25px;
 			margin-bottom: 10px;
 			font-size: 18px;
+			font-family: 'PFAgoraSlabPro-Medium';
 		}
 		p{
 			line-height: normal;
 		}
 	}
 }
+.about{
+	background-color: #f6f6f7;
+	margin-top: 85px;
+	.about-header{
+		font-family: 'PFAgoraSlabPro-Medium';
+		font-size: 16px;
+		margin-top: 35px;
+		margin-bottom: 20px;
+	}
+	.about-content{
+		font-size: 14px;
+		margin-bottom: 35px;
+	}
+}
+.why-we{
+	background-color: #191919;
+	& .row>div:first-child .why-we-item{
+		padding: 31px 0;
+	}
+	.why-we-item{
+		padding: 18px 0;
+		text-align: center;
+		& .estimate,& span{
+			position: relative;
+			top: 11px;
+			font-size: 14px;
+			display: inline-block;
+			color: #cccccc;
+			text-align: left;
+		}
+		span{
+			min-width: 145px;
+		}
+	}
+}
+.foo{
+	background-color: #202020;
+	padding: 35px 0;
+	.faq{
+		@include list-reset;
+		text-align: left;
+		margin-bottom: 25px;
+		li{
+			display: inline-block;
+			margin-right: 15px;
+			margin-bottom: 10px;
+			a{
+				text-decoration: none;
+				color: #cccccc;
+				font-size: 14px;
+				@include transition(0.2s, color);
+				&:hover{
+					color: #ffffff;
+				}
+			}
+		}
+	}
+	& .apple-btn,
+	& .play-btn{
+		width: 175px;
+		height: 50px;
+		background-color: #191919;
+		border-radius: 5px;
+		line-height: normal;
+		color: #ffffff;
+		padding: 4px 0 0 10px;
+		display: inline-block;
+		text-decoration: none;
+		margin-bottom: 15px;
+		@include transition(0.2s, background-color);
+		&:hover{
+			background-color: #343434;
+		}
+		p{
+			position: relative;
+			top: 4px;
+			font-size: 12px;
+			display: inline-block;
+			text-align: left;
+			padding-left: 5px;
+			margin: 0px;
+			vertical-align: middle;
+			span{
+				font-size: 20px;
+			}
+		}
+	}
+	.contacts-footer{
 
-
+		span{
+			color: #cccccc;
+			font-size: 14px;
+			font-family: 'PFAgoraSlabPro-Bold';
+		}
+		.email-footer{
+			text-align: right;
+		}
+	}
+}
 
 
 
