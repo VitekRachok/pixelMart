@@ -5,6 +5,16 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+  font-family: 'PFAgoraSlabPro-Medium';
+  src: url("../fonts/PFAgoraSlabPro-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
 html,body{
 	margin: 0;
 	padding: 0;
@@ -93,9 +103,147 @@ html,body{
 		}
 	}
 }
+.search-items{
+	margin: 80px auto;
+
+	.search-items-header{
+		margin-bottom: 40px;
+		font-size: 36px;
+		font-family: PFAgoraSlabPro-Light;
+	}
+	.search-items-input{
+		
+		&::before{
+			position: absolute;
+			content: "\f002";
+			width: 60px;
+			height: 60px;
+			font-family: FontAwesome;
+			font-size: 26px;
+			line-height: 60px;
+			text-align: center;
+			color: #53585a;
+			z-index: 99;
+		}
+		input{
+			font-size: 20px;
+			border-color: #e2eaec;
+			text-indent: 50px;
+
+		}
+		.input-group-btn button{
+			width: 90px;
+			background-color: #00baff;
+			font-size: 18px;
+			color: #ffffff;
+		}
+		input,.input-group-btn button{
+			height: 60px;
+		}
+	}
+	.items-tag-wrap{
+		text-align: center;
+		margin-top: 30px;
+
+		span{
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+
+		 ul{
+			padding: 0;
+			list-style: none;
+			display: inline-block;
+
+			li{
+				display: inline-block;
+				background-color: #a2c0cc;
+				padding: 2px 8px;
+				border-radius: 3px;
+				margin: 0px 2px 20px;
+
+				a{
+					color: #ffffff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+}
+.popular-items-wrap{
+	.popular-items-header{
+		font-size: 36px;
+		margin-bottom: 25px;
+		font-family: 'PFAgoraSlabPro-Medium';
+	}
+	ul{
+		padding: 0;
+		margin: 0 0 40px;
+		list-style: none;
+		text-align: center;
+		li{
+			display: inline-block;
+			padding: 0 8px;
+			.popular-tag{
+				color: #0099ff;
+				text-decoration: none;
+				padding: 8px 0;
+				display: inline-block;
+			}
+			.active-popular-tag{
+				color: #53585a;
+				font-size: 16px;
+			}
+		}
+	}
+}
+.popular-items{
+	margin-bottom: 60px;
+	.popular-items-image-wrap{
+		background-image: url("../images/pop-bg.jpg");
+		background-repeat: no-repeat;
+		background-repeat-y: repeat;
+		background-size: 100%;
+		max-width: 380px;
+		margin: 0 auto;
+		padding: 30px 0px;
+		img{
+			margin: 0 auto;
+		}
+	}
+	.popular-items-info{
+		.popular-items-name{
+			margin-top: 20px;
+		}
+		.popular-items-type{
+			color: #939697;
+		}
+		.popular-items-price{
+			display: inline-block;
+			margin-top: 5px;
+		}
+	}
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-input-placeholder  { color:#53585a !important; }
+:-moz-placeholder { color:#53585a !important; }
+:-ms-input-placeholder { color:#53585a !important; }
 
 
 

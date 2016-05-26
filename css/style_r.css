@@ -5,6 +5,14 @@
   src: local("☺"), url("../fonts/PFAgoraSlabPro-Regular.woff") format("woff"), url("../fonts/PFAgoraSlabPro-Regular.ttf") format("truetype"), url("../fonts/PFAgoraSlabPro-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'PFAgoraSlabPro-Medium';
+  src: url("../fonts/PFAgoraSlabPro-Medium.ttf");
+  font-weight: normal;
+  font-style: normal; }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -77,6 +85,104 @@ html, body {
       padding-left: 0; }
     .nav-center li a.px-active {
       border-bottom: 2px solid #FD0003; }
+
+.search-items {
+  margin: 80px auto; }
+  .search-items .search-items-header {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-family: PFAgoraSlabPro-Light; }
+  .search-items .search-items-input::before {
+    position: absolute;
+    content: "\f002";
+    width: 60px;
+    height: 60px;
+    font-family: FontAwesome;
+    font-size: 26px;
+    line-height: 60px;
+    text-align: center;
+    color: #53585a;
+    z-index: 99; }
+  .search-items .search-items-input input {
+    font-size: 20px;
+    border-color: #e2eaec;
+    text-indent: 50px; }
+  .search-items .search-items-input .input-group-btn button {
+    width: 90px;
+    background-color: #00baff;
+    font-size: 18px;
+    color: #ffffff; }
+  .search-items .search-items-input input, .search-items .search-items-input .input-group-btn button {
+    height: 60px; }
+  .search-items .items-tag-wrap {
+    text-align: center;
+    margin-top: 30px; }
+    .search-items .items-tag-wrap span {
+      display: inline-block;
+      margin-bottom: 20px; }
+    .search-items .items-tag-wrap ul {
+      padding: 0;
+      list-style: none;
+      display: inline-block; }
+      .search-items .items-tag-wrap ul li {
+        display: inline-block;
+        background-color: #a2c0cc;
+        padding: 2px 8px;
+        border-radius: 3px;
+        margin: 0px 2px 20px; }
+        .search-items .items-tag-wrap ul li a {
+          color: #ffffff;
+          text-decoration: none; }
+
+.popular-items-wrap .popular-items-header {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-family: 'PFAgoraSlabPro-Medium'; }
+.popular-items-wrap ul {
+  padding: 0;
+  margin: 0 0 40px;
+  list-style: none;
+  text-align: center; }
+  .popular-items-wrap ul li {
+    display: inline-block;
+    padding: 0 8px; }
+    .popular-items-wrap ul li .popular-tag {
+      color: #0099ff;
+      text-decoration: none;
+      padding: 8px 0;
+      display: inline-block; }
+    .popular-items-wrap ul li .active-popular-tag {
+      color: #53585a;
+      font-size: 16px; }
+
+.popular-items {
+  margin-bottom: 60px; }
+  .popular-items .popular-items-image-wrap {
+    background-image: url("../images/pop-bg.jpg");
+    background-repeat: no-repeat;
+    background-repeat-y: repeat;
+    background-size: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 30px 0px; }
+    .popular-items .popular-items-image-wrap img {
+      margin: 0 auto; }
+  .popular-items .popular-items-info .popular-items-name {
+    margin-top: 20px; }
+  .popular-items .popular-items-info .popular-items-type {
+    color: #939697; }
+  .popular-items .popular-items-info .popular-items-price {
+    display: inline-block;
+    margin-top: 5px; }
+
+::-webkit-input-placeholder {
+  color: #53585a !important; }
+
+:-moz-placeholder {
+  color: #53585a !important; }
+
+:-ms-input-placeholder {
+  color: #53585a !important; }
 
 @media (min-width: 768px) {
   .nav-center {
