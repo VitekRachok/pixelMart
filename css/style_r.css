@@ -25,16 +25,6 @@ html, body {
     background-size: 100%; }
     .navbar .scroll-block img {
       float: right; }
-  .navbar .nav-center {
-    text-align: center;
-    line-height: 90px; }
-    .navbar .nav-center li {
-      padding: 0 15px; }
-      .navbar .nav-center li a {
-        padding-right: 0;
-        padding-left: 0; }
-      .navbar .nav-center li a.px-active {
-        border-bottom: 2px solid #FD0003; }
 
 .right-header-block {
   float: right; }
@@ -76,6 +66,17 @@ html, body {
 
 .navbar-toggle {
   clear: right; }
+
+.nav-center {
+  text-align: center;
+  line-height: 90px; }
+  .nav-center li {
+    padding: 0 15px; }
+    .nav-center li a {
+      padding-right: 0;
+      padding-left: 0; }
+    .nav-center li a.px-active {
+      border-bottom: 2px solid #FD0003; }
 
 @media (min-width: 768px) {
   .nav-center {
