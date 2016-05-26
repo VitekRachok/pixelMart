@@ -14,6 +14,19 @@ $large: 1200px;
 		}
 	}
 	.collapse{
+		// float: left;
+	}
+
+ }
+
+
+@media (max-width: $small) { 
+
+	.navbar-header{
 		float: left;
 	}
- }
+	.navbar-collapse{
+		clear: right;
+	}
+
+}

@@ -28,6 +28,13 @@ html, body {
   .navbar .nav-center {
     text-align: center;
     line-height: 90px; }
+    .navbar .nav-center li {
+      padding: 0 15px; }
+      .navbar .nav-center li a {
+        padding-right: 0;
+        padding-left: 0; }
+      .navbar .nav-center li a.px-active {
+        border-bottom: 2px solid #FD0003; }
 
 .right-header-block {
   float: right; }
@@ -67,14 +74,20 @@ html, body {
     color: #ffffff;
     font-size: 22px; }
 
+.navbar-toggle {
+  clear: right; }
+
 @media (min-width: 768px) {
   .nav-center {
     float: none; }
     .nav-center li {
       float: none;
-      display: inline-block; }
+      display: inline-block; } }
+@media (max-width: 768px) {
+  .navbar-header {
+    float: left; }
 
-  .collapse {
-    float: left; } }
+  .navbar-collapse {
+    clear: right; } }
 
 /*# sourceMappingURL=style_r.css.map */

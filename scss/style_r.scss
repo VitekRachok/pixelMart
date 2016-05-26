@@ -34,6 +34,19 @@ html,body{
 	.nav-center{
 		text-align: center;
 		line-height: 90px;
+
+		li{
+			padding: 0 15px;
+
+			a{
+				padding-right: 0;
+				padding-left: 0;
+			}
+			a.px-active{
+				border-bottom: 2px solid #FD0003;
+			}
+		}
+
 	}
 }
 
@@ -93,7 +106,9 @@ html,body{
 	}
 }
 
-
+.navbar-toggle{
+	clear: right;
+}
 
 
 
