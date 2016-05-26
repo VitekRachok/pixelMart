@@ -11,14 +11,18 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@mixin list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
 }
 html,body{
 	margin: 0;
 	padding: 0;
-	height: 3000px;
 }
 .navbar{
 	border: 0;
@@ -104,7 +108,8 @@ html,body{
 	}
 }
 .search-items{
-	margin: 80px auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
 
 	.search-items-header{
 		margin-bottom: 40px;
@@ -151,8 +156,7 @@ html,body{
 		}
 
 		 ul{
-			padding: 0;
-			list-style: none;
+			@include list-reset;
 			display: inline-block;
 
 			li{
@@ -178,10 +182,8 @@ html,body{
 		font-family: 'PFAgoraSlabPro-Medium';
 	}
 	ul{
-		padding: 0;
+		@include list-reset;
 		margin: 0 0 40px;
-		list-style: none;
-		text-align: center;
 		li{
 			display: inline-block;
 			padding: 0 8px;
@@ -225,7 +227,48 @@ html,body{
 		}
 	}
 }
-
+.inspiration-wrap{
+	.inspiration-header{
+		font-size: 36px;
+		margin-bottom: 25px;
+		font-family: 'PFAgoraSlabPro-Medium';
+	}
+	span{
+		padding-right: 15px;
+		display: inline-block;
+	}
+	ul{
+		@include list-reset;
+		display: inline-block;
+		li{
+			display: inline-block;
+			padding-right: 10px;
+		}
+	}
+}
+.q-leader-wrap{
+	.q-leader-header{
+		font-size: 36px;
+		font-family: PFAgoraSlabPro-Light;
+		margin-bottom: 10px;
+	}
+	.q-leader-description{
+		max-width: 420px;
+		margin: 0 auto;
+	}
+	.q-leader-items{
+		max-width: 380px;
+		margin: 40px auto 0;
+		.q-leader-it-header{
+			margin-top: 25px;
+			margin-bottom: 10px;
+			font-size: 18px;
+		}
+		p{
+			line-height: normal;
+		}
+	}
+}
 
 
 

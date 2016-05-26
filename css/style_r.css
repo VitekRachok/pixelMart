@@ -15,8 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 html, body {
   margin: 0;
-  padding: 0;
-  height: 3000px; }
+  padding: 0; }
 
 .navbar {
   border: 0;
@@ -87,7 +86,8 @@ html, body {
       border-bottom: 2px solid #FD0003; }
 
 .search-items {
-  margin: 80px auto; }
+  margin-top: 80px;
+  margin-bottom: 80px; }
   .search-items .search-items-header {
     margin-bottom: 40px;
     font-size: 36px;
@@ -121,8 +121,10 @@ html, body {
       display: inline-block;
       margin-bottom: 20px; }
     .search-items .items-tag-wrap ul {
+      margin: 0;
       padding: 0;
       list-style: none;
+      text-align: center;
       display: inline-block; }
       .search-items .items-tag-wrap ul li {
         display: inline-block;
@@ -139,10 +141,11 @@ html, body {
   margin-bottom: 25px;
   font-family: 'PFAgoraSlabPro-Medium'; }
 .popular-items-wrap ul {
+  margin: 0;
   padding: 0;
-  margin: 0 0 40px;
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  margin: 0 0 40px; }
   .popular-items-wrap ul li {
     display: inline-block;
     padding: 0 8px; }
@@ -174,6 +177,40 @@ html, body {
   .popular-items .popular-items-info .popular-items-price {
     display: inline-block;
     margin-top: 5px; }
+
+.inspiration-wrap .inspiration-header {
+  font-size: 36px;
+  margin-bottom: 25px;
+  font-family: 'PFAgoraSlabPro-Medium'; }
+.inspiration-wrap span {
+  padding-right: 15px;
+  display: inline-block; }
+.inspiration-wrap ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: inline-block; }
+  .inspiration-wrap ul li {
+    display: inline-block;
+    padding-right: 10px; }
+
+.q-leader-wrap .q-leader-header {
+  font-size: 36px;
+  font-family: PFAgoraSlabPro-Light;
+  margin-bottom: 10px; }
+.q-leader-wrap .q-leader-description {
+  max-width: 420px;
+  margin: 0 auto; }
+.q-leader-wrap .q-leader-items {
+  max-width: 380px;
+  margin: 40px auto 0; }
+  .q-leader-wrap .q-leader-items .q-leader-it-header {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 18px; }
+  .q-leader-wrap .q-leader-items p {
+    line-height: normal; }
 
 ::-webkit-input-placeholder {
   color: #53585a !important; }
