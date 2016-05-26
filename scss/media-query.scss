@@ -17,6 +17,14 @@ $large: 1200px;
  }
 
 
+@media (max-width: $large) {
+	.why-we-item span{
+		text-align: center !important;
+	}
+	.email-footer{
+			text-indent: 0px !important;
+	}
+}
 @media (max-width: $small) { 
 
 	.navbar-header{
@@ -28,10 +36,20 @@ $large: 1200px;
 	.why-we-item .estimate{
 		text-align: center !important;
 	}
-
-}
-@media (max-width: $large) {
-	.why-we-item span{
-		text-align: center !important;
+	.contacts-footer{
+		text-align: center;
+		span{
+			margin: 0 10px;
+		}
 	}
+	.store-btn-wrap{
+		text-align: center;
+	}
+	.payment-ic-wrap,
+	.social-icon-wrap{
+		margin: 20px 0 0;
+		text-align: center;
+
+	}
+
 }
