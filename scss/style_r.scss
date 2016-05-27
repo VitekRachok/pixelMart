@@ -338,6 +338,18 @@ html,body{
 			}
 		}
 	}
+	.contacts-footer{
+		margin-bottom: 35px;
+		span{
+			display: inline-block;
+			color: #cccccc;
+			font-size: 14px;
+			font-family: 'PFAgoraSlabPro-Bold';
+		}
+		.email-footer{
+			text-indent: 20px;
+		}
+	}
 	& .apple-btn,
 	& .play-btn{
 		width: 175px;
@@ -368,16 +380,15 @@ html,body{
 			}
 		}
 	}
-	.contacts-footer{
-
-		span{
-			color: #cccccc;
-			font-size: 14px;
-			font-family: 'PFAgoraSlabPro-Bold';
-		}
-		.email-footer{
-			text-align: right;
-		}
+	.payment-ic,
+	.soc-icon{
+		display: inline-block;
+		margin: 0px 0 4px;
+	}
+	.private-policy{
+		margin-top: 25px;
+		color: #666666;
+		font-size: 12px;
 	}
 }
 

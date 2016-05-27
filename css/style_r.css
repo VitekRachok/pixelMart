@@ -270,6 +270,15 @@ html, body {
         transition: color 0.2s; }
         .foo .faq li a:hover {
           color: #ffffff; }
+  .foo .contacts-footer {
+    margin-bottom: 35px; }
+    .foo .contacts-footer span {
+      display: inline-block;
+      color: #cccccc;
+      font-size: 14px;
+      font-family: 'PFAgoraSlabPro-Bold'; }
+    .foo .contacts-footer .email-footer {
+      text-indent: 20px; }
   .foo .apple-btn, .foo .play-btn {
     width: 175px;
     height: 50px;
@@ -297,12 +306,14 @@ html, body {
       vertical-align: middle; }
       .foo .apple-btn p span, .foo .play-btn p span {
         font-size: 20px; }
-  .foo .contacts-footer span {
-    color: #cccccc;
-    font-size: 14px;
-    font-family: 'PFAgoraSlabPro-Bold'; }
-  .foo .contacts-footer .email-footer {
-    text-align: right; }
+  .foo .payment-ic,
+  .foo .soc-icon {
+    display: inline-block;
+    margin: 0px 0 4px; }
+  .foo .private-policy {
+    margin-top: 25px;
+    color: #666666;
+    font-size: 12px; }
 
 ::-webkit-input-placeholder {
   color: #53585a !important; }
@@ -319,6 +330,12 @@ html, body {
     .nav-center li {
       float: none;
       display: inline-block; } }
+@media (max-width: 1200px) {
+  .why-we-item span {
+    text-align: center !important; }
+
+  .email-footer {
+    text-indent: 0px !important; } }
 @media (max-width: 768px) {
   .navbar-header {
     float: left; }
@@ -327,9 +344,19 @@ html, body {
     clear: right; }
 
   .why-we-item .estimate {
-    text-align: center !important; } }
-@media (max-width: 1200px) {
-  .why-we-item span {
-    text-align: center !important; } }
+    text-align: center !important; }
+
+  .contacts-footer {
+    text-align: center; }
+    .contacts-footer span {
+      margin: 0 10px; }
+
+  .store-btn-wrap {
+    text-align: center; }
+
+  .payment-ic-wrap,
+  .social-icon-wrap {
+    margin: 20px 0 0;
+    text-align: center; } }
 
 /*# sourceMappingURL=style_r.css.map */
