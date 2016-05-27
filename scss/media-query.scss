@@ -1,4 +1,5 @@
 
+$mini: 500px;
 $small: 768px;
 $medium: 992px;
 $large: 1200px;
@@ -7,15 +8,12 @@ $large: 1200px;
 
 	.nav-center{
 		float: none;
-
 		li{
 			float: none;
 			display: inline-block;
 		}
 	}
-
  }
-
 
 @media (max-width: $large) {
 	.why-we-item span{
@@ -57,7 +55,31 @@ $large: 1200px;
 	.social-icon-wrap{
 		margin: 20px 0 0;
 		text-align: center;
-
 	}
-
+	.banner-wrap{
+		height: 200px;
+		a.btn{
+			left: -79px;
+			padding: 7px;
+			bottom: 7px;
+		}
+	}
 }
+@media (max-width: $small) {
+
+	.banner-wrap{
+		height: 150px;
+		a.btn{
+			padding: 5px;
+			bottom: 2px;
+		}
+	}
+}
+
+
+
+
+
+
+
+

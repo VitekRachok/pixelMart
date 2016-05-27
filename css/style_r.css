@@ -39,6 +39,8 @@ html, body {
 
 /* NAVIGATION*/
 .navbar {
+  height: 90px;
+  overflow: hidden;
   border: 0;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
@@ -388,6 +390,32 @@ html, body {
     color: #666666;
     font-size: 12px; }
 
+/****NEXT PAGE****/
+.banner-wrap {
+  height: 300px;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.banner-wrap {
+  position: relative; }
+  .banner-wrap a.btn {
+    position: absolute;
+    margin-left: 50%;
+    left: -105px;
+    bottom: 20px;
+    padding: 9px 34px;
+    color: #53585a;
+    font-family: 'Conv_PFAgoraSlabPro-Light'; }
+
 .popular-category-header {
   font-size: 36px;
   font-family: 'Conv_PFAgoraSlabPro-Light'; }
@@ -460,6 +488,19 @@ html, body {
   .payment-ic-wrap,
   .social-icon-wrap {
     margin: 20px 0 0;
-    text-align: center; } }
+    text-align: center; }
+
+  .banner-wrap {
+    height: 200px; }
+    .banner-wrap a.btn {
+      left: -79px;
+      padding: 7px;
+      bottom: 7px; } }
+@media (max-width: 768px) {
+  .banner-wrap {
+    height: 150px; }
+    .banner-wrap a.btn {
+      padding: 5px;
+      bottom: 2px; } }
 
 /*# sourceMappingURL=style_r.css.map */
