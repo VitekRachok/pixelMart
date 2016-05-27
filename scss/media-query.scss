@@ -24,6 +24,14 @@ $large: 1200px;
 	.email-footer{
 			text-indent: 0px !important;
 	}
+	.popular-category-img-wrap{
+		min-height: 175px !important;
+	}
+}
+@media (max-width: $medium) {
+	.popular-category-img-wrap{
+		min-height: 254px !important;
+	}
 }
 @media (max-width: $small) { 
 

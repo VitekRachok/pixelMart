@@ -6,16 +6,32 @@
 	font-style: normal;
 }
 @font-face {
-  font-family: 'PFAgoraSlabPro-Medium';
-  src: url("../fonts/PFAgoraSlabPro-Medium.ttf");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Conv_PFAgoraSlabPro-Medium';
+	src: url('../fonts/PFAgoraSlabPro-Medium.eot');
+	src: local('☺'), url('../fonts/PFAgoraSlabPro-Medium.woff') format('woff'), url('../fonts/PFAgoraSlabPro-Medium.ttf') format('truetype'), url('../fonts/PFAgoraSlabPro-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'PFAgoraSlabPro-Bold';
-  src: url("../fonts/PFAgoraSlabPro-Bold.ttf");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Conv_PFAgoraSlabPro-Bold';
+	src: url('../fonts/PFAgoraSlabPro-Bold.eot');
+	src: local('☺'), url('../fonts/PFAgoraSlabPro-Bold.woff') format('woff'), url('../fonts/PFAgoraSlabPro-Bold.ttf') format('truetype'), url('../fonts/PFAgoraSlabPro-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_PFAgoraSlabPro-Italic';
+	src: url('../fonts/PFAgoraSlabPro-Italic.eot');
+	src: local('☺'), url('../fonts/PFAgoraSlabPro-Italic.woff') format('woff'), url('../fonts/PFAgoraSlabPro-Italic.ttf') format('truetype'), url('../fonts/PFAgoraSlabPro-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_PFAgoraSlabPro-Light';
+	src: url('../fonts/PFAgoraSlabPro-Light.eot');
+	src: local('☺'), url('../fonts/PFAgoraSlabPro-Light.woff') format('woff'), url('../fonts/PFAgoraSlabPro-Light.ttf') format('truetype'), url('../fonts/PFAgoraSlabPro-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @mixin list-reset {
 	margin: 0;
@@ -34,7 +50,11 @@ h1,h2,h3,h4,h5,h6{
 html,body{
 	margin: 0;
 	padding: 0;
+	font-family: 'Conv_PFAgoraSlabPro-Regular';
 }
+
+
+/* NAVIGATION*/
 .navbar{
 	border: 0;
 	background-color: #ffffff;
@@ -45,9 +65,18 @@ html,body{
 		position: relative;
 		width: 180px;
 		float: left;
-		background-image: url('../images/gradient.jpg');
-		background-position-x: 0%;
 		background-size: 100%;
+		.logo-descr{
+			font-size: 10px;
+			font-family: 'Conv_PFAgoraSlabPro-Regular';
+			line-height: 12px;
+			display: inline-block;
+			width: 70px;
+			position: absolute;
+			bottom: 8px;
+			left: 8px;
+			color: #ffffff;
+		}
 		& img{
 			float: right;
 		}
@@ -64,14 +93,14 @@ html,body{
 			color: #53585a;
 			display: block;
 			font-size: 18px;
-			font-weight: 700;
+			font-family: 'Conv_PFAgoraSlabPro-Bold';
 			line-height: 18px;
 			&:hover{
 				text-decoration: none;
 			}
 		}
 		.city{
-			color: #939697;
+			color: #53585a;
 			font-size: 14px;
 		}
 	}
@@ -95,10 +124,17 @@ html,body{
 		height: 90px;
 		line-height: 90px;
 		text-align: center;
-		background-image: url('../images/nava.jpg');
 		float: right;
 		color: #ffffff;
 		font-size: 22px;
+		background: #f5a01e;
+		background: -moz-linear-gradient(-45deg, #f5a01e 0%, #ff0000 30%, #be00aa 100%);
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f5a01e), color-stop(30%,#ff0000), color-stop(100%,#be00aa));
+		background: -webkit-linear-gradient(-45deg, #f5a01e 0%,#ff0000 30%,#be00aa 100%);
+		background: -o-linear-gradient(-45deg, #f5a01e 0%,#ff0000 30%,#be00aa 100%);
+		background: -ms-linear-gradient(-45deg, #f5a01e 0%,#ff0000 30%,#be00aa 100%);
+		background: linear-gradient(135deg, #f5a01e 0%,#ff0000 30%,#be00aa 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5a01e', endColorstr='#be00aa',GradientType=1 );
 	}
 }
 .navbar-toggle{
@@ -112,12 +148,17 @@ html,body{
 		a{
 			padding-right: 0;
 			padding-left: 0;
+			font-size: 18px;
+			color: #53585a !important;
+			font-family: 'Conv_PFAgoraSlabPro-Regular';
+			
 		}
 		a.px-active{
 			border-bottom: 2px solid #FD0003;
 		}
 	}
 }
+/* NAVIGATION END*/
 .search-items{
 	margin-top: 80px;
 	margin-bottom: 80px;
@@ -125,7 +166,7 @@ html,body{
 	.search-items-header{
 		margin-bottom: 40px;
 		font-size: 36px;
-		font-family: 'PFAgoraSlabPro-Light';
+		font-family: 'Conv_PFAgoraSlabPro-Regular';
 	}
 	.search-items-input{
 		
@@ -134,6 +175,7 @@ html,body{
 			content: "\f002";
 			width: 60px;
 			height: 60px;
+			left: 0;
 			font-family: FontAwesome;
 			font-size: 26px;
 			line-height: 60px;
@@ -142,6 +184,7 @@ html,body{
 			z-index: 99;
 		}
 		input{
+			font-family: 'Conv_PFAgoraSlabPro-Light';
 			font-size: 20px;
 			border-color: #e2eaec;
 			text-indent: 50px;
@@ -183,14 +226,27 @@ html,body{
 				}
 			}
 		}
+		.btn-info{
+			background-color: #00baff;
+			padding: 14px 44px;
+			font-size: 16px;
+			margin-top: 10px;
+		}
 	}
-
+}
+.search-items.s-i{
+	margin-top: 60px;
+	margin-bottom: 55px;
+	.items-tag-wrap{
+		margin-top: 60px;
+	}
 }
 .popular-items-wrap{
+
 	.popular-items-header{
 		font-size: 36px;
 		margin-bottom: 25px;
-		font-family: 'PFAgoraSlabPro-Medium';
+		font-family: 'Conv_PFAgoraSlabPro-Medium';
 	}
 	ul{
 		@include list-reset;
@@ -228,13 +284,16 @@ html,body{
 	.popular-items-info{
 		.popular-items-name{
 			margin-top: 20px;
+			font-size: 20px;
+			color: #53585a;
 		}
 		.popular-items-type{
 			color: #939697;
+			font-size: 14px;
 		}
 		.popular-items-price{
 			display: inline-block;
-			margin-top: 5px;
+			font-size: 20px;
 		}
 	}
 }
@@ -242,9 +301,9 @@ html,body{
 	.inspiration-header{
 		font-size: 36px;
 		margin-bottom: 25px;
-		font-family: 'PFAgoraSlabPro-Medium';
+		font-family: 'Conv_PFAgoraSlabPro-Medium';
 	}
-	span{
+	.our-hash-tag{
 		padding-right: 15px;
 		display: inline-block;
 	}
@@ -256,11 +315,18 @@ html,body{
 			padding-right: 10px;
 		}
 	}
+	.instagram-wrap{
+		img{
+			margin-top: 30px;
+			margin-bottom: 100px;
+		}
+	}
 }
 .q-leader-wrap{
+	margin-bottom: 25px;
 	.q-leader-header{
 		font-size: 36px;
-		font-family: 'PFAgoraSlabPro-Light';
+		font-family: 'Conv_PFAgoraSlabPro-Light';
 		margin-bottom: 10px;
 	}
 	.q-leader-description{
@@ -274,7 +340,7 @@ html,body{
 			margin-top: 25px;
 			margin-bottom: 10px;
 			font-size: 18px;
-			font-family: 'PFAgoraSlabPro-Medium';
+			font-family: 'Conv_PFAgoraSlabPro-Regular';
 		}
 		p{
 			line-height: normal;
@@ -283,9 +349,9 @@ html,body{
 }
 .about{
 	background-color: #f6f6f7;
-	margin-top: 85px;
+	margin-top: 60px;
 	.about-header{
-		font-family: 'PFAgoraSlabPro-Medium';
+		font-family: 'Conv_PFAgoraSlabPro-Medium';
 		font-size: 16px;
 		margin-top: 35px;
 		margin-bottom: 20px;
@@ -303,6 +369,21 @@ html,body{
 	.why-we-item{
 		padding: 18px 0;
 		text-align: center;
+		.estimate{
+			background: #f5a01e;
+			background: -moz-linear-gradient(-45deg, #f5a01e 0%, #ff0000 30%, #be00aa 100%);
+			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#f5a01e), color-stop(30%,#ff0000), color-stop(100%,#be00aa));
+			background: -webkit-linear-gradient(-45deg, #f5a01e 0%,#ff0000 30%,#be00aa 100%);
+			background: -o-linear-gradient(-45deg, #f5a01e 0%,#ff0000 30%,#be00aa 100%);
+			background: -ms-linear-gradient(-45deg, #f5a01e 0%,#ff0000 30%,#be00aa 100%);
+			background: linear-gradient(135deg, #f5a01e 0%,#ff0000 30%,#be00aa 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5a01e', endColorstr='#be00aa',GradientType=1 );
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-background-clip: text;
+			-moz-text-fill-color: transparent;
+			line-height: normal;
+		}
 		& .estimate,& span{
 			position: relative;
 			top: 11px;
@@ -310,9 +391,11 @@ html,body{
 			display: inline-block;
 			color: #cccccc;
 			text-align: left;
+			font-family: 'Conv_PFAgoraSlabPro-Regular';
 		}
 		span{
 			min-width: 145px;
+			margin-left: 8px;
 		}
 	}
 }
@@ -344,10 +427,11 @@ html,body{
 			display: inline-block;
 			color: #cccccc;
 			font-size: 14px;
-			font-family: 'PFAgoraSlabPro-Bold';
+			font-family: 'Conv_PFAgoraSlabPro-Medium';
 		}
 		.email-footer{
 			text-indent: 20px;
+			font-family: 'Conv_PFAgoraSlabPro-Light';
 		}
 	}
 	& .apple-btn,
@@ -358,7 +442,7 @@ html,body{
 		border-radius: 5px;
 		line-height: normal;
 		color: #ffffff;
-		padding: 4px 0 0 10px;
+		padding: 2px 0 0 10px;
 		display: inline-block;
 		text-decoration: none;
 		margin-bottom: 15px;
@@ -391,8 +475,38 @@ html,body{
 		font-size: 12px;
 	}
 }
+.popular-category-header{
+	font-size: 36px;
+	font-family: 'Conv_PFAgoraSlabPro-Light';
 
+}
+.popular-category-wrap{
 
+	.popular-category-items{
+		background-color: #ececec;
+		margin: 35px auto 25px;
+		padding: 20px;
+		max-width: 380px;
+		a.btn{
+			font-size: 14px;
+			font-family: 'Conv_PFAgoraSlabPro-Light';
+			color: #53585a;
+		}
+	}
+	.popular-category-img-wrap{
+		min-height: 240px;
+		img{
+			margin: 0 auto;
+		}
+	}
+	.popular-category-name{
+		font-size: 20px;
+		font-family: 'Conv_PFAgoraSlabPro-Medium';
+		color: #53585a;
+		margin-top: 35px;
+		margin-bottom: 10px;
+	}
+}
 
 
 
