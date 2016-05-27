@@ -48,8 +48,6 @@ body {
 }
 
 .carousel-row .carousel-inner button {
-  font-family: 'PFAgoraSlabPro-Light';
-  text-transform: uppercase;
   color: #1c2423;
   width: 120px;
   height: 40px;
@@ -64,6 +62,13 @@ body {
 .carousel-row .carousel-inner button:hover {
   background-color: #ffd021;
   border-color: #ffd021;
+}
+
+.carousel-row .carousel-inner button.btn-see {
+  font-family: 'PFAgoraSlabPro-Light';
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 0;
 }
 
 .carousel-row .upload-btn, .carousel-row .order-btn {
@@ -102,6 +107,7 @@ body {
   padding-left: 53px;
   line-height: 60px;
   font-size: 20px;
+  font-weight: 400;
   cursor: pointer;
   background: url(../images/icon-photo.png) no-repeat 20px center;
 }
@@ -402,7 +408,9 @@ body {
   }
   .carousel-row .carousel-inner h3 + button {
     height: 35px;
-    padding: 8px 0;
+  }
+  .carousel-row .carousel-inner button.btn-see {
+    margin-top: 0;
   }
 }
 
@@ -431,8 +439,8 @@ body {
     width: 190px;
   }
   .carousel-row .carousel-inner img {
-    width: 95% !important;
-    height: 95% !important;
+    width: 90% !important;
+    height: 90% !important;
     margin: 0% auto 5%;
   }
   .carousel-row .owl-prev {

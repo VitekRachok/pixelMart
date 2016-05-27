@@ -10,7 +10,7 @@ $(document).ready(function () {
     animateIn: 'fadeIn',
     //autoplaySpeed: 5000,
     //autoplayTimeout: 1000,
-    //autoplay: true,
+    autoplay: true,
     autoplayHoverPause: true,
     mouseDrag: false,
     loop: true,
