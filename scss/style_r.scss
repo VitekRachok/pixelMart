@@ -40,9 +40,9 @@
 	text-align: center;
 }
 @mixin transition($transition, $val){
-	-webkit-transition: $val $transition;
-	-o-transition: $val $transition;
-	transition: $val $transition;
+	-webkit-transition: $transition $val ease-in-out;
+	-o-transition: $transition $val ease-in-out;
+	transition: $transition $val ease-in-out;
 }
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
@@ -56,8 +56,6 @@ html,body{
 
 /* NAVIGATION*/
 .navbar{
-	height: 90px;
-	overflow: hidden;
 	border: 0;
 	background-color: #ffffff;
 	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.05);
@@ -160,7 +158,39 @@ html,body{
 		}
 	}
 }
+
+
+.navbar-mini{
+	margin-top: 200px;
+	.trash{
+		height: 50px;
+		line-height: 50px;
+	}
+	.like-header{
+		line-height: 50px;
+	}
+	.contacts-header{
+		margin-top: 0;
+		line-height: 50px;
+		.phone-header{
+			line-height: 50px;
+		}
+		.city{
+			display: none;
+		}
+	}
+	.scroll-block{
+		width: 150px;
+	}
+	.nav-center{
+		line-height: 50px;
+		a{
+			padding: 8px 0px;
+		}
+	}
+}
 /* NAVIGATION END*/
+
 .search-items{
 	margin-top: 80px;
 	margin-bottom: 80px;
@@ -480,7 +510,7 @@ html,body{
 
 
 
-/****NEXT PAGE****/
+/****PAGE 4****/
 // Example: @include background-size-cover;
 
 @mixin background-size-cover {
@@ -545,8 +575,153 @@ html,body{
 	}
 }
 
-
-
+/*PAGE 5 ****/
+.category-page{
+	.left-category-panel{
+		ul{
+			margin-left: 15px;
+			text-align: left;
+			list-style: none;
+			padding: 15px 0;
+			li{
+				margin-bottom: 10px;
+				a.left-category-item.active{
+					background-color: #53585a;
+					color: #ffffff;
+				}
+				a{
+					padding: 7px 10px;
+					text-decoration: none;
+					color: #53585a;
+					border-radius: 5px;
+					@include transition(background-color, .2s);
+					&:hover{
+						background-color: #edeeee;
+					}
+				}
+			}
+		}
+	}
+	.right-category-panel{
+		.right-header{
+			color: #53585a;
+			font-size: 36px;
+			font-family: 'Conv_PFAgoraSlabPro-Light';
+			margin-bottom: 20px;
+		}
+		ul{
+			@include list-reset;
+			margin-bottom: 15px;
+			li{
+				margin-bottom: 15px;
+				display: inline-block;
+				a.active{
+					background-color: #edeeee;
+				}
+				a{
+					border-radius: 5px;
+					padding: 8px;
+					color: #53585a;
+					font-size: 14px;
+					text-decoration: none;
+				}
+			}
+		}
+		.category-items{
+			margin: 0 auto 60px;
+			max-width: 380px;
+		}
+		.category-img-wrap{
+			position: relative;
+			background-color: #ececec;
+			padding: 20px 10px;
+			min-height: 285px;
+			.category-items-mask{
+				opacity: 0;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				margin: -20px 0 0 -10px;
+				background-image: url('../images/cat-show1.png');
+				background-position: center;
+				@include background-size-cover;
+				@include transition(opacity, .3s);
+				a.btn{
+					position: absolute;
+					bottom: 20px;
+					margin-left: 50%;
+					left: -77px;
+					padding: 9px 15px;
+				}
+			}
+			img{
+				margin: 0 auto;
+			}
+		}
+			.category-img-wrap:hover .category-items-mask{
+				opacity: 1;
+			}
+		.category-items-name{
+			font-size: 16px;
+			color: #53585a;
+			margin-top: 20px;
+		}
+		.category-items-price{
+			margin-top: 8px;
+			font-family: 'Conv_PFAgoraSlabPro-Bold';
+		}
+	}
+}
+.category-page-pagination{
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	a.btn-info{
+		padding: 13px 67px;
+		font-size: 16px;
+		background-color: #00baff;
+		float: right;
+		margin-top: 10px;
+		@include transition(background-color, .2s);
+		&:hover{
+			background-color: #47CDFF;
+		}
+	}
+}
+.pagination-list{
+	float: left;
+	padding: 0;
+	list-style: none;
+	margin: 20px 0;
+	li:first-child{
+		margin-right: 15px;
+	}
+	li:last-child a{
+		width: auto;
+		margin-left: 15px;
+		&:hover{
+			background-color: transparent;
+		}
+	}
+	li:first-child,li:last-child a{
+		color: #a5a7a8;
+		border-radius: 0;
+	}
+	li{
+		display: inline-block;
+		a{
+			text-decoration: none;
+			display: inline-block;
+			border-radius: 15px;
+			text-align: center;
+			line-height: 30px;
+			width: 30px;
+			height: 30px;
+			&:hover{
+				background-color: #edeeee;
+			}
+		}
+	}
+}
 
 
 

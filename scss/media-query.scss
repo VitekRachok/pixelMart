@@ -25,10 +25,32 @@ $large: 1200px;
 	.popular-category-img-wrap{
 		min-height: 175px !important;
 	}
+	.right-category-panel .category-img-wrap{
+		min-height: 200px !important;
+	}
+	.left-category-panel ul{
+		margin-left: 0 !important;
+	}
 }
 @media (max-width: $medium) {
 	.popular-category-img-wrap{
 		min-height: 254px !important;
+	}
+	.left-category-panel {
+		ul{
+			text-align: center !important;
+			li{
+				display: inline-block;
+			}
+		}
+		
+	}
+	.pagination-list{
+		float: none;
+	}
+	.category-page-pagination a.btn-info{
+		float: none;
+		margin: 0 auto 20px;
 	}
 }
 @media (max-width: $small) { 
@@ -74,7 +96,7 @@ $large: 1200px;
 			bottom: 2px; 
 		}
 	}
-	
+
 }
 
 
