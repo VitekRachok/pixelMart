@@ -10,29 +10,37 @@ $(document).ready(function () {
     animateIn: 'fadeIn',
     //autoplaySpeed: 5000,
     //autoplayTimeout: 1000,
-    autoplay: true,
+    //autoplay: true,
     autoplayHoverPause: true,
     mouseDrag: false,
     loop: true,
   });
 
+  function configSliderControls (elem) {
+	  $(elem).on('click', function (e) {
+	  	$(elem).removeClass('active');
+	  	$(this).addClass('active');
+	  	var dataToggle = $(this).data('toggle');
+	  	$("#home-carousel .owl-dot")[dataToggle].click();
+	  	e.preventDefault();
+	  })
 
-  $('.carousel-toggle').on('click', function () {
-  	$('.carousel-toggle').removeClass('active');
-  	$(this).addClass('active');
-  	var dataToggle = $(this).data('toggle');
-  	$("#home-carousel .owl-dot")[dataToggle].click();
-  })
+	  owl.on('changed.owl.carousel', function(e) {
+	 		var activeNumber = null;
+	    $("#home-carousel .owl-dot").each(function (index) {
+	    	if($(this).hasClass('active')){
+	    		activeNumber = index;
+	    	}
+	    })
+			$(elem)[activeNumber].click();
+			e.preventDefault();
+	  })
+  }
 
-  owl.on('changed.owl.carousel', function(event) {
-   		var activeNumber = null;
-      $("#home-carousel .owl-dot").each(function (index) {
-      	if($(this).hasClass('active')){
-      		activeNumber = index;
-      	}
-      })
-  		$('.carousel-toggle')[activeNumber].click();
-   })
+configSliderControls('.carousel-toggle');
+configSliderControls('.toggle-top-items');
+
+
 
 
 

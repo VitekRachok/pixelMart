@@ -4,8 +4,10 @@
 		height: 567px
 		&.carousel-item1
 			background: url(../images/slide1-bg.jpg) no-repeat center center
+			background-size: cover
 		&.carousel-item2
 			background: url(../images/slide2-bg.jpg) no-repeat center center
+			background-size: cover
 	.carousel-inner
 		padding: 60px 0 88px
 		text-align: center
@@ -110,10 +112,12 @@
 			text-decoration: none
 			height: 50px
 			width: 240px
+			max-width: 100%
 			padding: 12px 0
 			border: 1px solid #e2eaec
 			border-radius: 5px
 			font-size: 18px
+			margin: 0 auto
 			+transition(all $duration ease)
 			&:hover
 				border-color: #00baff
