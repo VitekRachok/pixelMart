@@ -38,6 +38,9 @@ html, body {
   font-family: 'Conv_PFAgoraSlabPro-Regular'; }
 
 /* NAVIGATION*/
+.navbar-big {
+  z-index: 9999; }
+
 .navbar {
   border: 0;
   background-color: #ffffff;
@@ -108,7 +111,10 @@ html, body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5a01e', endColorstr='#be00aa',GradientType=1 ); }
 
 .navbar-toggle {
-  clear: right; }
+  margin: 22px 26px 0 0; }
+  .navbar-toggle .icon-bar {
+    width: 35px;
+    margin: 5px 0; }
 
 .nav-center {
   text-align: center;
@@ -124,8 +130,18 @@ html, body {
     .nav-center li a.px-active {
       border-bottom: 2px solid #FD0003; }
 
+.navbar-toggle {
+  border: 0; }
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent; }
+
+.navbar-collapse {
+  background-color: #ffffff; }
+
 .navbar-mini {
-  margin-top: 200px; }
+  display: none; }
   .navbar-mini .trash {
     height: 50px;
     line-height: 50px; }
@@ -144,6 +160,11 @@ html, body {
     line-height: 50px; }
     .navbar-mini .nav-center a {
       padding: 8px 0px; }
+  .navbar-mini .navbar-toggle {
+    margin: 5px 40px 0 0; }
+    .navbar-mini .navbar-toggle .icon-bar {
+      width: 35px;
+      margin: 4px 0; }
 
 /* NAVIGATION END*/
 .search-items {
@@ -605,6 +626,9 @@ html, body {
     .nav-center li {
       float: none;
       display: inline-block; } }
+@media (max-width: 1240px) {
+  .nav-center li {
+    padding: 0 7px; } }
 @media (max-width: 1200px) {
   .why-we-item span {
     text-align: center !important; }
@@ -663,12 +687,30 @@ html, body {
     .banner-wrap a.btn {
       left: -79px;
       padding: 7px;
-      bottom: 7px; } }
-@media (max-width: 768px) {
+      bottom: 7px; }
+
   .banner-wrap {
     height: 150px; }
     .banner-wrap a.btn {
       padding: 5px;
       bottom: 2px; } }
+@media (max-width: 570px) {
+  .navbar {
+    background-color: #191919; }
+    .navbar .contacts-header {
+      display: none; }
+    .navbar .like-header {
+      width: 40px; }
+      .navbar .like-header .like {
+        color: #ffffff; }
+    .navbar .icon-bar {
+      background-color: #ffffff !important; }
+
+  .navbar-toggle {
+    margin-right: 0 !important;
+    float: left; }
+
+  .navbar-mini .trash {
+    width: 60px; } }
 
 /*# sourceMappingURL=style_r.css.map */
