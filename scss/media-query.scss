@@ -1,5 +1,5 @@
 
-$mini: 500px;
+$mini: 570px;
 $small: 768px;
 $medium: 992px;
 $large: 1200px;
@@ -14,6 +14,12 @@ $large: 1200px;
 		}
 	}
  }
+
+@media (max-width: 1240px) {
+	.nav-center li {
+	    padding: 0 7px;
+	}
+}
 
 @media (max-width: $large) {
 	.why-we-item span{
@@ -86,14 +92,38 @@ $large: 1200px;
 			bottom: 7px;
 		}
 	}
-}
-@media (max-width: $small) {
-
 	.banner-wrap{
 		height: 150px;
 		a.btn{
 			padding: 5px;
 			bottom: 2px; 
+		}
+	}
+}
+@media (max-width: $mini) {
+
+	.navbar{
+		background-color: #191919;
+		.contacts-header{
+			display: none;
+		}
+		.like-header{
+			width: 40px;
+			.like{
+				color: #ffffff;
+			}
+		}
+		.icon-bar{
+			background-color: #ffffff !important;
+		}
+	}
+	.navbar-toggle{
+		margin-right: 0 !important;
+		float: left;
+	}
+	.navbar-mini{
+		.trash{
+			width: 60px;
 		}
 	}
 
