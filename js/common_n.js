@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
- // Init carousel
-  var owl = $("#home-carousel");
-  var owl = owl.owlCarousel({
+	// Init home page carousel
+  var homeOwl = $("#home-carousel");
+  homeOwl.owlCarousel({
     items: 1,
     nav: true,
     navText: "",
@@ -16,6 +16,7 @@ $(document).ready(function () {
     loop: true,
   });
 
+  // Config home page slider
   function configSliderControls (elem) {
 	  $(elem).on('click', function (e) {
 	  	$(elem).removeClass('active');
@@ -25,7 +26,7 @@ $(document).ready(function () {
 	  	e.preventDefault();
 	  })
 
-	  owl.on('changed.owl.carousel', function(e) {
+	  homeOwl.on('changed.owl.carousel', function(e) {
 	 		var activeNumber = null;
 	    $("#home-carousel .owl-dot").each(function (index) {
 	    	if($(this).hasClass('active')){
@@ -37,10 +38,42 @@ $(document).ready(function () {
 	  })
   }
 
-configSliderControls('.carousel-toggle');
-configSliderControls('.toggle-top-items');
+	configSliderControls('.carousel-toggle');
+	configSliderControls('.toggle-top-items');
 
 
+	// Module photo page: carousel init
+  var modOwl = $(".mod-carousel");
+  modOwl.owlCarousel({
+    items: 9,
+    margin: 5,
+    nav: true,
+    navText: "",
+    autoplayHoverPause: true,
+    loop: true,
+  });
+
+  // carousel toggle active class
+  function toggleActiveItem(elem) {
+  	if($(elem).length) {
+  		$(elem).click(function () {
+  			$(elem).removeClass('active');
+  			$(this).addClass('active');
+  		})
+  	}
+  }
+
+  toggleActiveItem('.mod-carousel-item');
+
+
+
+	// function addTooltip(elem, txt) {
+	//     if (elem) {
+	//         elem.append($('<div class="more-info"><div class="info-tooltip">' + txt + '</div></div>'));
+	//     }
+	// };
+
+	// addTooltip($('.best-label-tooltip'), 'Can choose more than one');
 
 
 
