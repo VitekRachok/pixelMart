@@ -65,19 +65,17 @@ $(document).ready(function () {
 
   toggleActiveItem('.mod-carousel-item');
 
-
-
-	// function addTooltip(elem, txt) {
-	//     if (elem) {
-	//         elem.append($('<div class="more-info"><div class="info-tooltip">' + txt + '</div></div>'));
-	//     }
-	// };
-
-	// addTooltip($('.best-label-tooltip'), 'Can choose more than one');
-
-
-
-
+  function checkTrashScroll() {
+  	if ($(window).scrollTop() > 90) {
+  		$('.trash-dropdown').addClass('trash-dropdown-fixed');
+  	}else{
+  		$('.trash-dropdown').removeClass('trash-dropdown-fixed');
+  	}
+  }
+  checkTrashScroll();
+  $(window).on('scroll', function() {
+  	checkTrashScroll();
+  })
 
 
 })

@@ -36,8 +36,58 @@
 							1
 						</span>
 					</div>
-					<div class="trash">
-						<img src="images/trash.png" alt="">
+					<div class="trash dropdown">
+						<a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<img src="images/trash.png" alt="">
+						</a>
+
+					  <ul class="dropdown-menu trash-dropdown" aria-labelledby="dropdownMenu1">
+					    <li>
+					    	<div class="row">
+					    		<div class="col-sm-6 text-center">
+					    			<img src="images/trash-img1.png" alt="">
+					    		</div>
+					    		<div class="col-sm-6">
+					    			<p class="type">Модульная картина</p>
+					    			<p class="title">«Порш»</p>
+					    			<p class="price">4 600 Р</p>
+					    		</div>
+					    	</div>
+					    </li>
+					    <li>
+					    	<div class="row">
+					    		<div class="col-sm-6 text-center">
+					    			<img src="images/trash-img2.png" alt="">
+					    		</div>
+					    		<div class="col-sm-6">
+					    			<p class="type">Штора для ванной </p>
+					    			<p class="title">«Цветы»</p>
+					    			<p class="price">2 700 Р</p>
+					    		</div>
+					    	</div>
+					    </li>
+					    <li>
+					    	<div class="row">
+					    		<div class="col-sm-6 text-center">
+					    			<img src="images/trash-img3.png" alt="">
+					    		</div>
+					    		<div class="col-sm-6">
+					    			<p class="type">Часы круглые</p>
+					    			<p class="title">«Хамелеон»</p>
+					    			<p class="price">1 890 Р</p>
+					    		</div>
+					    	</div>
+					    </li>
+							
+							<li class="btn-wrap">
+  							<a href="#" class="btn btn-take-order">Оформить заказ</a>
+					  		<a href="#" class="btn btn-to-trash">Перейти в корзину</a>
+							</li>
+					  </ul>
+
+					
+
+
 					</div>
 				</div>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -82,8 +132,57 @@
 							1
 						</span>
 					</div>
-					<div class="trash">
-						<img src="images/trash.png" alt="">
+					<div class="trash dropdown">
+						<a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<img src="images/trash.png" alt="">
+						</a>
+
+					  <ul class="dropdown-menu trash-dropdown" aria-labelledby="dropdownMenu1">
+					    <li>
+					    	<div class="row">
+					    		<div class="col-sm-6 text-center">
+					    			<img src="images/trash-img1.png" alt="">
+					    		</div>
+					    		<div class="col-sm-6">
+					    			<p class="type">Модульная картина</p>
+					    			<p class="title">«Порш»</p>
+					    			<p class="price">4 600 Р</p>
+					    		</div>
+					    	</div>
+					    </li>
+					    <li>
+					    	<div class="row">
+					    		<div class="col-sm-6 text-center">
+					    			<img src="images/trash-img2.png" alt="">
+					    		</div>
+					    		<div class="col-sm-6">
+					    			<p class="type">Штора для ванной </p>
+					    			<p class="title">«Цветы»</p>
+					    			<p class="price">2 700 Р</p>
+					    		</div>
+					    	</div>
+					    </li>
+					    <li>
+					    	<div class="row">
+					    		<div class="col-sm-6 text-center">
+					    			<img src="images/trash-img3.png" alt="">
+					    		</div>
+					    		<div class="col-sm-6">
+					    			<p class="type">Часы круглые</p>
+					    			<p class="title">«Хамелеон»</p>
+					    			<p class="price">1 890 Р</p>
+					    		</div>
+					    	</div>
+					    </li>
+
+					    <li class="btn-wrap">
+  							<a href="#" class="btn btn-take-order">Оформить заказ</a>
+					  		<a href="#" class="btn btn-to-trash">Перейти в корзину</a>
+							</li>
+
+					  </ul>
+
+
 					</div>
 				</div>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
@@ -391,13 +490,149 @@
 					    </div>
 
 
-					    <div role="tabpanel" class="tab-pane" id="delivery-tab">delivery tab</div>
-					    <div role="tabpanel" class="tab-pane" id="reviews-tab">reviews tab</div>
+					    <div role="tabpanel" class="tab-pane" id="delivery-tab">
+					    	<div class="row">
+					    		<div class="col-md-6">
+					    			<h4>Оплата</h4>
+					    			<p class="wallet">Оплата при получении наличными или картой</p>
+					    			<p class="credit-card">Оплата на сайте</p>
+					    			<ul>
+					    				<li><a href="#"><img src="/images/visa.png" alt=""></a></li>
+					    				<li><a href="#"><img src="/images/master-card.png" alt=""></a></li>
+					    				<li><a href="#"><img src="/images/sverbank.png" alt=""></a></li>
+					    				<li><a href="#"><img src="/images/webmoney.png" alt=""></a></li>
+					    				<li><a href="#"><img src="/images/payment.png" alt=""></a></li>
+					    			</ul>
+					    		</div>
+					    		<div class="col-md-6 delivery-list">
+					    			<h4>Доставка в <a href="#">Новосибирск</a></h4>
+					    			<div class="row price-row">
+					    				<div class="col-sm-6 price-title">Самовывоз из принт-центра</div>
+					    				<div class="col-sm-3 text-right price-duration">1 день</div>
+					    				<div class="col-sm-3 text-right del-price">бесплатно</div>
+					    			</div>
+
+					    			<div class="row price-row">
+					    				<div class="col-sm-6 price-title">Самовывоз из пункта выдачи СДЭК-Н<span class="delivery-icon"></span></div>
+					    				<div class="col-sm-3 text-right price-duration">2 дня</div>
+					    				<div class="col-sm-3 text-right del-price">250 Р</div>
+					    			</div>
+
+					    			<div class="row price-row">
+					    				<div class="col-sm-6 price-title">Самовывоз из пункта выдачи СДЭК<span class="delivery-icon"></span></div>
+					    				<div class="col-sm-3 text-right price-duration">2 дня</div>
+					    				<div class="col-sm-3 text-right del-price">200 Р</div>
+					    			</div>
+
+					    			<div class="row price-row">
+					    				<div class="col-sm-6 price-title">Доставка курьером СДЭК<span class="delivery-icon"></span></div>
+					    				<div class="col-sm-3 text-right price-duration">2 дня</div>
+					    				<div class="col-sm-3 text-right del-price">400 Р</div>
+					    			</div>
+
+					    			<div class="row price-row">
+					    				<div class="col-sm-6 price-title">Доставка курьером</div>
+					    				<div class="col-sm-3 text-right price-duration">1 день</div>
+					    				<div class="col-sm-3 text-right del-price">450 Р</div>
+					    			</div>
+
+					    			<div class="row price-row">
+					    				<div class="col-sm-6 price-title">Постаматы и пункты выдачи PickPoint<span class="pickPoint-icon"></span></div>
+					    				<div class="col-sm-3 text-right price-duration">5 дней</div>
+					    				<div class="col-sm-3 text-right del-price">250 Р</div>
+					    			</div>
+
+					    		</div>
+					    	</div>
+					    </div>
+
+					    <div role="tabpanel" class="tab-pane" id="reviews-tab">
+					    	
+								<div class="row">
+									<div class="col-sm-6">
+
+										<ul class="reviews-list">
+											<li>
+												<div class="review-wrap">
+													<p class="user-email">trenner@mail.ru</p>
+													<p class="user-review">класс!</p>
+													<div class="clearfix">
+														<div class="rating-wrap">
+															<fieldset class="rating disabled-stars">
+															    <input type="radio" id="rev1-star5" name="rating1" value="5" disabled/><label class = "full" for="star5" title="5 звезд"></label>
+															    <input type="radio" id="rev1-star4half" name="rating1" value="4 and a half" disabled/><label class="half" for="star4half" title="4.5 звезд"></label>
+															    <input type="radio" id="rev1-star4" name="rating1" value="4" disabled checked/><label class = "full" for="star4" title="4 звезд"></label>
+															    <input type="radio" id="rev1-star3half" name="rating1" value="3 and a half" disabled/><label class="half" for="star3half" title="3.5 звезд"></label>
+															    <input type="radio" id="rev1-star3" name="rating1" value="3" disabled/><label class = "full" for="star3" title="3 звезд"></label>
+															    <input type="radio" id="rev1-star2half" name="rating1" value="2 and a half" disabled/><label class="half" for="star2half" title="2.5 звезд"></label>
+															    <input type="radio" id="rev1-star2" name="rating1" value="2" disabled/><label class = "full" for="star2" title="2 звезд"></label>
+															    <input type="radio" id="rev1-star1half" name="rating1" value="1 and a half" disabled/><label class="half" for="star1half" title="1.5 звезд"></label>
+															    <input type="radio" id="rev1-star1" name="rating1" value="1" disabled/><label class = "full" for="star1" title="1 звезда"></label>
+															    <input type="radio" id="rev1-starhalf" name="rating1" value="half" disabled/><label class="half" for="starhalf" title="0.5 звезд"></label>
+															</fieldset>
+														</div>
+														<div class="review-date">8.05.2016</div>
+													</div>
+												</div>
+											</li>
+
+											<li>
+												<div class="review-wrap">
+													<p class="user-email">olga.ivanova@mail.ru</p>
+													<p class="user-review">картина супер, мы с мужем в восторге!!!!!!!!</p>
+													<div class="clearfix">
+														<div class="rating-wrap">
+															<fieldset class="rating disabled-stars">
+															    <input type="radio" id="rev2-star5" name="rating2" value="5" /><label class = "full" for="star5" title="5 звезд"></label>
+															    <input type="radio" id="rev2-star4half" name="rating2" value="4 and a half" /><label class="half" for="star4half" title="4.5 звезд"></label>
+															    <input type="radio" id="rev2-star4" name="rating2" value="4" checked/><label class = "full" for="star4" title="4 звезд"></label>
+															    <input type="radio" id="rev2-star3half" name="rating2" value="3 and a half" /><label class="half" for="star3half" title="3.5 звезд"></label>
+															    <input type="radio" id="rev2-star3" name="rating2" value="3" /><label class = "full" for="star3" title="3 звезд"></label>
+															    <input type="radio" id="rev2-star2half" name="rating2" value="2 and a half" /><label class="half" for="star2half" title="2.5 звезд"></label>
+															    <input type="radio" id="rev2-star2" name="rating2" value="2" /><label class = "full" for="star2" title="2 звезд"></label>
+															    <input type="radio" id="rev2-star1half" name="rating2" value="1 and a half" /><label class="half" for="star1half" title="1.5 звезд"></label>
+															    <input type="radio" id="rev2-star1" name="rating2" value="1" /><label class = "full" for="star1" title="1 звезда"></label>
+															    <input type="radio" id="rev2-starhalf" name="rating2" value="half" /><label class="half" for="starhalf" title="0.5 звезд"></label>
+															</fieldset>
+														</div>
+														<div class="review-date">8.05.2016</div>
+													</div>
+												</div>
+											</li>
+
+										</ul>
+
+										<form action="">
+											
+											<p>Ваша оценка:</p>
+								    	<div class="rating-wrap clearfix">
+												<fieldset class="rating hover-stars">
+												    <input type="radio" id="star5" name="setRating" value="5" /><label class = "full" for="star5" title="5 звезд"></label>
+												    <input type="radio" id="star4half" name="setRating" value="4 and a half" /><label class="half" for="star4half" title="4.5 звезд"></label>
+												    <input type="radio" id="star4" name="setRating" value="4" /><label class = "full" for="star4" title="4 звезд"></label>
+												    <input type="radio" id="star3half" name="setRating" value="3 and a half" /><label class="half" for="star3half" title="3.5 звезд"></label>
+												    <input type="radio" id="star3" name="setRating" value="3" /><label class = "full" for="star3" title="3 звезд"></label>
+												    <input type="radio" id="star2half" name="setRating" value="2 and a half" /><label class="half" for="star2half" title="2.5 звезд"></label>
+												    <input type="radio" id="star2" name="setRating" value="2" /><label class = "full" for="star2" title="2 звезд"></label>
+												    <input type="radio" id="star1half" name="setRating" value="1 and a half" /><label class="half" for="star1half" title="1.5 звезд"></label>
+												    <input type="radio" id="star1" name="setRating" value="1" /><label class = "full" for="star1" title="1 звезда"></label>
+												    <input type="radio" id="starhalf" name="setRating" value="half" /><label class="half" for="starhalf" title="0.5 звезд"></label>
+												</fieldset>
+											</div>
+											<p>Оставьте ваш отзыв: <span>(не более 1000 символов)</span></p>
+
+											<textarea  class="form-control"></textarea>
+											<p class="login"><a href="#">Авторизуйтесь</a>, чтобы оставить отзыв</p>
+
+										</form>
+
+									</div>
+								</div>
+
+					    </div>
 					  </div>
 
-
 						</div>
-
 
 					</div>
 				</div>

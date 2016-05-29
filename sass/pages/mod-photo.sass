@@ -1,5 +1,4 @@
 .mod-photo-container
-	margin-top: 90px
 	border-bottom: 1px solid #e5e5e5
 .photo-carousel-wrap
 	max-width: 870px
@@ -423,7 +422,247 @@ section.other-collections
 		&:hover
 			opacity: 0.8
 
+#delivery-tab
+	h4
+		font-size: 20px
+		font-family: 'PFAgoraSlabPro-Medium'
+		margin-bottom: 20px
+		a 
+			padding: 0
+			font-size: 20px
+			text-decoration: none
+			border-bottom: 1px dashed #00baff !important
+	p 
+		font-size: 14px
+		padding: 12px 0 7px 40px
+		margin-bottom: 0
+		&.wallet
+			background: url(../images/wallet.png) no-repeat 0 center
+		&.credit-card
+			background: url(../images/credit-card.png) no-repeat 0 center
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		margin-top: 15px
+		li 
+			display: inline-block
+			a 
+				display: block
+				border: 1px solid #dadadb !important
+				border-radius: 4px
+				width: 70px
+				height: 50px
+				float: left
+				padding: 0
+				position: relative
+				+transition(all $duration ease)
+				&:hover
+					background-color: #fafafa
+				img
+					@include centerer
+	.price-row
+		font-size: 14px		
+		border-bottom: 1px solid #dadadb
+		padding: 12px 0
+		.del-price
+			font-family: 'PFAgoraSlabPro-Black'
+	.delivery-icon, .pickPoint-icon
+		display: inline-block
+		width: 25px
+		height: 25px
+		float: right
+	.delivery-icon
+		background: url(../images/delivery-icon.png) no-repeat center center
+	.pickPoint-icon
+		background: url(../images/PickPoint.png) no-repeat center center
+	.price-title
+		padding-left: 0
+	.delivery-list h4
+		margin-left: -15px
 
 
+.rating-wrap
+	min-width: 200px
+	fieldset, label
+		margin: 0
+		padding: 0
+		cursor: pointer
+	.rating
+		border: none
+		float: left
+	.rating > input
+		display: none
+	.rating > label:before
+		margin: 5px
+		font-size: 1.25em
+		font-family: FontAwesome
+		display: inline-block
+		content: "\f005"
+	.rating > .half:before
+		content: "\f089"
+		position: absolute
+	.rating > label
+		color: #ddd
+		float: right
+		+transition(all 0.15s ease)
+
+	.rating > input:checked ~ label
+		color: #ff9900
+
+	.hover-stars > input:checked ~ label,
+	.hover-stars:not(:checked) > label:hover, 
+	.hover-stars:not(:checked) > label:hover ~ label
+		color: #ff9900
+
+	.hover-stars > input:checked + label:hover,
+	.hover-stars > input:checked ~ label:hover,
+	.hover-stars > label:hover ~ input:checked ~ label,
+	.hover-stars > input:checked ~ label:hover ~ label
+		color: lighten(#ff9900, 15%)
+
+	.rating.disabled-stars label
+		cursor: not-allowed
+
+.reviews-list
+	padding: 0
+	margin: 0
+	list-style-type: none
+	li 
+		margin-bottom: 18px
+		.review-wrap
+			display: inline-block
+			background-color: #fff
+			box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1)
+			padding: 10px 10px 4px
+			border-radius: 10px
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				bottom: 15px
+				left: -12px
+				width: 12px
+				height: 12px
+				background: url(../images/quote.png) no-repeat center center
+
+.review-wrap
+	p 
+		color: #53585a !important
+	.user-email
+		font-size: 14px
+		opacity: 0.6
+		margin-bottom: 0
+	.user-review
+		font-family: 'PFAgoraSlabPro-Medium'
+		font-size: 19px !important
+		margin-bottom: 0
+	.review-date
+		float: right
+		font-size: 12px
+		line-height: 28px
+		opacity: 0.4
+	.rating-wrap
+		float: left
+		font-size: 10px
+
+#reviews-tab
+	form
+		margin-top: 50px
+		p
+			font-size: 14px
+			margin-bottom: 5px
+			color: #53585a
+			span
+				color: #808385
+			&.login
+				font-size: 16px
+				margin-top: 25px
+				a 
+					color: #00baff
+					text-decoration: none
+					padding: 0
+		textarea
+			height: 55px
+			background-color: #fff
+			border: 1px solid #e5e5e5
+			border-radius: 10px
+			box-shadow: none
+			resize: none
+			&:focus
+				box-shadow: none
+		.rating-wrap
+			font-size: 30px
+			.rating > label:before
+				line-height: 40px
+
+
+
+.trash
+	a 
+		display: block
+	.dropdown-menu
+		right: 0
+		top: 90px
+		left: auto
+		width: 340px
+		border-top: 2px solid #cb0a37
+		margin-top: 0
+		border-radius: 0
+		padding: 0 20px
+		+transition(all 1s ease)
+		&:after
+			content: ''
+			position: absolute
+			top: -20px
+			right: 35px
+			border: 10px solid transparent
+			border-bottom-color: #fff
+		&.trash-dropdown-fixed
+			position: fixed
+			top: 50px
+	img
+		max-width: 100%
+	p 
+		font-size: 14px
+		line-height: 14px
+		color: #53585a
+		&.type
+			margin-top: 20px
+		&.price
+			font-family: 'PFAgoraSlabPro-Black'
+	li 
+		border-bottom: 1px solid #e5e5e5
+		padding: 10px 0
+	.btn-take-order
+		width: 100%
+		height: 40px
+		text-decoration: none
+		line-height: 40px
+		color: #fff
+		padding: 0
+		font-size: 14px
+		background: -webkit-linear-gradient(90deg, #0099ff 0%, #00ccff 100%)
+		background: -moz-linear-gradient(90deg, #0099ff 0%, #00ccff 100%)
+		background: -o-linear-gradient(90deg, #0099ff 0%, #00ccff 100%)
+		background: -ms-linear-gradient(90deg, #0099ff 0%, #00ccff 100%)
+		background: linear-gradient(0deg, #0099ff 0%, #00ccff 100%)
+		border: none
+		&:hover
+			color: #fff
+	.btn-to-trash
+		display: inline-block
+		text-decoration: none
+		opacity: 0.6
+		font-size: 14px
+		box-shadow: none
+		&:hover, &:focus
+			background-color: transparent
+			border-color: transparent
+			text-decoration: underline
+	.btn-wrap
+		text-align: center
+		line-height: 50px
+		margin-top: 15px
 
 
