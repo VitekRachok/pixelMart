@@ -1,0 +1,32 @@
+@mixin list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+@mixin transition($transition, $val){
+	-webkit-transition: $transition $val ease-in-out;
+	-o-transition: $transition $val ease-in-out;
+	transition: $transition $val ease-in-out;
+}
+// Example: @include background-size-cover;
+
+@mixin background-size-cover {
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+@mixin vertical-al{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}

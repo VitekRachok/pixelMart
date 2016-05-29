@@ -7,13 +7,6 @@ $(window).on('scroll load', function() {
 		"background" : "url('images/gradient.jpg') 0 -" + scrollX / 3 + "px"
 	});
 
-// });
-
-
-// $(window).on('resize load ', function() {
-
-	// var scrollX = $(this).scrollTop(),
-
 	if(scrollX >= navHeight){
 
 		$('.navbar-mini').css('display','block');

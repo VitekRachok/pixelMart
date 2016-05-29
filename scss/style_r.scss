@@ -33,17 +33,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-@mixin list-reset {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-align: center;
-}
-@mixin transition($transition, $val){
-	-webkit-transition: $transition $val ease-in-out;
-	-o-transition: $transition $val ease-in-out;
-	transition: $transition $val ease-in-out;
-}
 h1,h2,h3,h4,h5,h6{
 	margin: 0;
 }
@@ -52,13 +41,15 @@ html,body{
 	padding: 0;
 	font-family: 'Conv_PFAgoraSlabPro-Regular';
 }
-
+@import "variables.scss";
+@import "mixins.scss";
 
 /* NAVIGATION*/
 .navbar-big{
 	z-index: 9999;
 }
 .navbar{
+	margin-bottom: 0;
 	border: 0;
 	background-color: #ffffff;
 	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.05);
@@ -93,7 +84,7 @@ html,body{
 		margin-top: 25px;
 		margin-right: 10px;
 		.phone-header{
-			color: #53585a;
+			color: $text-color;
 			display: block;
 			font-size: 18px;
 			font-family: 'Conv_PFAgoraSlabPro-Bold';
@@ -103,7 +94,7 @@ html,body{
 			}
 		}
 		.city{
-			color: #53585a;
+			color: $text-color;
 			font-size: 14px;
 		}
 	}
@@ -156,7 +147,7 @@ html,body{
 			padding-right: 0;
 			padding-left: 0;
 			font-size: 18px;
-			color: #53585a !important;
+			color: $text-color !important;
 			font-family: 'Conv_PFAgoraSlabPro-Regular';
 			
 		}
@@ -234,7 +225,7 @@ html,body{
 			font-size: 26px;
 			line-height: 60px;
 			text-align: center;
-			color: #53585a;
+			color: $text-color;
 			z-index: 99;
 		}
 		input{
@@ -315,7 +306,7 @@ html,body{
 				display: inline-block;
 			}
 			.active-popular-tag{
-				color: #53585a;
+				color: $text-color;
 				font-size: 16px;
 			}
 		}
@@ -324,6 +315,7 @@ html,body{
 .popular-items{
 	margin-bottom: 60px;
 	.popular-items-image-wrap{
+		position: relative;
 		background-image: url("../images/pop-bg.jpg");
 		background-repeat: no-repeat;
 		background-repeat-y: repeat;
@@ -339,7 +331,7 @@ html,body{
 		.popular-items-name{
 			margin-top: 20px;
 			font-size: 20px;
-			color: #53585a;
+			color: $text-color;
 		}
 		.popular-items-type{
 			color: #939697;
@@ -496,7 +488,7 @@ html,body{
 		border-radius: 5px;
 		line-height: normal;
 		color: #ffffff;
-		padding: 2px 0 0 10px;
+		padding: 4px 0 0 10px;
 		display: inline-block;
 		text-decoration: none;
 		margin-bottom: 15px;
@@ -533,18 +525,8 @@ html,body{
 
 
 /****PAGE 4****/
-// Example: @include background-size-cover;
 
-@mixin background-size-cover {
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
-}
+
 .banner-wrap{
 	height: 300px;
 	background-image: url('../images/banner.jpg');
@@ -560,7 +542,7 @@ html,body{
 		left: -105px;
 		bottom: 20px;
 		padding: 9px 34px;
-		color: #53585a;
+		color: $text-color;
 		font-family: 'Conv_PFAgoraSlabPro-Light';
 	}
 }
@@ -579,11 +561,12 @@ html,body{
 		a.btn{
 			font-size: 14px;
 			font-family: 'Conv_PFAgoraSlabPro-Light';
-			color: #53585a;
+			color: $text-color;
 		}
 	}
 	.popular-category-img-wrap{
 		min-height: 240px;
+		position: relative;
 		img{
 			margin: 0 auto;
 		}
@@ -591,15 +574,18 @@ html,body{
 	.popular-category-name{
 		font-size: 20px;
 		font-family: 'Conv_PFAgoraSlabPro-Medium';
-		color: #53585a;
+		color: $text-color;
 		margin-top: 35px;
 		margin-bottom: 10px;
 	}
 }
 
+
 /*PAGE 5 ****/
-.category-page{
-	.left-category-panel{
+
+.catalog-page{
+	margin-top: 35px;
+	.left-catalog-panel{
 		ul{
 			margin-left: 15px;
 			text-align: left;
@@ -607,14 +593,14 @@ html,body{
 			padding: 15px 0;
 			li{
 				margin-bottom: 10px;
-				a.left-category-item.active{
-					background-color: #53585a;
+				a.left-catalog-item.active{
+					background-color: $text-color;
 					color: #ffffff;
 				}
 				a{
 					padding: 7px 10px;
 					text-decoration: none;
-					color: #53585a;
+					color: $text-color;
 					border-radius: 5px;
 					@include transition(background-color, .2s);
 					&:hover{
@@ -624,9 +610,9 @@ html,body{
 			}
 		}
 	}
-	.right-category-panel{
+	.right-catalog-panel{
 		.right-header{
-			color: #53585a;
+			color: $text-color;
 			font-size: 36px;
 			font-family: 'Conv_PFAgoraSlabPro-Light';
 			margin-bottom: 20px;
@@ -643,22 +629,22 @@ html,body{
 				a{
 					border-radius: 5px;
 					padding: 8px;
-					color: #53585a;
+					color: $text-color;
 					font-size: 14px;
 					text-decoration: none;
 				}
 			}
 		}
-		.category-items{
+		.catalog-items{
 			margin: 0 auto 60px;
 			max-width: 380px;
 		}
-		.category-img-wrap{
+		.catalog-img-wrap{
 			position: relative;
 			background-color: #ececec;
 			padding: 20px 10px;
 			min-height: 285px;
-			.category-items-mask{
+			.catalog-items-mask{
 				opacity: 0;
 				position: absolute;
 				width: 100%;
@@ -680,21 +666,21 @@ html,body{
 				margin: 0 auto;
 			}
 		}
-			.category-img-wrap:hover .category-items-mask{
+			.catalog-img-wrap:hover .catalog-items-mask{
 				opacity: 1;
 			}
-		.category-items-name{
+		.catalog-items-name{
 			font-size: 16px;
-			color: #53585a;
+			color: $text-color;
 			margin-top: 20px;
 		}
-		.category-items-price{
+		.items-price{
 			margin-top: 8px;
 			font-family: 'Conv_PFAgoraSlabPro-Bold';
 		}
 	}
 }
-.category-page-pagination{
+.catalog-page-pagination{
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
 	a.btn-info{
@@ -744,6 +730,34 @@ html,body{
 		}
 	}
 }
+.modal-width{
+	width: 90%;
+	margin-top: 4%;
+	.modal-content{
+		border-radius: 0;
+		background-color: #f2f3f4;
+		.modal-body{
+			.mod-photo-container{
+				margin-top: 0;
+			}
+		}
+		.close{
+			overflow: hidden;
+			width: 30px;
+			height: 30px;
+			margin-top: 0;
+			line-height: 20px;
+			position: absolute;
+			right: -30px;
+			top: -26px;
+			font-size: 56px;
+			font-weight: normal;
+			opacity: 1;
+			color: #fff;
+			text-shadow: none;
+		}
+	}
+}
 
 
 
@@ -752,9 +766,11 @@ html,body{
 
 
 
-::-webkit-input-placeholder  { color:#53585a !important; }
-:-moz-placeholder { color:#53585a !important; }
-:-ms-input-placeholder { color:#53585a !important; }
+
+::-webkit-input-placeholder  { color:$text-color !important; }
+:-moz-placeholder { color:$text-color !important; }
+:-ms-input-placeholder { color:$text-color !important; }
+
 
 
 
