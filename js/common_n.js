@@ -45,7 +45,27 @@ $(document).ready(function () {
 	// Module photo page: carousel init
   var modOwl = $(".mod-carousel");
   modOwl.owlCarousel({
-    items: 9,
+  	responsive: {
+  		0: {
+  			items: 3
+  		},
+  		380: {
+  			items: 4
+  		},
+  		480: {
+  			items: 5
+  		},
+  		600: {
+  			items: 6
+  		},
+  		767: {
+  			items: 7
+  		},
+  		992: {
+  			items: 9
+  		}
+  	},
+    //items: 9,
     margin: 5,
     nav: true,
     navText: "",
@@ -65,19 +85,17 @@ $(document).ready(function () {
 
   toggleActiveItem('.mod-carousel-item');
 
-
-
-	// function addTooltip(elem, txt) {
-	//     if (elem) {
-	//         elem.append($('<div class="more-info"><div class="info-tooltip">' + txt + '</div></div>'));
-	//     }
-	// };
-
-	// addTooltip($('.best-label-tooltip'), 'Can choose more than one');
-
-
-
-
+  function checkTrashScroll() {
+  	if ($(window).scrollTop() > 90) {
+  		$('.trash-dropdown').addClass('trash-dropdown-fixed');
+  	}else{
+  		$('.trash-dropdown').removeClass('trash-dropdown-fixed');
+  	}
+  }
+  checkTrashScroll();
+  $(window).on('scroll', function() {
+  	checkTrashScroll();
+  })
 
 
 })
