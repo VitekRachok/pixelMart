@@ -1,0 +1,166 @@
+
+
+@media (min-width: $small) { 
+
+	.nav-center{
+		float: none;
+		li{
+			float: none;
+			display: inline-block;
+		}
+	}
+ }
+
+@media (max-width: 1240px) {
+	.nav-center li {
+	    padding: 0 7px;
+	}
+}
+
+@media (max-width: $large) {
+	.why-we-item span{
+		text-align: center !important;
+	}
+	.email-footer{
+			text-indent: 0px !important;
+	}
+	.popular-catalog-img-wrap{
+		min-height: 175px !important;
+	}
+	.right-catalog-panel .catalog-img-wrap{
+		min-height: 200px !important;
+	}
+	.left-catalog-panel ul{
+		margin-left: 0 !important;
+	}
+	.order-item-img-wrap{
+		width: 240px !important;
+		height: 240px !important;
+	}
+}
+@media (max-width: $medium) {
+	.popular-catalog-img-wrap{
+		min-height: 254px !important;
+	}
+	.left-catalog-panel {
+		ul{
+			text-align: center !important;
+			li{
+				display: inline-block;
+			}
+		}
+		
+	}
+	.pagination-list{
+		float: none;
+	}
+	.catalog-page-pagination a.btn-info{
+		float: none;
+		margin: 0 auto 20px;
+	}
+}
+@media (max-width: $small) { 
+
+	.navbar-header{
+		float: left;
+	}
+	.navbar-collapse{
+		clear: right;
+	}
+	.why-we-item .estimate{
+		text-align: center !important;
+	}
+	.contacts-footer{
+		text-align: center;
+		span{
+			margin: 0 10px;
+		}
+	}
+	.store-btn-wrap{
+		text-align: center;
+	}
+	.payment-ic-wrap,
+	.social-icon-wrap{
+		margin: 20px 0 0;
+		text-align: center;
+	}
+	.banner-wrap{
+		height: 200px;
+		a.btn{
+			left: -79px;
+			padding: 7px;
+			bottom: 7px;
+		}
+	}
+	.banner-wrap{
+		height: 150px;
+		a.btn{
+			padding: 5px;
+			bottom: 2px; 
+		}
+	}
+	.can-be-us-col{
+		padding: 0 20px;
+		box-shadow: none;
+	}
+	.total-price-block{
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	.input-group{
+		margin: 0 auto;
+	}
+	.place-order,
+	.buy-one-click-wrap{
+		float: none !important;
+		margin: auto !important;
+	}
+}
+@media (max-width: 600px) {
+	.order-list{
+		.order-item-img-wrap, .order-item-info{
+			float: none !important;
+			margin: 0 auto !important;
+		}
+		.order-item-info{
+			max-width: 240px;
+		}
+	}
+}
+@media (max-width: $mini) {
+
+	.navbar{
+		background-color: #191919;
+		.contacts-header{
+			display: none;
+		}
+		.like-header{
+			width: 40px;
+			.like{
+				color: #ffffff;
+			}
+		}
+		.icon-bar{
+			background-color: #ffffff !important;
+		}
+	}
+	.navbar-toggle{
+		margin-right: 0 !important;
+		float: left;
+	}
+	.navbar-mini{
+		.trash{
+			width: 60px;
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+

@@ -84,7 +84,7 @@ html,body{
 		margin-top: 25px;
 		margin-right: 10px;
 		.phone-header{
-			color: $text-color;
+			color: $grey;
 			display: block;
 			font-size: 18px;
 			font-family: 'Conv_PFAgoraSlabPro-Bold';
@@ -94,7 +94,7 @@ html,body{
 			}
 		}
 		.city{
-			color: $text-color;
+			color: $grey;
 			font-size: 14px;
 		}
 	}
@@ -147,7 +147,7 @@ html,body{
 			padding-right: 0;
 			padding-left: 0;
 			font-size: 18px;
-			color: $text-color !important;
+			color: $grey !important;
 			font-family: 'Conv_PFAgoraSlabPro-Regular';
 			
 		}
@@ -225,7 +225,7 @@ html,body{
 			font-size: 26px;
 			line-height: 60px;
 			text-align: center;
-			color: $text-color;
+			color: $grey;
 			z-index: 99;
 		}
 		input{
@@ -237,7 +237,7 @@ html,body{
 		}
 		.input-group-btn button{
 			width: 90px;
-			background-color: #00baff;
+			background-color: $blue;
 			font-size: 18px;
 			color: #ffffff;
 		}
@@ -272,7 +272,7 @@ html,body{
 			}
 		}
 		.btn-info{
-			background-color: #00baff;
+			background-color: $blue;
 			padding: 14px 44px;
 			font-size: 16px;
 			margin-top: 10px;
@@ -306,7 +306,7 @@ html,body{
 				display: inline-block;
 			}
 			.active-popular-tag{
-				color: $text-color;
+				color: $grey;
 				font-size: 16px;
 			}
 		}
@@ -331,7 +331,7 @@ html,body{
 		.popular-items-name{
 			margin-top: 20px;
 			font-size: 20px;
-			color: $text-color;
+			color: $grey;
 		}
 		.popular-items-type{
 			color: #939697;
@@ -542,7 +542,7 @@ html,body{
 		left: -105px;
 		bottom: 20px;
 		padding: 9px 34px;
-		color: $text-color;
+		color: $grey;
 		font-family: 'Conv_PFAgoraSlabPro-Light';
 	}
 }
@@ -561,7 +561,7 @@ html,body{
 		a.btn{
 			font-size: 14px;
 			font-family: 'Conv_PFAgoraSlabPro-Light';
-			color: $text-color;
+			color: $grey;
 		}
 	}
 	.popular-category-img-wrap{
@@ -574,7 +574,7 @@ html,body{
 	.popular-category-name{
 		font-size: 20px;
 		font-family: 'Conv_PFAgoraSlabPro-Medium';
-		color: $text-color;
+		color: $grey;
 		margin-top: 35px;
 		margin-bottom: 10px;
 	}
@@ -594,13 +594,13 @@ html,body{
 			li{
 				margin-bottom: 10px;
 				a.left-catalog-item.active{
-					background-color: $text-color;
+					background-color: $grey;
 					color: #ffffff;
 				}
 				a{
 					padding: 7px 10px;
 					text-decoration: none;
-					color: $text-color;
+					color: $grey;
 					border-radius: 5px;
 					@include transition(background-color, .2s);
 					&:hover{
@@ -612,7 +612,7 @@ html,body{
 	}
 	.right-catalog-panel{
 		.right-header{
-			color: $text-color;
+			color: $grey;
 			font-size: 36px;
 			font-family: 'Conv_PFAgoraSlabPro-Light';
 			margin-bottom: 20px;
@@ -629,7 +629,7 @@ html,body{
 				a{
 					border-radius: 5px;
 					padding: 8px;
-					color: $text-color;
+					color: $grey;
 					font-size: 14px;
 					text-decoration: none;
 				}
@@ -671,7 +671,7 @@ html,body{
 			}
 		.catalog-items-name{
 			font-size: 16px;
-			color: $text-color;
+			color: $grey;
 			margin-top: 20px;
 		}
 		.items-price{
@@ -686,12 +686,12 @@ html,body{
 	a.btn-info{
 		padding: 13px 67px;
 		font-size: 16px;
-		background-color: #00baff;
+		background-color: $blue;
 		float: right;
 		margin-top: 10px;
 		@include transition(background-color, .2s);
 		&:hover{
-			background-color: #47CDFF;
+			background-color: $blue-hover;
 		}
 	}
 }
@@ -730,6 +730,8 @@ html,body{
 		}
 	}
 }
+
+/*********MODAL *****/
 .modal-width{
 	width: 90%;
 	margin-top: 4%;
@@ -760,16 +762,308 @@ html,body{
 }
 
 
+/********* 8.html****/
+
+.order-content{
+	margin-top: 55px;
+	margin-bottom: 60px;
+	.order-list{
+		.orer-heading{
+			margin-bottom: 20px;
+			font-size: 32px;
+			font-family: 'Conv_PFAgoraSlabPro-Medium';
+		}
+		.order-item{
+			margin-bottom: 60px;
+			&:after{
+				content: "";
+				display: block;
+				clear: both;
+				height: 0;
+			}
+		}
+		.order-item-img-wrap{
+			position: relative;
+			width: 300px;
+			height: 300px;
+			background-color: #ececec;
+			padding: 0 20px;
+			float: left;
+			margin-right: 35px;
+			.order-img{
+				margin: 0 auto;
+			}
+		}
+		.order-item-info{
+			float: left;
+			width: 60%;
+			.order-i-name{
+				margin-top: 15px;
+				font-size: 24px;
+				// display: none;
+			}
+			.form-group{
+				width: 240px;
+				margin-bottom: 10px;
+				label{
+					font-weight: normal;
+					font-size: 14px;
+					margin-top: 15px;
+					margin-bottom: 2px;
+				}
+				select{
+					padding-top: 9px;
+					border: 2px solid #e5e5e5;
+					border-radius: 4px;
+					height: 40px;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					-ms-appearance: none;
+					-o-appearance: none;
+					appearance: none;
+					background: url(../images/select-arrow.png) no-repeat 95% center;
+					&:focus{
+						box-shadow: none;
+					}
+				}
+				.checkbox-style{
+					margin-top: 2px;
+					margin-bottom: 2px;
+					label{
+						margin-top: 0px;
+						padding-left: 0;
+						opacity: 1;
+						color: #808385;
+						display: inline-block;
+						&:hover{
+							color: #53585a;
+						}
+						input[type=checkbox]{
+							opacity: 0;
+							width: 16px;
+							height: 16px;
+							position: absolute;
+							cursor: pointer;
+						}
+						input[type="checkbox"] + span.stylesheet {
+							display: inline-block;
+							width: 16px;
+							height: 16px;
+							margin-right: 5px;
+							vertical-align: middle;
+							position: relative;
+							top: -2px;
+							background: url(../images/checkbox-field.png) no-repeat center center;
+						}
+						input[type="checkbox"]:checked + span.stylesheet {
+							background: url(../images/checkbox-checked.png) no-repeat center center;
+						}
+						input[type="checkbox"]:checked + span.stylesheet + span {
+							color: #53585a;
+						}
+					}
+					.icon-info{
+						width: 12px;
+						height: 12px;
+						display: inline-block;
+						background: url(../images/info-icon.png) no-repeat center center;
+						margin-left: 0;
+						cursor: pointer;
+						position: relative;
+						&:hover .more-info{
+							opacity: 1;
+							visibility: visible;
+						}
+						.more-info{
+							position: absolute;
+							top: -12px;
+							-webkit-transform: translate(-50%, -100%);
+							-moz-transform: translate(-50%, -100%);
+							-ms-transform: translate(-50%, -100%);
+							-o-transform: translate(-50%, -100%);
+							transform: translate(-50%, -100%);
+							opacity: 0;
+							visibility: hidden;
+							box-shadow: 0 0 10px 1px #aaa;
+							width: 200px;
+							padding: 10px 15px;
+							border-radius: 4px;
+							line-height: 16px;
+							font-size: 12px;
+							z-index: 2;
+							background-color: #f2f3f4;
+							text-align: center;
+							-webkit-transition: all 0.25s ease;
+							-moz-transition: all 0.25s ease;
+							transition: all 0.25s ease;
+							&:after{
+								content: '';
+								position: absolute;
+								border: 10px solid transparent;
+								bottom: -20px;
+								left: 95px;
+								border-top-color: #f2f3f4;
+								border-top-width: 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.order-edit{
+			margin-top: 35px;
+			a.btn{
+				border-color: #e5e5e5;
+				color: #a5a7a8;
+				font-size: 14px;
+				width: 160px;
+				height: 40px;
+				line-height: 27px;
+			}
+			.order-delete{
+				margin-left: 20px;
+			}
+		}
+	}
+}
+.can-be-us-col{
+	padding: 0 20px 30px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.can-be-us{
+	h2{
+		text-align: left;
+		font-size: 24px;
+		margin-top: 30px;
+	}
+	.can-be-us-wrap{
+		max-width: 300px;
+		margin: 0 auto;
+		.can-be-us-item{
+			margin-top: 30px;
+		}
+		.item-img-wrap{
+			padding: 20px;
+			border: 1px solid #e5e5e5;
+			margin-bottom: 15px;
+			img{
+				margin: 0 auto;
+			}
+		}
+		.items-name{
+			font-size: 14px;
+		}
+		.items-price{
+			font-size: 16px;
+			font-family: 'Conv_PFAgoraSlabPro-Bold';
+		}
+		.add-to-cart{
+			width: 160px;
+			height: 35px;
+			line-height: 25px;
+			font-size: 14px;
+			background-color: $blue;
+			border: 0;
+			color: #ffffff;
+			display: block;
+			margin: 0 auto;
+			&:hover{
+				background-color: $blue-hover;
+			}
+		}
+	}
+	
+}
+.total-price-block{
+	padding-top: 40px;
+	padding-bottom: 130px;
+	background-color: #f2f3f4;
+	.back{
+		width: 160px;
+		height: 40px;
+		line-height: 27px;
+		color: $grey;
+		margin-bottom: 40px;
+	}
+	.total-hed{
+		font-family: 'Conv_PFAgoraSlabPro-Bold';
+		font-size: 40px;
+		color: $grey;
+		line-height: normal;
+		margin-bottom: 5px;
+		.total-price{
+			color: #cc0033;
+		}
+	}
+	.total-price-wrap{
+		.input-group{
+			margin-bottom: 20px;
+			input{
+				border-color: #d9dadb;
+				width: 178px;
+				height: 40px;
+				&::-webkit-input-placeholder  { color:#a5a7a8 !important; }
+				&:-moz-placeholder { color:#a5a7a8 !important; }
+				&:-ms-input-placeholder { color:#a5a7a8 !important; }
+			}
+			.input-group-btn{
+				float: left;
+				button{
+					width: 93px;
+					height: 40px;
+					color: #a5a7a8;
+					border-color: #d9dadb;
+					text-indent: -3px;
+				}
+			}
+		}
+	}
+	.place-order{
+		background-color: $blue;
+		width: 270px;
+		height: 80px;
+		border: 0;
+		color: #fff;
+		padding: 0;
+		line-height: 80px;
+		font-size: 24px;
+		float: left;
+		@include transition(background-color, .2s);
+		&:hover{
+			background-color: $blue-hover;
+		}
+	}
+	.buy-one-click-wrap{
+		float: left;
+		margin-left: 40px;
+		height: 80px;
+		padding-top: 10px;
+		span{
+			color: #9fa1a2;
+			font-size: 14px;
+		}
+		.buy-one-click{
+			border-color: #d9dadb;
+			color: $grey;
+			font-size: 14px;
+			padding: 0;
+			width: 220px;
+			height: 40px;
+			line-height: 38px;
+			text-indent: 10px;
+			display: block;
+			margin: 5px auto;
+		}
+	}
+}
 
 
 
 
 
-
-
-::-webkit-input-placeholder  { color:$text-color !important; }
-:-moz-placeholder { color:$text-color !important; }
-:-ms-input-placeholder { color:$text-color !important; }
+::-webkit-input-placeholder  { color:$grey !important; }
+:-moz-placeholder { color:$grey !important; }
+:-ms-input-placeholder { color:$grey !important; }
 
 
 

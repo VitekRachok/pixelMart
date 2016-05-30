@@ -37,6 +37,7 @@ html, body {
   padding: 0;
   font-family: 'Conv_PFAgoraSlabPro-Regular'; }
 
+/*******COLORS *****/
 /* NAVIGATION*/
 .navbar-big {
   z-index: 9999; }
@@ -586,7 +587,7 @@ html, body {
     -o-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out; }
     .catalog-page-pagination a.btn-info:hover {
-      background-color: #47CDFF; }
+      background-color: #03A6E3; }
 
 .pagination-list {
   float: left;
@@ -616,6 +617,7 @@ html, body {
       .pagination-list li a:hover {
         background-color: #edeeee; }
 
+/*********MODAL *****/
 .modal-width {
   width: 90%;
   margin-top: 4%; }
@@ -638,6 +640,251 @@ html, body {
       opacity: 1;
       color: #fff;
       text-shadow: none; }
+
+/********* 8.html****/
+.order-content {
+  margin-top: 55px;
+  margin-bottom: 60px; }
+  .order-content .order-list .orer-heading {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-family: 'Conv_PFAgoraSlabPro-Medium'; }
+  .order-content .order-list .order-item {
+    margin-bottom: 60px; }
+    .order-content .order-list .order-item:after {
+      content: "";
+      display: block;
+      clear: both;
+      height: 0; }
+  .order-content .order-list .order-item-img-wrap {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #ececec;
+    padding: 0 20px;
+    float: left;
+    margin-right: 35px; }
+    .order-content .order-list .order-item-img-wrap .order-img {
+      margin: 0 auto; }
+  .order-content .order-list .order-item-info {
+    float: left;
+    width: 60%; }
+    .order-content .order-list .order-item-info .order-i-name {
+      margin-top: 15px;
+      font-size: 24px; }
+    .order-content .order-list .order-item-info .form-group {
+      width: 240px;
+      margin-bottom: 10px; }
+      .order-content .order-list .order-item-info .form-group label {
+        font-weight: normal;
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 2px; }
+      .order-content .order-list .order-item-info .form-group select {
+        padding-top: 9px;
+        border: 2px solid #e5e5e5;
+        border-radius: 4px;
+        height: 40px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        background: url(../images/select-arrow.png) no-repeat 95% center; }
+        .order-content .order-list .order-item-info .form-group select:focus {
+          box-shadow: none; }
+      .order-content .order-list .order-item-info .form-group .checkbox-style {
+        margin-top: 2px;
+        margin-bottom: 2px; }
+        .order-content .order-list .order-item-info .form-group .checkbox-style label {
+          margin-top: 0px;
+          padding-left: 0;
+          opacity: 1;
+          color: #808385;
+          display: inline-block; }
+          .order-content .order-list .order-item-info .form-group .checkbox-style label:hover {
+            color: #53585a; }
+          .order-content .order-list .order-item-info .form-group .checkbox-style label input[type=checkbox] {
+            opacity: 0;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            cursor: pointer; }
+          .order-content .order-list .order-item-info .form-group .checkbox-style label input[type="checkbox"] + span.stylesheet {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            background: url(../images/checkbox-field.png) no-repeat center center; }
+          .order-content .order-list .order-item-info .form-group .checkbox-style label input[type="checkbox"]:checked + span.stylesheet {
+            background: url(../images/checkbox-checked.png) no-repeat center center; }
+          .order-content .order-list .order-item-info .form-group .checkbox-style label input[type="checkbox"]:checked + span.stylesheet + span {
+            color: #53585a; }
+        .order-content .order-list .order-item-info .form-group .checkbox-style .icon-info {
+          width: 12px;
+          height: 12px;
+          display: inline-block;
+          background: url(../images/info-icon.png) no-repeat center center;
+          margin-left: 0;
+          cursor: pointer;
+          position: relative; }
+          .order-content .order-list .order-item-info .form-group .checkbox-style .icon-info:hover .more-info {
+            opacity: 1;
+            visibility: visible; }
+          .order-content .order-list .order-item-info .form-group .checkbox-style .icon-info .more-info {
+            position: absolute;
+            top: -12px;
+            -webkit-transform: translate(-50%, -100%);
+            -moz-transform: translate(-50%, -100%);
+            -ms-transform: translate(-50%, -100%);
+            -o-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: 0 0 10px 1px #aaa;
+            width: 200px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            line-height: 16px;
+            font-size: 12px;
+            z-index: 2;
+            background-color: #f2f3f4;
+            text-align: center;
+            -webkit-transition: all 0.25s ease;
+            -moz-transition: all 0.25s ease;
+            transition: all 0.25s ease; }
+            .order-content .order-list .order-item-info .form-group .checkbox-style .icon-info .more-info:after {
+              content: '';
+              position: absolute;
+              border: 10px solid transparent;
+              bottom: -20px;
+              left: 95px;
+              border-top-color: #f2f3f4;
+              border-top-width: 10px; }
+  .order-content .order-list .order-edit {
+    margin-top: 35px; }
+    .order-content .order-list .order-edit a.btn {
+      border-color: #e5e5e5;
+      color: #a5a7a8;
+      font-size: 14px;
+      width: 160px;
+      height: 40px;
+      line-height: 27px; }
+    .order-content .order-list .order-edit .order-delete {
+      margin-left: 20px; }
+
+.can-be-us-col {
+  padding: 0 20px 30px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1); }
+
+.can-be-us h2 {
+  text-align: left;
+  font-size: 24px;
+  margin-top: 30px; }
+.can-be-us .can-be-us-wrap {
+  max-width: 300px;
+  margin: 0 auto; }
+  .can-be-us .can-be-us-wrap .can-be-us-item {
+    margin-top: 30px; }
+  .can-be-us .can-be-us-wrap .item-img-wrap {
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 15px; }
+    .can-be-us .can-be-us-wrap .item-img-wrap img {
+      margin: 0 auto; }
+  .can-be-us .can-be-us-wrap .items-name {
+    font-size: 14px; }
+  .can-be-us .can-be-us-wrap .items-price {
+    font-size: 16px;
+    font-family: 'Conv_PFAgoraSlabPro-Bold'; }
+  .can-be-us .can-be-us-wrap .add-to-cart {
+    width: 160px;
+    height: 35px;
+    line-height: 25px;
+    font-size: 14px;
+    background-color: #00baff;
+    border: 0;
+    color: #ffffff;
+    display: block;
+    margin: 0 auto; }
+    .can-be-us .can-be-us-wrap .add-to-cart:hover {
+      background-color: #03A6E3; }
+
+.total-price-block {
+  padding-top: 40px;
+  padding-bottom: 130px;
+  background-color: #f2f3f4; }
+  .total-price-block .back {
+    width: 160px;
+    height: 40px;
+    line-height: 27px;
+    color: #53585a;
+    margin-bottom: 40px; }
+  .total-price-block .total-hed {
+    font-family: 'Conv_PFAgoraSlabPro-Bold';
+    font-size: 40px;
+    color: #53585a;
+    line-height: normal;
+    margin-bottom: 5px; }
+    .total-price-block .total-hed .total-price {
+      color: #cc0033; }
+  .total-price-block .total-price-wrap .input-group {
+    margin-bottom: 20px; }
+    .total-price-block .total-price-wrap .input-group input {
+      border-color: #d9dadb;
+      width: 178px;
+      height: 40px; }
+      .total-price-block .total-price-wrap .input-group input::-webkit-input-placeholder {
+        color: #a5a7a8 !important; }
+      .total-price-block .total-price-wrap .input-group input:-moz-placeholder {
+        color: #a5a7a8 !important; }
+      .total-price-block .total-price-wrap .input-group input:-ms-input-placeholder {
+        color: #a5a7a8 !important; }
+    .total-price-block .total-price-wrap .input-group .input-group-btn {
+      float: left; }
+      .total-price-block .total-price-wrap .input-group .input-group-btn button {
+        width: 93px;
+        height: 40px;
+        color: #a5a7a8;
+        border-color: #d9dadb;
+        text-indent: -3px; }
+  .total-price-block .place-order {
+    background-color: #00baff;
+    width: 270px;
+    height: 80px;
+    border: 0;
+    color: #fff;
+    padding: 0;
+    line-height: 80px;
+    font-size: 24px;
+    float: left;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -o-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out; }
+    .total-price-block .place-order:hover {
+      background-color: #03A6E3; }
+  .total-price-block .buy-one-click-wrap {
+    float: left;
+    margin-left: 40px;
+    height: 80px;
+    padding-top: 10px; }
+    .total-price-block .buy-one-click-wrap span {
+      color: #9fa1a2;
+      font-size: 14px; }
+    .total-price-block .buy-one-click-wrap .buy-one-click {
+      border-color: #d9dadb;
+      color: #53585a;
+      font-size: 14px;
+      padding: 0;
+      width: 220px;
+      height: 40px;
+      line-height: 38px;
+      text-indent: 10px;
+      display: block;
+      margin: 5px auto; }
 
 ::-webkit-input-placeholder {
   color: #53585a !important; }
@@ -671,7 +918,14 @@ html, body {
     min-height: 200px !important; }
 
   .left-catalog-panel ul {
-    margin-left: 0 !important; } }
+    margin-left: 0 !important; }
+
+  .order-item-img-wrap {
+    width: 240px !important;
+    height: 240px !important; } }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .order-item-info {
+    width: auto !important; } }
 @media (max-width: 992px) {
   .popular-catalog-img-wrap {
     min-height: 254px !important; }
@@ -721,7 +975,32 @@ html, body {
     height: 150px; }
     .banner-wrap a.btn {
       padding: 5px;
-      bottom: 2px; } }
+      bottom: 2px; }
+
+  .can-be-us-col {
+    padding: 0 20px;
+    box-shadow: none; }
+
+  .total-price-block {
+    text-align: center;
+    padding-bottom: 50px; }
+
+  .input-group {
+    margin: 0 auto; }
+
+  .place-order,
+  .buy-one-click-wrap {
+    float: none !important;
+    margin: auto !important; }
+
+  .order-item-info {
+    width: 50% !important; } }
+@media (max-width: 600px) {
+  .order-list .order-item-img-wrap, .order-list .order-item-info {
+    float: none !important;
+    margin: 0 auto !important; }
+  .order-list .order-item-info {
+    width: auto !important; } }
 @media (max-width: 570px) {
   .navbar {
     background-color: #191919; }
