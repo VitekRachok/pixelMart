@@ -875,6 +875,7 @@ html, body {
       color: #9fa1a2;
       font-size: 14px; }
     .total-price-block .buy-one-click-wrap .buy-one-click {
+      position: relative;
       border-color: #d9dadb;
       color: #53585a;
       font-size: 14px;
@@ -882,9 +883,34 @@ html, body {
       width: 220px;
       height: 40px;
       line-height: 38px;
-      text-indent: 10px;
+      text-indent: 35px;
       display: block;
       margin: 5px auto; }
+      .total-price-block .buy-one-click-wrap .buy-one-click:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: url(../images/buy-click.png) no-repeat 20% center; }
+
+.ordering {
+  margin-top: 55px; }
+  .ordering h2 {
+    font-size: 32px;
+    font-family: 'Conv_PFAgoraSlabPro-Medium';
+    float: left; }
+  .ordering .security {
+    width: 175px;
+    height: 32px;
+    display: inline-block;
+    font-size: 14px;
+    color: #808385;
+    line-height: 18px;
+    margin-left: 18px;
+    padding-left: 35px;
+    background: url("../images/security.png") left center no-repeat; }
 
 ::-webkit-input-placeholder {
   color: #53585a !important; }

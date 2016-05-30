@@ -248,7 +248,6 @@ html,body{
 	.items-tag-wrap{
 		text-align: center;
 		margin-top: 30px;
-
 		span{
 			display: inline-block;
 			margin-bottom: 20px;
@@ -1043,6 +1042,7 @@ html,body{
 			font-size: 14px;
 		}
 		.buy-one-click{
+			position: relative;
 			border-color: #d9dadb;
 			color: $grey;
 			font-size: 14px;
@@ -1050,13 +1050,40 @@ html,body{
 			width: 220px;
 			height: 40px;
 			line-height: 38px;
-			text-indent: 10px;
+			text-indent: 35px;
 			display: block;
 			margin: 5px auto;
+			&:before{
+				position: absolute;
+				content: '';
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				background: url(../images/buy-click.png) no-repeat 20% center;
+			}
 		}
 	}
 }
-
+.ordering{
+		margin-top: 55px;
+	h2{
+		font-size: 32px;
+		font-family: 'Conv_PFAgoraSlabPro-Medium';
+		float: left;
+	}
+	.security{
+		width: 175px;
+		height: 32px;
+		display: inline-block;
+		font-size: 14px;
+		color: #808385;
+		line-height: 18px;
+		margin-left: 18px;
+		padding-left: 35px;
+		background: url('../images/security.png') left center no-repeat;
+	}
+}
 
 
 
