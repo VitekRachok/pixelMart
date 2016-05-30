@@ -824,7 +824,7 @@ section.about-item .tab-content .guarantee-wrap p.guarantee-descr {
 
 .your-design-wrap .foo .apple-btn p, .your-design-wrap .foo .play-btn p {
   font-size: 10px;
-  top: 7px;
+  top: 2px;
 }
 
 .your-design-wrap .foo .apple-btn span, .your-design-wrap .foo .play-btn span {
@@ -837,11 +837,11 @@ section.about-item .tab-content .guarantee-wrap p.guarantee-descr {
 }
 
 .your-design-wrap .foo .play-btn img {
-  top: 8px;
+  top: 3px;
 }
 
 .your-design-wrap .foo .apple-btn img {
-  top: 6px;
+  top: 1px;
 }
 
 section.other-collections {
@@ -1296,6 +1296,17 @@ section.other-collections .btn-show-all:hover {
   .carousel-row .carousel-toggle p {
     font-size: 12px;
   }
+  .your-design-wrap .foo .apple-btn, .your-design-wrap .foo .play-btn {
+    width: 46%;
+    margin: 0 2%;
+  }
+  section.other-collections .item-cover {
+    height: 262.5px;
+  }
+  section.other-collections .item-cover img {
+    max-width: 85%;
+    max-height: 85%;
+  }
 }
 
 /* Large Devices, Wide Screens */
@@ -1310,6 +1321,12 @@ section.other-collections .btn-show-all:hover {
     width: 175px;
     height: 40px;
     padding: 6px 0;
+  }
+  .store-btn-wrap {
+    padding: 0 15px !important;
+  }
+  section.other-collections .item-cover {
+    height: 212.5px;
   }
 }
 
@@ -1353,6 +1370,36 @@ section.other-collections .btn-show-all:hover {
     font-size: 18px;
     line-height: 50px;
     padding: 0;
+  }
+  .choose-image-section .mod-form {
+    max-width: 500px;
+    margin: 25px auto;
+  }
+  .mod-left-col {
+    padding-right: 15px;
+  }
+  .mod-right-col {
+    padding-left: 15px;
+  }
+  .price-group {
+    text-align: center;
+  }
+  .choose-image-section .form-bottom-btns {
+    text-align: center;
+  }
+  .choose-image-section .form-bottom-btns a {
+    float: none !important;
+    margin: 0 15px;
+  }
+  .your-design-wrap {
+    max-width: 300px;
+    margin: 20px auto;
+  }
+  section.other-collections .item-cover {
+    height: 345px;
+  }
+  section.other-collections .price {
+    margin-bottom: 40px;
   }
 }
 
@@ -1443,6 +1490,21 @@ section.other-collections .btn-show-all:hover {
   .carousel-row .carousel-inner button.btn-see {
     margin-top: 0;
   }
+  .photo-carousel-wrap {
+    padding: 0 30px;
+  }
+  .choose-image-section .input-file-wrap label {
+    width: 90%;
+    left: 5%;
+  }
+  .nav-tabs > li {
+    float: none;
+    margin-bottom: 1px;
+  }
+  section.other-collections .item-cover {
+    max-width: 345px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -1457,6 +1519,9 @@ section.other-collections .btn-show-all:hover {
     width: 75% !important;
     height: 75% !important;
     margin: 2% auto 20px;
+  }
+  .choose-image-section .other-img-row ul li {
+    width: 13%;
   }
 }
 
@@ -1486,10 +1551,25 @@ section.other-collections .btn-show-all:hover {
   .carousel-row .carousel-inner h3 {
     margin-top: 20px;
   }
+  .choose-image-section .other-img-row ul li {
+    width: 19%;
+  }
+  .choose-image-section .other-img-row ul li {
+    height: 67px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
   .carousel-row .upload-btn {
     margin-top: 50px;
+  }
+  .choose-image-section .other-img-row ul li {
+    height: 55px;
+  }
+  .choose-image-section .form-bottom-btns a {
+    margin: 10px 15px;
+  }
+  section.other-collections .item-cover {
+    height: 290px;
   }
 }
