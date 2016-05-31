@@ -1068,6 +1068,7 @@ html,body{
 .ordering{
 		margin-top: 55px;
 	h2{
+		margin-bottom: 40px;
 		font-size: 32px;
 		font-family: 'Conv_PFAgoraSlabPro-Medium';
 		float: left;
@@ -1084,6 +1085,194 @@ html,body{
 		background: url('../images/security.png') left center no-repeat;
 	}
 }
+.ordering-form{
+	clear: both;
+	label.user-info{
+		width: 150px;
+		height: 50px;
+		font-weight: normal;
+		font-size: 14px;
+		color: #808385;
+		float: left;
+		line-height: 48px;
+		margin-bottom: 0;
+	}
+	h2.del{
+		float: none;
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+	input,
+	select{
+		max-width: 450px;
+		height: 50px;
+		float: left;
+		font-size: 20px;
+		font-family: 'Conv_PFAgoraSlabPro-Medium';
+	}
+	.datalist-wrap{
+		input{
+			width: 450px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			padding: 0 10px;
+			display: block;
+		}
+		span{
+			padding-top: 10px;
+			padding-left: 20px;
+			font-size: 14px;
+			color: #808385;
+			display: inline-block;
+			line-height: 16px;
+		}
+	}
+	input[type=checkbox]{
+		opacity: 0;
+		width: 16px;
+		height: 16px;
+		margin: 0;
+		position: absolute;
+		cursor: pointer;
+	}
+	input[type="checkbox"] + span.stylesheet {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		margin: 3px 2px 0 0;
+		vertical-align: top;
+		position: relative;
+		background: url(../images/checkbox-field.png) no-repeat center center;
+	}
+	.checkbox{
+		margin: 10px 0 0;
+		height: 50px;
+		line-height: 16px;
+		display: inline-block;
+		span{
+			font-size: 14px;
+			color: #808385;
+			display: inline-block;
+		}
+	}
+	input[type="checkbox"]:checked + span.stylesheet {
+		background: url(../images/checkbox-checked.png) no-repeat center center;
+	}
+	input[type="checkbox"]:checked + span.stylesheet + span {
+		color: #808385;
+	}
+	.bottom-info{
+		margin-left: 150px;
+		float: left;
+		&>div{
+			float: left;
+			width: 450px;
+			line-height: 24px;
+			&>span{
+				padding-left: 20px;
+			}
+		}
+		label{
+			padding-left: 0;
+			line-height: 20px;
+		}
+		a{
+			text-decoration: none;
+			color: $blue;
+		}
+		.icon-info{
+			width: 12px;
+			height: 12px;
+			display: inline-block;
+			background: url(../images/info-icon.png) no-repeat center center;
+			margin-left: 5px;
+			cursor: pointer;
+			position: relative;
+			&:hover .more-info{
+				opacity: 1;
+				visibility: visible;
+			}
+			.more-info{
+				position: absolute;
+				top: -12px;
+				-webkit-transform: translate(-50%, -100%);
+				-moz-transform: translate(-50%, -100%);
+				-ms-transform: translate(-50%, -100%);
+				-o-transform: translate(-50%, -100%);
+				transform: translate(-50%, -100%);
+				opacity: 0;
+				visibility: hidden;
+				box-shadow: 0 0 10px 1px #aaa;
+				width: 200px;
+				padding: 10px 15px;
+				border-radius: 4px;
+				line-height: 16px;
+				font-size: 12px;
+				z-index: 2;
+				background-color: #f2f3f4;
+				text-align: center;
+				-webkit-transition: all 0.25s ease;
+				-moz-transition: all 0.25s ease;
+				transition: all 0.25s ease;
+				&:after{
+					content: '';
+					position: absolute;
+					border: 10px solid transparent;
+					bottom: -20px;
+					left: 95px;
+					border-top-color: #f2f3f4;
+					border-top-width: 10px;
+				}
+			}
+		}
+	}
+	.bottom-info + span{
+		font-size: 14px;
+		color: #808385;
+		line-height: 16px;
+		width: 215px;
+		display: inline-block;
+		padding-left: 20px;
+	}
+	.order-inf{
+		float: left;
+		padding-left: 20px;
+		padding-top: 8px;
+	}
+}
+.right-order-list{
+	padding: 0;
+	list-style: none;
+	clear: both;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+	li{
+		border-bottom: 1px solid #e5e5e5;
+		padding: 20px 0;
+	}
+	p{
+		font-size: 14px;
+		line-height: 14px;
+		color: $grey;
+		margin: 10px 0 0;
+	}
+	.price{
+		font-family: 'Conv_PFAgoraSlabPro-Bold'
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

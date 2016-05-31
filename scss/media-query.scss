@@ -37,6 +37,45 @@
 		width: 240px !important;
 		height: 240px !important;
 	}
+	.ordering-form label.user-info,{
+		float: none;
+		line-height: normal;
+		height: 25px;
+	}
+	.ordering-form input, .ordering-form select{
+		float: none;
+		height: 45px;
+	}
+	.ordering-form .checkbox{
+		height: auto;
+		margin-left: 0;
+		& div{
+			padding-left: 20px;
+			float: none !important;
+		}
+		label{
+			.stylesheet{
+				padding: 0;
+				margin: 0 auto !important;
+			}
+		}
+		br{
+			display: none;
+		}
+	}
+	.del{
+		margin: 30px 0 20px !important;
+	}
+	.ordering-form .datalist-wrap br{
+		display: none;
+	}
+	.order-inf{
+		padding: 10px 0 !important;
+		float: none !important;
+		text-align: center;
+		display: block !important;
+	}
+
 }
 @media screen and (min-width: 768px) and (max-width: 992px) { 
 
@@ -64,6 +103,9 @@
 	.catalog-page-pagination a.btn-info{
 		float: none;
 		margin: 0 auto 20px;
+	}
+	.ordering-form .datalist-wrap input{
+		width: 100%;
 	}
 }
 @media (max-width: $small) { 
@@ -125,6 +167,14 @@
 	.order-item-info{
 		width: 50% !important;
 	}
+	form.ordering-form{
+		margin: 40px auto;
+		max-width: 400px;
+	}
+	.ordering-form .bottom-info > div{
+		width: 100%;
+	}
+
 }
 @media (max-width: 600px) {
 	.order-list{

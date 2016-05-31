@@ -898,6 +898,7 @@ html, body {
 .ordering {
   margin-top: 55px; }
   .ordering h2 {
+    margin-bottom: 40px;
     font-size: 32px;
     font-family: 'Conv_PFAgoraSlabPro-Medium';
     float: left; }
@@ -911,6 +912,153 @@ html, body {
     margin-left: 18px;
     padding-left: 35px;
     background: url("../images/security.png") left center no-repeat; }
+
+.ordering-form {
+  clear: both; }
+  .ordering-form label.user-info {
+    width: 150px;
+    height: 50px;
+    font-weight: normal;
+    font-size: 14px;
+    color: #808385;
+    float: left;
+    line-height: 48px;
+    margin-bottom: 0; }
+  .ordering-form h2.del {
+    float: none;
+    margin-top: 60px;
+    margin-bottom: 40px; }
+  .ordering-form input,
+  .ordering-form select {
+    max-width: 450px;
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    font-family: 'Conv_PFAgoraSlabPro-Medium'; }
+  .ordering-form .datalist-wrap input {
+    width: 450px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    display: block; }
+  .ordering-form .datalist-wrap span {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #808385;
+    display: inline-block;
+    line-height: 16px; }
+  .ordering-form input[type=checkbox] {
+    opacity: 0;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    position: absolute;
+    cursor: pointer; }
+  .ordering-form input[type="checkbox"] + span.stylesheet {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 3px 2px 0 0;
+    vertical-align: top;
+    position: relative;
+    background: url(../images/checkbox-field.png) no-repeat center center; }
+  .ordering-form .checkbox {
+    margin: 10px 0 0;
+    height: 50px;
+    line-height: 16px;
+    display: inline-block; }
+    .ordering-form .checkbox span {
+      font-size: 14px;
+      color: #808385;
+      display: inline-block; }
+  .ordering-form input[type="checkbox"]:checked + span.stylesheet {
+    background: url(../images/checkbox-checked.png) no-repeat center center; }
+  .ordering-form input[type="checkbox"]:checked + span.stylesheet + span {
+    color: #808385; }
+  .ordering-form .bottom-info {
+    margin-left: 150px;
+    float: left; }
+    .ordering-form .bottom-info > div {
+      float: left;
+      width: 450px;
+      line-height: 24px; }
+      .ordering-form .bottom-info > div > span {
+        padding-left: 20px; }
+    .ordering-form .bottom-info label {
+      padding-left: 0;
+      line-height: 20px; }
+    .ordering-form .bottom-info a {
+      text-decoration: none;
+      color: #00baff; }
+    .ordering-form .bottom-info .icon-info {
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      background: url(../images/info-icon.png) no-repeat center center;
+      margin-left: 5px;
+      cursor: pointer;
+      position: relative; }
+      .ordering-form .bottom-info .icon-info:hover .more-info {
+        opacity: 1;
+        visibility: visible; }
+      .ordering-form .bottom-info .icon-info .more-info {
+        position: absolute;
+        top: -12px;
+        -webkit-transform: translate(-50%, -100%);
+        -moz-transform: translate(-50%, -100%);
+        -ms-transform: translate(-50%, -100%);
+        -o-transform: translate(-50%, -100%);
+        transform: translate(-50%, -100%);
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: 0 0 10px 1px #aaa;
+        width: 200px;
+        padding: 10px 15px;
+        border-radius: 4px;
+        line-height: 16px;
+        font-size: 12px;
+        z-index: 2;
+        background-color: #f2f3f4;
+        text-align: center;
+        -webkit-transition: all 0.25s ease;
+        -moz-transition: all 0.25s ease;
+        transition: all 0.25s ease; }
+        .ordering-form .bottom-info .icon-info .more-info:after {
+          content: '';
+          position: absolute;
+          border: 10px solid transparent;
+          bottom: -20px;
+          left: 95px;
+          border-top-color: #f2f3f4;
+          border-top-width: 10px; }
+  .ordering-form .bottom-info + span {
+    font-size: 14px;
+    color: #808385;
+    line-height: 16px;
+    width: 215px;
+    display: inline-block;
+    padding-left: 20px; }
+  .ordering-form .order-inf {
+    float: left;
+    padding-left: 20px;
+    padding-top: 8px; }
+
+.right-order-list {
+  padding: 0;
+  list-style: none;
+  clear: both;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1); }
+  .right-order-list li {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px 0; }
+  .right-order-list p {
+    font-size: 14px;
+    line-height: 14px;
+    color: #53585a;
+    margin: 10px 0 0; }
+  .right-order-list .price {
+    font-family: "Conv_PFAgoraSlabPro-Bold"; }
 
 ::-webkit-input-placeholder {
   color: #53585a !important; }
@@ -930,7 +1078,7 @@ html, body {
 @media (max-width: 1240px) {
   .nav-center li {
     padding: 0 7px; } }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .why-we-item span {
     text-align: center !important; }
 
@@ -948,7 +1096,40 @@ html, body {
 
   .order-item-img-wrap {
     width: 240px !important;
-    height: 240px !important; } }
+    height: 240px !important; }
+
+  .ordering-form label.user-info {
+    float: none;
+    line-height: normal;
+    height: 25px; }
+
+  .ordering-form input, .ordering-form select {
+    float: none;
+    height: 45px; }
+
+  .ordering-form .checkbox {
+    height: auto;
+    margin-left: 0; }
+    .ordering-form .checkbox div {
+      padding-left: 20px;
+      float: none !important; }
+    .ordering-form .checkbox label .stylesheet {
+      padding: 0;
+      margin: 0 auto !important; }
+    .ordering-form .checkbox br {
+      display: none; }
+
+  .del {
+    margin: 30px 0 20px !important; }
+
+  .ordering-form .datalist-wrap br {
+    display: none; }
+
+  .order-inf {
+    padding: 10px 0 !important;
+    float: none !important;
+    text-align: center;
+    display: block !important; } }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .order-item-info {
     width: auto !important; } }
@@ -966,7 +1147,10 @@ html, body {
 
   .catalog-page-pagination a.btn-info {
     float: none;
-    margin: 0 auto 20px; } }
+    margin: 0 auto 20px; }
+
+  .ordering-form .datalist-wrap input {
+    width: 100%; } }
 @media (max-width: 768px) {
   .navbar-header {
     float: left; }
@@ -1020,7 +1204,14 @@ html, body {
     margin: auto !important; }
 
   .order-item-info {
-    width: 50% !important; } }
+    width: 50% !important; }
+
+  form.ordering-form {
+    margin: 40px auto;
+    max-width: 400px; }
+
+  .ordering-form .bottom-info > div {
+    width: 100%; } }
 @media (max-width: 600px) {
   .order-list .order-item-img-wrap, .order-list .order-item-info {
     float: none !important;

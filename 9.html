@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/style_r.css">
 	<link rel="stylesheet" href="css/style_n.css">
 </head>
-<body style="height: 4000px">
+<body>
 	<nav class="navbar navbar-default navbar-big">
 		<div class="container-fluid">
 			<div class="row">
@@ -102,16 +102,134 @@
 	</nav>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-9">
-				<div class="ordering">
-					<h2>Ваши данные</h2>
-					<div class="security">
-						Мы гарантируем безопасность даных
-					</div>
+		<div class="row ordering">
+			<div class="col-lg-9 col-sm-7">
+				<h2>Ваши данные</h2>
+				<div class="security">
+					Мы гарантируем безопасность даных
 				</div>
+				<form class="ordering-form" action="">
+					<fieldset class="form-group">
+						<label class="user-info" for="">Телефон</label>
+						<input type="tel" class="form-control" placeholder="">
+					</fieldset>
+					<fieldset class="form-group">
+						<label class="user-info" for="">Электронная почта</label>
+						<input type="email" class="form-control" placeholder="">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox">
+								<span class="stylesheet"></span>
+								<span>Подписаться на новости<br/>и подписки</span>
+							</label>
+						</div>
+					</fieldset>
+					<fieldset class="form-group">
+						<label class="user-info" for="">ФИО</label>
+						<input type="text" class="form-control" placeholder="">
+					</fieldset>
+					<h2 class="del">Доставка</h2>
+					<fieldset class="form-group">
+						<label class="user-info" for="">Страна</label>
+						<select class="form-control">
+							<option value="0" selected>Россия</option>
+							<option value="1">other value</option>
+							<option value="2">other value</option>
+							<option value="3">other value</option>
+						</select>
+					</fieldset>
+					<fieldset class="form-group datalist-wrap">
+						<label class="user-info" for="">Город</label>
+						<input type="text" list="city" autocomplete="on">
+						<datalist id="city">
+							<option>Новосибирск, Новосибирская обл.</option>
+							<option>Самара</option>
+							<option>Тольятти</option>
+							<option>Новосибирск, Новосибирская обл.</option>
+						</datalist>
+						<span class="">Начните вводить город,<br/>а затем выберите из списка.</span>
+					</fieldset>
+					<fieldset class="form-group">
+						<label class="user-info" for="">Адрес</label>
+						<input type="email" class="form-control" placeholder="">
+					</fieldset>
+					<fieldset class="form-group">
+						<label class="user-info" for="">Способ доставки</label>
+						<select class="form-control">
+							<option value="0" selected>Самовывоз</option>
+							<option value="1">other value</option>
+							<option value="2">other value</option>
+							<option value="3">other value</option>
+						</select>
+						<div class="checkbox bottom-info">
+							<div>
+								<label>
+									<input type="checkbox">
+									<span class="stylesheet"></span>
+									<span>Постоматы PickPoint — два дня — </span>
+									<span>400<span class="currency"> P</span>
+									<span class="icon-info">
+										<span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span>
+									</span>
+								</label><br/>
+								<span>Щёлковское шоссе, 204, ТЦ Европа <a href="#">Сменить адрес</a>.</span>
+							</div>
+							<span class="order-inf">Сроки доставки указаны после<br/>изготовления товара (48 часов)</span>
+						</div>
+					</fieldset>
+				</form>
 			</div>
-			<div class="col-sm-3"></div>
+			<div class="col-lg-3 col-sm-5">
+					<h2>Ваш заказ</h2>
+				<ul class="right-order-list">
+					<li>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-6 text-center">
+									<img class="img-responsive" src="images/trash-img1.png" alt="">
+								</div>
+								<div class="col-xs-6">
+									<p class="type">Модульная картина</p>
+									<p class="title">«Порш»</p>
+									<p class="price">4 600 Р</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-6 text-center">
+									<img class="img-responsive" src="images/trash-img2.png" alt="">
+								</div>
+								<div class="col-xs-6">
+									<p class="type">Штора для ванной </p>
+									<p class="title">«Цветы»</p>
+									<p class="price">2 700 Р</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-6 text-center">
+									<img class="img-responsive" src="images/trash-img3.png" alt="">
+								</div>
+								<div class="col-xs-6">
+									<p class="type">Часы круглые</p>
+									<p class="title">«Хамелеон»</p>
+									<p class="price">1 890 Р</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="btn-wrap">
+						<a href="#" class="btn btn-take-order">Оформить заказ</a>
+						<a href="#" class="btn btn-to-trash">Перейти в корзину</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
