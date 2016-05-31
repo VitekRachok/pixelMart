@@ -142,6 +142,7 @@ html, body {
 .navbar-collapse {
   background-color: #ffffff; }
 
+/****************************/
 .navbar-mini {
   display: none; }
   .navbar-mini .trash {
@@ -914,7 +915,8 @@ html, body {
     background: url("../images/security.png") left center no-repeat; }
 
 .ordering-form {
-  clear: both; }
+  clear: both;
+  margin-bottom: 60px; }
   .ordering-form label.user-info {
     width: 150px;
     height: 50px;
@@ -1045,6 +1047,7 @@ html, body {
     padding-top: 8px; }
 
 .right-order-list {
+  margin: 0 auto 60px;
   padding: 0;
   list-style: none;
   clear: both;
@@ -1059,6 +1062,33 @@ html, body {
     margin: 10px 0 0; }
   .right-order-list .price {
     font-family: "Conv_PFAgoraSlabPro-Bold"; }
+  .right-order-list .btn-wrap {
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px; }
+    .right-order-list .btn-wrap .edit-order {
+      width: 100%;
+      font-size: 14px;
+      color: #53585a;
+      height: 40px;
+      line-height: 26px; }
+
+.total-price-block.order {
+  padding-bottom: 100px; }
+  .total-price-block.order .total-price-wrap {
+    margin-left: 150px;
+    max-width: 300px; }
+  .total-price-block.order .place-order {
+    float: none; }
+
+.privacy-policy {
+  font-size: 14px;
+  color: #808385;
+  display: block;
+  margin-top: 20px; }
+  .privacy-policy a {
+    text-decoration: none;
+    color: #00baff; }
 
 ::-webkit-input-placeholder {
   color: #53585a !important; }
@@ -1129,7 +1159,10 @@ html, body {
     padding: 10px 0 !important;
     float: none !important;
     text-align: center;
-    display: block !important; } }
+    display: block !important; }
+
+  .total-price-block.order .total-price-wrap {
+    margin: 0 auto !important; } }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .order-item-info {
     width: auto !important; } }
@@ -1205,6 +1238,18 @@ html, body {
 
   .order-item-info {
     width: 50% !important; }
+
+  .right-order-list {
+    max-width: 400px; }
+
+  .ordering h2 {
+    float: none !important;
+    text-align: center;
+    margin-bottom: 15px; }
+
+  .security {
+    margin: 0 auto !important;
+    display: block !important; }
 
   form.ordering-form {
     margin: 40px auto;

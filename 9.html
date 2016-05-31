@@ -35,8 +35,52 @@
 							1
 						</span>
 					</div>
-					<div class="trash">
-						<img src="images/trash.png" alt="">
+					<div class="trash dropdown">
+						<a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<img src="images/trash.png" alt="">
+						</a>
+						<ul class="dropdown-menu big trash-dropdown" aria-labelledby="dropdownMenu1">
+							<li>
+								<div class="row">
+									<div class="col-sm-6 text-center">
+										<img src="images/trash-img1.png" alt="">
+									</div>
+									<div class="col-sm-6">
+										<p class="type">Модульная картина</p>
+										<p class="title">«Порш»</p>
+										<p class="price">4 600 Р</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-sm-6 text-center">
+										<img src="images/trash-img2.png" alt="">
+									</div>
+									<div class="col-sm-6">
+										<p class="type">Штора для ванной </p>
+										<p class="title">«Цветы»</p>
+										<p class="price">2 700 Р</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-sm-6 text-center">
+										<img src="images/trash-img3.png" alt="">
+									</div>
+									<div class="col-sm-6">
+										<p class="type">Часы круглые</p>
+										<p class="title">«Хамелеон»</p>
+										<p class="price">1 890 Р</p>
+									</div>
+								</div>
+							</li>
+							<li class="btn-wrap">
+								<a href="#" class="btn btn-take-order">Оформить заказ</a>
+								<a href="#" class="btn btn-to-trash">Перейти в корзину</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -55,8 +99,8 @@
 					</ul>
 				</div>
 			</div>
-		</div>	</nav>
-
+		</div>
+	</nav>
 
 	<!-- MINI NAV -->
 	<nav class="navbar navbar-default navbar-mini animated fadeInDown">
@@ -78,8 +122,64 @@
 							1
 						</span>
 					</div>
-					<div class="trash">
-						<img src="images/trash.png" alt="">
+					<div class="trash dropdown">
+						<a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<img src="images/trash.png" alt="">
+						</a>
+						<ul class="dropdown-menu trash-dropdown" aria-labelledby="dropdownMenu1">
+							<li>
+								<div class="row">
+									<div class="col-sm-6 text-center">
+										<img src="images/trash-img1.png" alt="">
+									</div>
+									<div class="col-sm-6">
+										<p class="type">Модульная картина</p>
+										<p class="title">«Порш»</p>
+										<p class="price">4 600 Р</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-sm-6 text-center">
+										<img src="images/trash-img1.png" alt="">
+									</div>
+									<div class="col-sm-6">
+										<p class="type">Модульная картина</p>
+										<p class="title">«Порш»</p>
+										<p class="price">4 600 Р</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-sm-6 text-center">
+										<img src="images/trash-img2.png" alt="">
+									</div>
+									<div class="col-sm-6">
+										<p class="type">Штора для ванной </p>
+										<p class="title">«Цветы»</p>
+										<p class="price">2 700 Р</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-sm-6 text-center">
+										<img src="images/trash-img3.png" alt="">
+									</div>
+									<div class="col-sm-6">
+										<p class="type">Часы круглые</p>
+										<p class="title">«Хамелеон»</p>
+										<p class="price">1 890 Р</p>
+									</div>
+								</div>
+							</li>
+							<li class="btn-wrap">
+								<a href="#" class="btn btn-take-order">Оформить заказ</a>
+								<a href="#" class="btn btn-to-trash">Перейти в корзину</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
@@ -225,10 +325,30 @@
 						</div>
 					</li>
 					<li class="btn-wrap">
-						<a href="#" class="btn btn-take-order">Оформить заказ</a>
-						<a href="#" class="btn btn-to-trash">Перейти в корзину</a>
+						<a href="#" class="btn btn-default edit-order">Редактировать заказ</a>
 					</li>
 				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid total-price-block order">
+		<div class="row">
+			<div class="container">
+				<div class="total-price-wrap">
+					<div class="total-hed">Итого: 
+						<span class="total-price">6 000
+							<span class="currency"> P</span>
+						</span>
+					</div>
+					<div class="input-group">
+						<input type="text" class="form-control" aria-label="..." placeholder="Ввести промо-код">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="button">Применить</button>
+						</div>
+					</div>
+					<a href="#" class="btn btn-default place-order">Оформить заказ</a>
+					<span class="privacy-policy">Нажимая на кнопку «Отправить заказ»,<br/>вы принимаете условия <a href="#">Публичной сферы</a></span>
+				</div>
 			</div>
 		</div>
 	</div>

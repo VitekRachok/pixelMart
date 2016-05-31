@@ -603,14 +603,14 @@ section.other-collections
 		display: block
 	.dropdown-menu
 		right: 0
-		top: 90px
+		top: 50px
 		left: auto
 		width: 340px
 		border-top: 2px solid #cb0a37
 		margin-top: 0
 		border-radius: 0
 		padding: 0 20px
-		+transition(all 1s ease)
+		+transition(all 0.2s ease)
 		&:after
 			content: ''
 			position: absolute
@@ -618,9 +618,11 @@ section.other-collections
 			right: 35px
 			border: 10px solid transparent
 			border-bottom-color: #fff
-		&.trash-dropdown-fixed
+		&.trash-dropdown-away
 			position: fixed
-			top: 50px
+			top: -500px
+	.big
+		top: 90px
 	img
 		max-width: 100%
 	p 

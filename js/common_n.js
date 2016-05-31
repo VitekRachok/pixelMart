@@ -87,9 +87,9 @@ $(document).ready(function () {
 
   function checkTrashScroll() {
   	if ($(window).scrollTop() > 90) {
-  		$('.trash-dropdown').addClass('trash-dropdown-fixed');
+  		$('.navbar-big .trash-dropdown').addClass('trash-dropdown-away');
   	}else{
-  		$('.trash-dropdown').removeClass('trash-dropdown-fixed');
+  		$('.navbar-big .trash-dropdown').removeClass('trash-dropdown-away');
   	}
   }
   checkTrashScroll();

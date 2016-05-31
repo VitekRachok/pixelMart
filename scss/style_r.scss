@@ -166,6 +166,9 @@ html,body{
 .navbar-collapse{
 	background-color: #ffffff;
 }
+
+
+/****************************/
 .navbar-mini{
 	display: none;
 	.trash{
@@ -1087,6 +1090,7 @@ html,body{
 }
 .ordering-form{
 	clear: both;
+	margin-bottom: 60px;
 	label.user-info{
 		width: 150px;
 		height: 50px;
@@ -1241,6 +1245,7 @@ html,body{
 	}
 }
 .right-order-list{
+	margin: 0 auto 60px;
 	padding: 0;
 	list-style: none;
 	clear: both;
@@ -1258,8 +1263,39 @@ html,body{
 	.price{
 		font-family: 'Conv_PFAgoraSlabPro-Bold'
 	}
+	.btn-wrap{
+		text-align: center;
+		padding-left: 15px;
+		padding-right: 15px;
+		.edit-order{
+			width: 100%;
+			font-size: 14px;
+			color: $grey;
+			height: 40px;
+			line-height: 26px;
+		}
+	}
 }
-
+.total-price-block.order{
+	padding-bottom: 100px;
+	.total-price-wrap{
+		margin-left: 150px;
+		max-width: 300px;
+	}
+	.place-order{
+		float: none;
+	}
+}
+.privacy-policy{
+	font-size: 14px;
+	color: #808385;
+	display: block;
+	margin-top: 20px;
+	a{
+		text-decoration: none;
+		color: $blue;
+	}
+}
 
 
 

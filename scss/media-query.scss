@@ -75,6 +75,9 @@
 		text-align: center;
 		display: block !important;
 	}
+	.total-price-block.order .total-price-wrap{
+		margin: 0 auto !important;
+	}
 
 }
 @media screen and (min-width: 768px) and (max-width: 992px) { 
@@ -166,6 +169,18 @@
 	}
 	.order-item-info{
 		width: 50% !important;
+	}
+	.right-order-list{
+		max-width: 400px;
+	}
+	.ordering h2{
+		float: none !important;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.security{
+		margin: 0 auto !important;
+		display: block !important;
 	}
 	form.ordering-form{
 		margin: 40px auto;
