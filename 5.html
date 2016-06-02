@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/style_n.css">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-big">
+	<nav class="navbar navbar-default navbar-big" role="navigation">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="navbar-header">
@@ -91,8 +91,17 @@
 				</button>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav nav-center">
-						<li><a class="px-active" href="#">Создайте свою картину</a></li>
-						<li><a href="#">Модульные картины</a></li>
+						<li><a href="#">Создайте свою картину</a></li>
+						<li class="dropdown">
+							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Модульные картины <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class=""><a href="#">Часы</a></li>
+								<li class=""><a href="#">Шторы для ванны</a></li>
+								<li class=""><a href="#">Занавески для кухни</a></li>
+								<li class=""><a href="#">Игрушки</a></li>
+								<li class=""><a href="#">Магниты</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Холсты</a></li>
 						<li><a href="#">Плакаты</a></li>
 						<li><a href="#">Постеры</a></li>
@@ -178,7 +187,16 @@
 				</button>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					<ul class="nav navbar-nav nav-center">
-						<li><a class="px-active" href="#">Создайте свою картину</a></li>
+						<li class="dropdown">
+							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Создайте свою картину <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class=""><a href="#">Часы</a></li>
+								<li class=""><a href="#">Шторы для ванны</a></li>
+								<li class=""><a href="#">Занавески для кухни</a></li>
+								<li class=""><a href="#">Игрушки</a></li>
+								<li class=""><a href="#">Магниты</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Модульные картины</a></li>
 						<li><a href="#">Холсты</a></li>
 						<li><a href="#">Плакаты</a></li>
@@ -188,7 +206,56 @@
 			</div>
 		</div>
 	</nav>
-	
+	<div id="top-panel">
+		<ol class="breadcrumb">
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Модульные картины</a></li>
+			<li class="active">Автомобили и мотоциклы</li>
+		</ol>
+		<div id="filter">
+			<ul class="filter-list">
+				<li><a class="active" href="#">Цветовая гамма</a></li>
+				<li><a href="#">Ориентация</a></li>
+				<li>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Размер</a>
+					<ul class="dropdown-menu">
+						<li>
+							<form action="" class="filter-size">
+								<div class="form-group">
+									<div class="radio-inline">
+										<input type="radio" name="selectSize" id="size1" value="90-60">
+										<label for="size1">90x60</label>
+									</div>
+									<div class="radio-inline">
+										<input type="radio" name="selectSize" id="size2" value="120-90">
+										<label for="size2">120x90</label>
+									</div>
+									<div class="radio-inline">
+										<input type="radio" name="selectSize" id="size3" value="140-110">
+										<label for="size3">140x110</label>
+									</div>
+									<div class="radio-inline">
+										<input type="radio" name="selectSize" id="size4" value="160-120">
+										<label for="size4">150x120</label>
+									</div>
+									<div class="radio-inline">
+										<input type="radio" name="selectSize" id="size5" value="160-120">
+										<label for="size5">160x120</label>
+									</div>
+									<div class="radio-inline">
+										<input type="radio" name="selectSize" id="size6" value="240-160">
+										<label for="size6">240x160</label>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-default">Применить</button>
+							</form>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Сбросить фильтр</a></li>
+			</ul>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row catalog-page">
 			<div class="col-md-3">
@@ -234,7 +301,7 @@
 					<div class="col-md-4 col-sm-6 text-center catalog-items">
 						<div class="catalog-img-wrap">
 							<div class="catalog-items-mask">
-								<a href="#" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Быстрый просмотр</a>
+								<a href="#" class="btn btn-default btn-quick-view" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>
 							</div>
 							<img class="img-responsive" src="images/cat-it1.png" alt="">
 						</div>
@@ -249,7 +316,7 @@
 					<div class="col-md-4 col-sm-6 text-center catalog-items">
 						<div class="catalog-img-wrap">
 							<div class="catalog-items-mask">
-								<a href="#" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Быстрый просмотр</a>
+								<a href="#" class="btn btn-default btn-quick-view" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>
 							</div>
 							<img class="img-responsive" src="images/cat-it2.png" alt="">
 						</div>
@@ -264,7 +331,7 @@
 					<div class="col-md-4 col-sm-6 text-center catalog-items">
 						<div class="catalog-img-wrap">
 							<div class="catalog-items-mask">
-								<a href="#" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Быстрый просмотр</a>
+								<a href="#" class="btn btn-default btn-quick-view" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>
 							</div>
 							<img class="img-responsive" src="images/cat-it3.png" alt="">
 						</div>
@@ -279,7 +346,7 @@
 					<div class="col-md-4 col-sm-6 text-center catalog-items">
 						<div class="catalog-img-wrap">
 							<div class="catalog-items-mask">
-								<a href="#" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Быстрый просмотр</a>
+								<a href="#" class="btn btn-default btn-quick-view" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>
 							</div>
 							<img class="img-responsive" src="images/cat-it4.png" alt="">
 						</div>
@@ -294,7 +361,7 @@
 					<div class="col-md-4 col-sm-6 text-center catalog-items">
 						<div class="catalog-img-wrap">
 							<div class="catalog-items-mask">
-								<a href="#" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Быстрый просмотр</a>
+								<a href="#" class="btn btn-default btn-quick-view" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>
 							</div>
 							<img class="img-responsive" src="images/cat-it5.png" alt="">
 						</div>
@@ -309,7 +376,7 @@
 					<div class="col-md-4 col-sm-6 text-center catalog-items">
 						<div class="catalog-img-wrap">
 							<div class="catalog-items-mask">
-								<a href="#" class="btn btn-default" data-toggle="modal" data-target=".bs-example-modal-lg">Быстрый просмотр</a>
+								<a href="#" class="btn btn-default btn-quick-view" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>
 							</div>
 							<img class="img-responsive" src="images/cat-it1.png" alt="">
 						</div>
@@ -332,7 +399,7 @@
 					<li>Страницы</li>
 					<li><a href="#">1</a></li>
 					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
+					<li><a class="active" href="#">3</a></li>
 					<li><a href="#">4</a></li>
 					<li><a href="#">5</a></li>
 					<li><a href="#">6</a></li>
@@ -348,8 +415,8 @@
 	</div>
 	<br/>
 
-	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-		<div class="modal-dialog modal-lg modal-width">
+	<div id="quick-view" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg modal-width quick">
 			<div class="modal-content">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
 					</button>
@@ -398,20 +465,18 @@
 
 								</div>	
 							</div>
-							
 						</div>
 					</div>
 					<div class="container-fluid">
 						<div class="row">
 							<div class="choose-image-section">
-								<div class="col-sm-9 mod-left-col">
+								<div class="col-md-8 mod-left-col">
 									<div class="mod-main-photo">
 										<img src="images/mod/mod-photo.png" alt="">
 									</div>
 								</div>
-								<div class="col-sm-3 mod-right-col">
+								<div class="col-md-4 mod-right-col">
 									<form action="" class="mod-form">
-
 										  <div class="form-group">
 										    <label>Тип картины</label>
 										    <select class="form-control">
@@ -478,17 +543,19 @@
 												</div>
 										  </div>
 
-										  <div class="form-group">
+										  <div class="form-group price-group">
 												<span class="old-price">6480Р</span>
 												<span class="new-price">4090Р</span>
 										  </div>
 
 										  <button class="btn btn-add-to-cart">Добавить в корзину</button>
+										  <button class="btn btn-go-to-cart">Перейти в корзину</button>
 
 										  <div class="clearfix form-bottom-btns">
 										  	<a href="#" class="buy-one-click">Купить в 1 клик</a>
 										  	<a href="#" class="set-aside">Отложить товар</a>
 										  </div>
+										  <a href="#" class="btn in-detail">Подробнее о картине</a>
 									</form>
 								</div>
 							</div>
@@ -499,6 +566,74 @@
 		</div>
 	</div>
 
+	<div class="modal fade" id="buy-one-cl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header background">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Быстрое оформление заказа</h4>
+				</div>
+				<div class="modal-body">
+					<form id="" class="" action="">
+						<fieldset class="form-group">
+							<label for="">Имя</label>
+							<input type="text" placeholder="">
+						</fieldset>
+						<fieldset class="form-group">
+							<label for="">Телефон</label>
+							<input type="text" placeholder="+7 (___) ___ -__-__">
+						</fieldset>
+						<fieldset class="form-group">
+							<label for=""></label>
+							<button type="submit" class="btn btn-default">Заказать</button>
+						</fieldset>
+					</form>
+					<p>Оператор свяжется с вами в течение 5 минут в рабочее время чтобы оформить заказ</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="modal fade" id="product-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Информация о товаре</h4>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4">
+								<img class="img-responsive" src="images/cat-show1.png" alt="">
+							</div>
+							<div class="col-sm-4">
+								<h4>Описание</h4>
+								<p>
+									Сублимационная печать — печать при которой краска под высокой температурой переходит с сублимационной бумаги на окрашиваему поверхность. В отличие от других способов печати позволяет наносить на поверхность фотографические изображения с высоким качеством. Технология позволяет получить яркие цвета устойчивые к воздействию окружающей среды. Использование данной технологии позволяет нам создавать изображения на следующих товарах: посуда, часы, фартуки, сумки, коврики для мыши.
+								</p>
+							</div>
+							<div class="col-sm-4">
+								<h4>Описание</h4>
+								<p>
+									Изображение нанесенное методом сублимации очень стойкое к истиранию, но все же необходимо следовать рекомендациям:
+									Посуда; Не рекомендуется чистка абразивными материалами (металличеосие щетки и тл) и мытье в посудомоечных машинах.
+									Текстиль: ручная стирка, но допускается стирка в стиральной машине в щадящем режиме при температуре воды до 3О°С. допускается гладить изделие только с обратной стороны, ни в коем случае не гладьте по изображению. Перед стиркой необходимо вывернуть изделие наизнанку! 
+									И никакого отбелеватия!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL  END-->
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -507,6 +642,7 @@
 	<![endif]-->
 
 	<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="https://use.fontawesome.com/d6d1c30920.js"></script>

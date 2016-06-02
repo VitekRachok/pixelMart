@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/style_n.css">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-big">
+	<nav class="navbar navbar-default navbar-big" role="navigation">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="navbar-header">
@@ -91,8 +91,17 @@
 				</button>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav nav-center">
-						<li><a class="px-active" href="#">Создайте свою картину</a></li>
-						<li><a href="#">Модульные картины</a></li>
+						<li><a href="#">Создайте свою картину</a></li>
+						<li class="dropdown">
+							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Модульные картины <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class=""><a href="#">Часы</a></li>
+								<li class=""><a href="#">Шторы для ванны</a></li>
+								<li class=""><a href="#">Занавески для кухни</a></li>
+								<li class=""><a href="#">Игрушки</a></li>
+								<li class=""><a href="#">Магниты</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Холсты</a></li>
 						<li><a href="#">Плакаты</a></li>
 						<li><a href="#">Постеры</a></li>
@@ -178,7 +187,16 @@
 				</button>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					<ul class="nav navbar-nav nav-center">
-						<li><a class="px-active" href="#">Создайте свою картину</a></li>
+						<li class="dropdown">
+							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Создайте свою картину <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class=""><a href="#">Часы</a></li>
+								<li class=""><a href="#">Шторы для ванны</a></li>
+								<li class=""><a href="#">Занавески для кухни</a></li>
+								<li class=""><a href="#">Игрушки</a></li>
+								<li class=""><a href="#">Магниты</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Модульные картины</a></li>
 						<li><a href="#">Холсты</a></li>
 						<li><a href="#">Плакаты</a></li>
@@ -465,6 +483,7 @@
 	<![endif]-->
 
 	<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="https://use.fontawesome.com/d6d1c30920.js"></script>

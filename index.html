@@ -27,7 +27,7 @@
 				<div class="right-header-block">
 					<div class="contacts-header">
 						<a class="phone-header" href="tel:8 800 660 90 60">8 800 660 90 60</a>
-						<span class="city">Новосибирск</span>
+						<a href="" class="city" data-toggle="modal" data-target="#question-city">Новосибирск</a>
 					</div>
 					<div class="like-header">
 						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
@@ -372,6 +372,9 @@
 						<div class="popular-items">
 							<div class="popular-items-image-wrap">
 								<img class="img-responsive" src="images/popular1.png" alt="">
+								<!-- <div class="popular-masck">
+									<a href="#" class="btn btn-default quick-view" data-toggle="modal" data-target=".bs-example-modal-lg">Быстрый просмотр</a>
+								</div> -->
 							</div>
 							<div class="popular-items-info text-center">
 								<h4 class="popular-items-name">Хамелеон</h4>
@@ -655,10 +658,63 @@
 
 
 
+<!-- MODAL CONFIRM CITY -->
+
+	<div id="question-city" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>
+						Ваш город <span id="modal-city">Новосибирск</span>?
+						<a href="#" class="city-confirm btn btn-default" type="button" data-dismiss="modal" aria-label="Close">Да, всё верно</a>
+						<a class="choose-another-city" href="#">Нет, выбрать другой город</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
+<!-- MODAL CONFIRM CITY END-->
+<!-- MODAL CHOICE CITY END-->
 
+<div id="choice-city" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header background">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Выберите ваш город</h4>
+			</div>
+			<div class="modal-body">
+				<form id="auto-comlete" class="" action="">
+					<input id="city-res">
+				</form>
+				<div class="choice-manually">
+					<p>или выберите из списка</p>
+					<ul>
+						<li><a href="#">Москва</a></li>
+						<li><a href="#">Санкт-Петербург</a></li>
+						<li><a href="#">Новосибирск</a></li>
+						<li><a href="#">Екатеренбург</a></li>
+						<li><a href="#">Нижний Новгород</a></li>
+						<li><a href="#">Уфа</a></li>
+						<li><a href="#">Красноярск</a></li>
+						<li><a href="#">Казань</a></li>
+						<li><a href="#">Самара</a></li>
+						<li><a href="#">Челябинск</a></li>
+						<li><a href="#">Омск</a></li>
+						<li><a href="#">Ростов-на-Дону</a></li>
+						<li><a href="#">Пермь</a></li>
+						<li><a href="#">Волгоград</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
 
+<!-- MODAL CHOICE CITY END-->
 
 
 

@@ -50,7 +50,7 @@
 		text-align: center
 		h3
 			font-size: 24px
-		+ p
+		p
 			font-size: 12px
 			color: #808385
 		img
@@ -111,6 +111,7 @@
 		border-radius: 4px
 		box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1)
 		padding: 25px 20px
+		max-width: 360px
 		.form-group
 			margin-bottom: 20px
 		label
@@ -237,16 +238,24 @@
 		font-family: 'PFAgoraSlabPro-Medium'
 		font-size: 20px
 		color: #fff
-		background: -webkit-linear-gradient(90deg, #0099ff 0%, #00ccff 100%)
-		background: -moz-linear-gradient(90deg, #0099ff 0%, #00ccff 100%)
-		background: -o-linear-gradient(90deg, #0099ff 0%, #00ccff 100%)
-		background: -ms-linear-gradient(90deg, #0099ff 0%, #00ccff 100%)
-		background: linear-gradient(0deg, #0099ff 0%, #00ccff 100%)
-		+transition(opacity $duration ease)
+		background-color: #00baff
+		+transition(background-color $duration ease)
 		border: none
 		margin-bottom: 20px
 		&:hover
-			opacity: 0.8
+			background-color: #00ccff
+	.btn-go-to-cart
+		display: none
+		width: 100%
+		height: 70px
+		border-radius: 4px
+		font-family: 'PFAgoraSlabPro-Medium'
+		font-size: 20px
+		color: #fff
+		background-color: #00cc00
+		+transition(background-color $duration ease)
+		border: none
+		margin-bottom: 20px
 	.form-bottom-btns
 		font-size: 13px
 		a 
@@ -273,6 +282,20 @@
 		margin-top: 25px
 		span
 			font-family: 'PFAgoraSlabPro-Black'
+	.in-detail
+		height: 50px
+		line-height: 50px
+		padding: 0
+		background-color: transparent
+		border-color: #00baff
+		color: #00baff
+		font-size: 16px
+		width: 100%
+		margin-top: 35px
+		+transition(all $duration ease)
+		&:hover
+			background-color: #00baff
+			color: #ffffff
 
 .mod-left-col
 	padding-right: 30px
@@ -625,7 +648,7 @@ section.other-collections
 			border-bottom-color: #fff
 		&.trash-dropdown-away
 			position: fixed
-			top: -500px
+			top: -580px
 	.big
 		top: 90px
 	img

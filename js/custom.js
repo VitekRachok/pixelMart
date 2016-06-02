@@ -9,13 +9,11 @@ $(window).on('scroll load', function() {
 	});
 
 	if(scrollX >= navHeight){
-
 		$('.navbar-mini').css('display','block');
 		$('.navbar-mini').addClass('navbar-fixed-top');
 		setTimeout(function(){
 			$('.navbar-big .trash').removeClass('open');
 		},200);
-
 	}else{
 		$('.navbar-mini .trash').removeClass('open');
 		$('.navbar-mini').removeClass('navbar-fixed-top');
@@ -24,37 +22,72 @@ $(window).on('scroll load', function() {
 
 });
 
-
-
-	$(function() {
-		var availableTags = [
-			"Москва",
-			"Санкт-Петербург",
-			"Новосибирск",
-			"Екатеренбург",
-			"Нижний Новгород",
-			"Уфа",
-			"Красноярск",
-			"Казань",
-			"Самара",
-			"Челябинск",
-			"Омск",
-			"Ростов-на-Дону",
-			"Пермь",
-			"Волгоград",
-			"java",
-			"java",
-			"java",
-			"java"
-		],
-		appTo = $('#auto-comlete');
-		$("#city-res" ).autocomplete({
-			source: availableTags,
-			appendTo: appTo,
-			messages: {
-					noResults: '',
-					results: function() {}
-				}
-		});
-		$('.ui-helper-hidden-accessible').hide();
+$(function() {
+	var availableTags = [
+		"Москва",
+		"Санкт-Петербург",
+		"Новосибирск",
+		"Екатеренбург",
+		"Нижний Новгород",
+		"Уфа",
+		"Красноярск",
+		"Казань",
+		"Самара",
+		"Челябинск",
+		"Омск",
+		"Ростов-на-Дону",
+		"Пермь",
+		"Волгоград",
+		"java",
+		"java",
+		"java",
+		"java"
+	],
+	appTo = $('#auto-comlete');
+	$("#city-res" ).autocomplete({
+		source: availableTags,
+		appendTo: appTo,
+		messages: {
+				noResults: '',
+				results: function() {}
+			}
 	});
+	$('.ui-helper-hidden-accessible').hide();
+});
+
+
+$(document).ready(function(){
+	$(function(e){
+		$(".choose-another-city").click(function(e) {
+			e.preventDefault();
+			$("#question-city").modal('hide');
+			setTimeout(function(){
+				$("#choice-city").modal('show');
+			}, 400)
+		});
+	});
+	$(function(e){
+		$(".buy-one-click").click(function(e) {
+			e.preventDefault();
+			$("#quick-view").modal('hide');
+			setTimeout(function(){
+				$("#buy-one-cl").modal('show');
+			}, 350)
+		});
+	});
+	$(function(e){
+		$(".in-detail").click(function(e) {
+			e.preventDefault();
+			$("#quick-view").modal('hide');
+			setTimeout(function(){
+				$("#product-info").modal('show');
+			}, 350)
+		});
+	});
+});
+
+$(document).ready(function(){
+	$("#filter .dropdown-menu").on('click', function(e) {
+		e.stopPropagation();
+	});
+});

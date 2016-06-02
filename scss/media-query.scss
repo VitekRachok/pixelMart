@@ -20,6 +20,9 @@
 			display: inline-block;
 		}
 	}
+	.navbar-big li>a{
+		padding-bottom: 33px;
+	}
  }
 
 @media (max-width: 1240px) {
@@ -200,19 +203,18 @@
 	.ordering-form .bottom-info > div{
 		width: 100%;
 	}
+	.modal-width{
+		width: 90%;
+	}
 
 }
 @media (max-width: 767px) {
-
-  .navbar-nav  {
-	 display: inline;
-  }
   .navbar-default .navbar-brand {
 	display: inline;
   }
   .navbar-default .navbar-nav .dropdown-menu > li > a {
 	color: red;
-	background-color: #ccc;
+	background-color: #fff;
 	border-radius: 4px;
 	margin-top: 2px;   
   }
@@ -221,7 +223,7 @@
    }
    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-	 background-color: #ccc;
+	 background-color: #fff;
    }
 
    .navbar-nav .open .dropdown-menu {
