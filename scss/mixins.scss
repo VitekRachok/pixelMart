@@ -30,3 +30,13 @@
 	-o-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 }
+@mixin gradient{
+	background: #f5a01e;
+	background: -moz-linear-gradient(-45deg, #f5a01e 0%, #ff0000 30%, #be00aa 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #f5a01e), color-stop(30%, #ff0000), color-stop(100%, #be00aa));
+	background: -webkit-linear-gradient(-45deg, #f5a01e 0%, #ff0000 30%, #be00aa 100%);
+	background: -o-linear-gradient(-45deg, #f5a01e 0%, #ff0000 30%, #be00aa 100%);
+	background: -ms-linear-gradient(-45deg, #f5a01e 0%, #ff0000 30%, #be00aa 100%);
+	background: linear-gradient(135deg, #f5a01e 0%, #ff0000 30%, #be00aa 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5a01e', endColorstr='#be00aa',GradientType=1 );
+}

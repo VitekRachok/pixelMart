@@ -23,3 +23,38 @@ $(window).on('scroll load', function() {
 	}
 
 });
+
+
+
+	$(function() {
+		var availableTags = [
+			"Москва",
+			"Санкт-Петербург",
+			"Новосибирск",
+			"Екатеренбург",
+			"Нижний Новгород",
+			"Уфа",
+			"Красноярск",
+			"Казань",
+			"Самара",
+			"Челябинск",
+			"Омск",
+			"Ростов-на-Дону",
+			"Пермь",
+			"Волгоград",
+			"java",
+			"java",
+			"java",
+			"java"
+		],
+		appTo = $('#auto-comlete');
+		$("#city-res" ).autocomplete({
+			source: availableTags,
+			appendTo: appTo,
+			messages: {
+					noResults: '',
+					results: function() {}
+				}
+		});
+		$('.ui-helper-hidden-accessible').hide();
+	});

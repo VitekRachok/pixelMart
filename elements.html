@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pixel Mart</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/owl.carousel/owl.carousel.css">
+	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="css/style_r.css">
+	<link rel="stylesheet" href="css/style_n.css">
+</head>
+<body>
+
+	<br/>
+	<br/>
+	<br/>
+	<div class="test-mod-btn-wrap text-center">
+		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#question-city">Выбор города</button>
+		
+		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#product-info">Информация о товаре</button>
+
+	</div>
+
+	<!-- MODAL CONFIRM CITY -->
+
+	<div id="question-city" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>
+						Ваш город <span id="modal-city">Новосибирск</span>?
+						<a href="" class="city-confirm btn btn-default" type="button" data-dismiss="modal" aria-label="Close">Да, всё верно</a>
+						<a class="choose-another-city" href="#"  data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#choice-city">Нет, выбрать другой город</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL CONFIRM CITY END-->
+
+
+	<!-- MODAL CHOICE CITY END-->
+
+	<div class="modal fade" id="choice-city" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header background">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Выберите ваш город</h4>
+				</div>
+				<div class="modal-body">
+					<form id="auto-comlete" class="" action="">
+						<input id="city-res">
+					</form>
+					<div class="choice-manually">
+						<p>или выберите из списка</p>
+						<ul>
+							<li><a href="#">Москва</a></li>
+							<li><a href="#">Санкт-Петербург</a></li>
+							<li><a href="#">Новосибирск</a></li>
+							<li><a href="#">Екатеренбург</a></li>
+							<li><a href="#">Нижний Новгород</a></li>
+							<li><a href="#">Уфа</a></li>
+							<li><a href="#">Красноярск</a></li>
+							<li><a href="#">Казань</a></li>
+							<li><a href="#">Самара</a></li>
+							<li><a href="#">Челябинск</a></li>
+							<li><a href="#">Омск</a></li>
+							<li><a href="#">Ростов-на-Дону</a></li>
+							<li><a href="#">Пермь</a></li>
+							<li><a href="#">Волгоград</a></li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL CHOICE CITY END-->
+
+
+
+	<!-- MODAL product info-->
+
+	<!-- Button trigger modal -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="product-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Информация о товаре</h4>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4">
+								<img class="img-responsive" src="images/cat-show1.png" alt="">
+							</div>
+							<div class="col-sm-4">
+								<h4>Описание</h4>
+								<p>
+									Сублимационная печать — печать при которой краска под высокой температурой переходит с сублимационной бумаги на окрашиваему поверхность. В отличие от других способов печати позволяет наносить на поверхность фотографические изображения с высоким качеством. Технология позволяет получить яркие цвета устойчивые к воздействию окружающей среды. Использование данной технологии позволяет нам создавать изображения на следующих товарах: посуда, часы, фартуки, сумки, коврики для мыши.
+								</p>
+							</div>
+							<div class="col-sm-4">
+								<h4>Описание</h4>
+								<p>
+									Изображение нанесенное методом сублимации очень стойкое к истиранию, но все же необходимо следовать рекомендациям:
+									Посуда; Не рекомендуется чистка абразивными материалами (металличеосие щетки и тл) и мытье в посудомоечных машинах.
+									Текстиль: ручная стирка, но допускается стирка в стиральной машине в щадящем режиме при температуре воды до 3О°С. допускается гладить изделие только с обратной стороны, ни в коем случае не гладьте по изображению. Перед стиркой необходимо вывернуть изделие наизнанку! 
+									И никакого отбелеватия!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL  END-->
+
+	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
+	<script src="https://use.fontawesome.com/d6d1c30920.js"></script>
+
+	<script src="js/custom.js"></script>
+	<script src="js/common_n.js"></script>
+</body>
+</html>

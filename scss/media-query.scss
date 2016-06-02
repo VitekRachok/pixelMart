@@ -279,7 +279,54 @@
 			width: 60px;
 		}
 	}
-
+	.modal{
+		.modal-header{
+			height: 50px !important;
+		}
+		.modal-title{
+			font-size: 18px !important;
+		}
+	}
+	#buy-one-cl .modal-body{
+		form{
+			label{
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 34px;
+			}
+		}
+		p{
+			margin-left: 0;
+			text-align: center;
+		}
+	}
+	#buy-one-cl button[type="submit"]{
+		margin: 0 auto;
+		display: block;
+	}
+	#bought{
+		h3{
+			font-size: 30px;
+			margin-top: 25px;
+			margin-bottom: 30px;
+		}
+		.bought-content{
+			p:nth-child(2){
+				margin-bottom: 30px;
+			}
+			button[type="submit"]{
+				display: block;
+				margin: 0 auto 20px;
+				font-size: 18px;
+				height: 40px;
+				line-height: 40px;
+			}
+		}
+		.bought-social-block{
+			padding-top: 20px;
+		}
+	}
 
 }
 

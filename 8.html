@@ -333,7 +333,7 @@
 						<a href="#" class="btn btn-default place-order">Оформить заказ</a>
 						<div class="buy-one-click-wrap text-center">
 							<span>Оформите покупку за 5 минут!</span>
-							<a href="#" class="btn btn-default buy-one-click">Купить в один клик</a>
+							<a href="#" class="btn btn-default buy-one-click" data-toggle="modal" data-target="#buy-one-cl">Купить в один клик</a>
 						</div>
 					</div>
 				</div>
@@ -342,7 +342,73 @@
 	</div>
 
 
+	<div class="modal fade" id="buy-one-cl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header background">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Быстрое оформление заказа</h4>
+				</div>
+				<div class="modal-body">
+					<form id="" class="" action="">
+						<fieldset class="form-group">
+							<label for="">Имя</label>
+							<input type="text" placeholder="">
+						</fieldset>
+						<fieldset class="form-group">
+							<label for="">Телефон</label>
+							<input type="text" placeholder="+7 (___) ___ -__-__">
+						</fieldset>
+						<fieldset class="form-group">
+							<label for=""></label>
+							<button type="submit" class="btn btn-default">Заказать</button>
+						</fieldset>
+					</form>
+					<p>Оператор свяжется с вами в течение 5 минут в рабочее время чтобы оформить заказ</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
+
+	<div class="modal fade" id="bought" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header background">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Поздравляем с покупкой!</h4>
+				</div>
+				<div class="modal-body">
+						<h3>Номер вашего заказа <span class="order-num">897896</span></h3>
+					<div class="bought-content">
+						<img class="img-responsive" src="images/tel-icon.png" alt="">
+						<p>
+							<span>С 9.00 до 23.00 по местному времени с вами свяжется наш менеджер для уточнения данных по заказу.</span>
+						</p>
+						<img class="img-responsive" src="images/email-icon.png" alt="">
+						<p>
+							<span>На ваш e-mail отправлено письмо с паролем для личного кабинета.</span>
+						</p>
+						<button type="submit" class="btn btn-default">Оплатить заказ</button>
+					</div>
+					<div class="bought-social-block">
+						<p>
+							Присоиденяйтесь к нам в социальных сетях:
+							<span class="social-icon">
+								<ul>
+									<li><a href="#"><img src="images/soc-ic3.png" alt=""></a></li>
+									<li><a href="#"><img src="images/soc-ic2.png" alt=""></a></li>
+									<li><a href="#"><img src="images/soc-ic1.png" alt=""></a></li>
+									<li><a href="#"><img src="images/soc-ic6.png" alt=""></a></li>
+									<li><a href="#"><img src="images/soc-ic7.png" alt=""></a></li>
+								</ul>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -352,6 +418,7 @@
 	<![endif]-->
 
 	<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="https://use.fontawesome.com/d6d1c30920.js"></script>

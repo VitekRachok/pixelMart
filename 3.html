@@ -359,8 +359,9 @@
 						  <button class="btn btn-add-to-cart">Добавить в корзину</button>
 
 						  <div class="clearfix form-bottom-btns">
-						  	<a href="#" class="buy-one-click">Купить в 1 клик</a>
+						  	<a href="#" class="buy-one-click" data-toggle="modal" data-target="#buy-one-cl">Купить в 1 клик</a>
 						  	<a href="#" class="set-aside">Отложить товар</a>
+						  	<a href="#" class="set-aside-look">Посмотреть избранное</a>
 						  </div>
 
 					</form>
@@ -755,6 +756,35 @@
 	</div>
 
 
+	<div class="modal fade" id="buy-one-cl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header background">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Быстрое оформление заказа</h4>
+				</div>
+				<div class="modal-body">
+					<form id="" class="" action="">
+						<fieldset class="form-group">
+							<label for="">Имя</label>
+							<input type="text" placeholder="">
+						</fieldset>
+						<fieldset class="form-group">
+							<label for="">Телефон</label>
+							<input type="text" placeholder="+7 (___) ___ -__-__">
+						</fieldset>
+						<fieldset class="form-group">
+							<label for=""></label>
+							<button type="submit" class="btn btn-default">Заказать</button>
+						</fieldset>
+					</form>
+					<p>Оператор свяжется с вами в течение 5 минут в рабочее время чтобы оформить заказ</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -763,6 +793,7 @@
 	<![endif]-->
 
 	<script src="libs/jquery/jquery-2.2.4.min.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="https://use.fontawesome.com/d6d1c30920.js"></script>
