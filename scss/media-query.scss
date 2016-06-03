@@ -1,8 +1,5 @@
 
 @media (min-width: 768px) {
-  // ul.dropdown-menu {
-  //   display: block;
-  // }
   ul.nav li:hover > ul.dropdown-menu {
     display: block;
   }
@@ -60,22 +57,13 @@
 		float: none;
 		height: 45px;
 	}
-	.ordering-form .checkbox{
-		height: auto;
-		margin-left: 0;
-		& div{
-			padding-left: 20px;
-			float: none !important;
-		}
-		label{
-			.stylesheet{
-				padding: 0;
-				margin: 0 auto !important;
-			}
-		}
-		br{
-			display: none;
-		}
+	.bottom-info{
+		margin-left: 0 !important;
+		margin-bottom: 0 !important;
+		float: none !important;
+	}
+	.ordering-form span.error{
+		margin-left: 0 !important
 	}
 	.del{
 		margin: 30px 0 20px !important;
@@ -84,10 +72,12 @@
 		display: none;
 	}
 	.order-inf{
-		padding: 10px 0 !important;
 		float: none !important;
-		text-align: center;
-		display: block !important;
+		width: auto !important;
+		max-width: 450px !important;
+		br{
+			display: none;
+		}
 	}
 	.total-price-block.order .total-price-wrap{
 		margin: 0 auto !important;
@@ -181,9 +171,9 @@
 		float: none !important;
 		margin: auto !important;
 	}
-	.order-item-info{
-		width: 50% !important;
-	}
+	// .order-item-info{
+	// 	width: 50% !important;
+	// }
 	.right-order-list{
 		max-width: 400px;
 	}
@@ -205,6 +195,24 @@
 	}
 	.modal-width{
 		width: 90%;
+	}
+	.order-list{
+		.order-item-img-wrap, .order-item-info{
+			float: none !important;
+			margin: 0 auto !important;
+		}
+		.order-item-info{
+			max-width: 380px;
+			width: auto !important;
+			margin: 0 auto;
+			.order-i-name{
+				text-align: center;
+			}
+			.form-group{
+				width: 100% !important;
+				text-align: center;
+			}
+		}
 	}
 
 }
@@ -245,15 +253,6 @@
 
 }
 @media (max-width: 600px) {
-	.order-list{
-		.order-item-img-wrap, .order-item-info{
-			float: none !important;
-			margin: 0 auto !important;
-		}
-		.order-item-info{
-			width: auto !important;
-		}
-	}
 }
 @media (max-width: $mini) {
 

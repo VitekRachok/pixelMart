@@ -1019,7 +1019,7 @@ a.btn.btn-quick-view {
     -o-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out; }
     .catalog-page-pagination a.btn-info:hover {
-      background-color: #03A6E3; }
+      background-color: #00ccff; }
 
 .pagination-list {
   float: left;
@@ -1115,6 +1115,8 @@ a.btn.btn-quick-view {
     .order-content .order-list .order-item-info .order-i-name {
       margin-top: 15px;
       font-size: 24px; }
+      .order-content .order-list .order-item-info .order-i-name span {
+        display: inline-block; }
     .order-content .order-list .order-item-info .form-group {
       width: 240px;
       margin-bottom: 10px; }
@@ -1207,17 +1209,17 @@ a.btn.btn-quick-view {
               left: 95px;
               border-top-color: #f2f3f4;
               border-top-width: 10px; }
-  .order-content .order-list .order-edit {
-    margin-top: 35px; }
-    .order-content .order-list .order-edit a.btn {
-      border-color: #e5e5e5;
-      color: #a5a7a8;
-      font-size: 14px;
-      width: 160px;
+  .order-content .order-list .order-sum {
+    font-size: 14px; }
+    .order-content .order-list .order-sum .sum {
+      width: 60px;
       height: 40px;
-      line-height: 27px; }
-    .order-content .order-list .order-edit .order-delete {
-      margin-left: 20px; }
+      line-height: 40px;
+      border-radius: 4px;
+      border: 1px solid #e5e5e5;
+      text-align: center; }
+    .order-content .order-list .order-sum .sum-result {
+      font-family: 'Conv_PFAgoraSlabPro-Bold'; }
 
 .can-be-us-col {
   padding: 0 20px 30px;
@@ -1254,7 +1256,7 @@ a.btn.btn-quick-view {
     display: block;
     margin: 0 auto; }
     .can-be-us .can-be-us-wrap .add-to-cart:hover {
-      background-color: #03A6E3; }
+      background-color: #00ccff; }
 
 .total-price-block {
   padding-top: 40px;
@@ -1310,7 +1312,7 @@ a.btn.btn-quick-view {
     -o-transition: background-color 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out; }
     .total-price-block .place-order:hover {
-      background-color: #03A6E3; }
+      background-color: #00ccff; }
   .total-price-block .buy-one-click-wrap {
     float: left;
     margin-left: 40px;
@@ -1378,9 +1380,18 @@ a.btn.btn-quick-view {
   .ordering-form select {
     max-width: 450px;
     height: 50px;
+    border: 1px solid #c8c8c8;
     float: left;
     font-size: 20px;
     font-family: 'Conv_PFAgoraSlabPro-Medium'; }
+  .ordering-form input.error {
+    border: 1px solid #cc0000; }
+  .ordering-form span.error {
+    color: #cc0000;
+    font-size: 14px;
+    display: block;
+    clear: both;
+    margin-left: 150px; }
   .ordering-form .datalist-wrap input {
     width: 450px;
     border-radius: 5px;
@@ -1411,7 +1422,7 @@ a.btn.btn-quick-view {
     background: url(../images/checkbox-field.png) no-repeat center center; }
   .ordering-form .checkbox {
     margin: 10px 0 0;
-    height: 50px;
+    height: 40px;
     line-height: 16px;
     display: inline-block; }
     .ordering-form .checkbox span {
@@ -1424,7 +1435,28 @@ a.btn.btn-quick-view {
     color: #808385; }
   .ordering-form .bottom-info {
     margin-left: 150px;
-    float: left; }
+    margin-bottom: 50px;
+    float: left;
+    max-width: 450px; }
+    .ordering-form .bottom-info:not(#foo) div > input[type='radio'] {
+      position: absolute;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      width: 17px;
+      height: 20px;
+      z-index: 99999;
+      cursor: pointer; }
+    .ordering-form .bottom-info:not(#foo) div > input[type='radio'] + label {
+      padding-left: 24px;
+      position: relative;
+      font-size: 14px;
+      cursor: pointer;
+      height: 20px;
+      color: #808385; }
+    .ordering-form .bottom-info:not(#foo) div > input[type='radio']:checked + label {
+      background-image: url("../images/radio.png");
+      background-repeat: no-repeat;
+      background-position: left center; }
     .ordering-form .bottom-info > div {
       float: left;
       width: 450px;
@@ -1433,7 +1465,8 @@ a.btn.btn-quick-view {
         padding-left: 20px; }
     .ordering-form .bottom-info label {
       padding-left: 0;
-      line-height: 20px; }
+      line-height: 20px;
+      font-weight: normal; }
     .ordering-form .bottom-info a {
       text-decoration: none;
       color: #00baff; }
@@ -1478,16 +1511,13 @@ a.btn.btn-quick-view {
           left: 95px;
           border-top-color: #f2f3f4;
           border-top-width: 10px; }
-  .ordering-form .bottom-info + span {
+  .ordering-form .order-inf {
+    float: left;
     font-size: 14px;
     color: #808385;
     line-height: 16px;
     width: 215px;
     display: inline-block;
-    padding-left: 20px; }
-  .ordering-form .order-inf {
-    float: left;
-    padding-left: 20px;
     padding-top: 8px; }
 
 .right-order-list {
@@ -1590,17 +1620,13 @@ a.btn.btn-quick-view {
     float: none;
     height: 45px; }
 
-  .ordering-form .checkbox {
-    height: auto;
-    margin-left: 0; }
-    .ordering-form .checkbox div {
-      padding-left: 20px;
-      float: none !important; }
-    .ordering-form .checkbox label .stylesheet {
-      padding: 0;
-      margin: 0 auto !important; }
-    .ordering-form .checkbox br {
-      display: none; }
+  .bottom-info {
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+    float: none !important; }
+
+  .ordering-form span.error {
+    margin-left: 0 !important; }
 
   .del {
     margin: 30px 0 20px !important; }
@@ -1609,10 +1635,11 @@ a.btn.btn-quick-view {
     display: none; }
 
   .order-inf {
-    padding: 10px 0 !important;
     float: none !important;
-    text-align: center;
-    display: block !important; }
+    width: auto !important;
+    max-width: 450px !important; }
+    .order-inf br {
+      display: none; }
 
   .total-price-block.order .total-price-wrap {
     margin: 0 auto !important; } }
@@ -1689,9 +1716,6 @@ a.btn.btn-quick-view {
     float: none !important;
     margin: auto !important; }
 
-  .order-item-info {
-    width: 50% !important; }
-
   .right-order-list {
     max-width: 400px; }
 
@@ -1712,7 +1736,20 @@ a.btn.btn-quick-view {
     width: 100%; }
 
   .modal-width {
-    width: 90%; } }
+    width: 90%; }
+
+  .order-list .order-item-img-wrap, .order-list .order-item-info {
+    float: none !important;
+    margin: 0 auto !important; }
+  .order-list .order-item-info {
+    max-width: 380px;
+    width: auto !important;
+    margin: 0 auto; }
+    .order-list .order-item-info .order-i-name {
+      text-align: center; }
+    .order-list .order-item-info .form-group {
+      width: 100% !important;
+      text-align: center; } }
 @media (max-width: 767px) {
   .navbar-default .navbar-brand {
     display: inline; }
@@ -1745,12 +1782,6 @@ a.btn.btn-quick-view {
 
   li.dropdown.open {
     border: 0px solid red; } }
-@media (max-width: 600px) {
-  .order-list .order-item-img-wrap, .order-list .order-item-info {
-    float: none !important;
-    margin: 0 auto !important; }
-  .order-list .order-item-info {
-    width: auto !important; } }
 @media (max-width: 570px) {
   .navbar {
     background-color: #191919; }

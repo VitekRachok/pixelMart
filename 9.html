@@ -232,7 +232,8 @@
 					</fieldset>
 					<fieldset class="form-group">
 						<label class="user-info" for="">ФИО</label>
-						<input type="text" class="form-control" placeholder="">
+						<input type="text" class="form-control error" placeholder="">
+						<span class="error">Обязательное поле</span>
 					</fieldset>
 					<h2 class="del">Доставка</h2>
 					<fieldset class="form-group">
@@ -267,22 +268,46 @@
 							<option value="2">other value</option>
 							<option value="3">other value</option>
 						</select>
-						<div class="checkbox bottom-info">
-							<div>
-								<label>
-									<input type="checkbox">
-									<span class="stylesheet"></span>
-									<span>Постоматы PickPoint — два дня — </span>
-									<span>400<span class="currency"> P</span>
-									<span class="icon-info">
-										<span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span>
-									</span>
-								</label><br/>
+					</fieldset>
+					<fieldset class="bottom-info">
+						<div>
+							<input type="radio" name="radio" id="rb1" />
+							<label for="rb1">
+								<span>Постоматы PickPoint — два дня — </span>
+								<span>400<span class="currency"> P</span>
+								<span class="icon-info">
+									<span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span>
+								</span>
+							</label>
+						</div>
+						<div>
+							<input type="radio" name="radio" id="rb2" />
+							<label for="rb2">
 								<span>Щёлковское шоссе, 204, ТЦ Европа <a href="#">Сменить адрес</a>.</span>
-							</div>
-							<span class="order-inf">Сроки доставки указаны после<br/>изготовления товара (48 часов)</span>
+							</label>
 						</div>
 					</fieldset>
+					<span class="order-inf">Сроки доставки указаны после<br/>изготовления товара (48 часов)</span>
+					<!-- <div class="bottom-info">
+						<fieldset>
+							<input type="radio" value="" name="" id="rb1" />
+							<label for="rb1">
+								<span>Постоматы PickPoint — два дня — </span>
+								<span>400<span class="currency"> P</span>
+								<span class="icon-info">
+									<span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span>
+								</span>
+							</label>
+						</fieldset>
+						<fieldset>
+							<input type="radio" value="" name="" id="rb2" />
+							<label for="rb2">
+								<span>Щёлковское шоссе, 204, ТЦ Европа <a href="#">Сменить адрес</a>.</span>
+							</label>
+						</fieldset>
+						<br/>
+					
+					</div> -->
 				</form>
 			</div>
 			<div class="col-lg-3 col-sm-5">

@@ -1322,7 +1322,9 @@ a.btn.btn-quick-view{
 			.order-i-name{
 				margin-top: 15px;
 				font-size: 24px;
-				// display: none;
+				span{
+					display: inline-block;
+				}
 			}
 			.form-group{
 				width: 240px;
@@ -1432,20 +1434,21 @@ a.btn.btn-quick-view{
 				}
 			}
 		}
-		.order-edit{
-			margin-top: 35px;
-			a.btn{
-				border-color: #e5e5e5;
-				color: #a5a7a8;
-				font-size: 14px;
-				width: 160px;
+		.order-sum{
+			font-size: 14px;
+			.sum{
+				width: 60px;
 				height: 40px;
-				line-height: 27px;
+				line-height: 40px;
+				border-radius: 4px;
+				border: 1px solid #e5e5e5;
+				text-align: center;
 			}
-			.order-delete{
-				margin-left: 20px;
+			.sum-result{
+				font-family: 'Conv_PFAgoraSlabPro-Bold';
 			}
 		}
+
 	}
 }
 .can-be-us-col{
@@ -1632,9 +1635,20 @@ a.btn.btn-quick-view{
 	select{
 		max-width: 450px;
 		height: 50px;
+		border: 1px solid #c8c8c8;
 		float: left;
 		font-size: 20px;
 		font-family: 'Conv_PFAgoraSlabPro-Medium';
+	}
+	input.error{
+		border: 1px solid #cc0000;
+	}
+	span.error{
+		color: #cc0000;
+		font-size: 14px;
+		display: block;
+		clear: both;
+		margin-left: 150px;
 	}
 	.datalist-wrap{
 		input{
@@ -1672,7 +1686,7 @@ a.btn.btn-quick-view{
 	}
 	.checkbox{
 		margin: 10px 0 0;
-		height: 50px;
+		height: 40px;
 		line-height: 16px;
 		display: inline-block;
 		span{
@@ -1689,7 +1703,31 @@ a.btn.btn-quick-view{
 	}
 	.bottom-info{
 		margin-left: 150px;
+		margin-bottom: 50px;
 		float: left;
+		max-width: 450px;
+		&:not(#foo) div > input[type='radio'] {
+			position: absolute;
+			opacity: 0;
+			filter: alpha(opacity=0);
+			width: 17px;
+			height: 20px;
+			z-index:99999;
+			cursor: pointer;
+		}
+		&:not(#foo) div > input[type='radio'] + label {
+			padding-left: 24px;
+			position: relative;
+			font-size: 14px;
+			cursor: pointer;
+			height: 20px;
+			color: #808385;
+		}
+		&:not(#foo) div > input[type='radio']:checked + label {
+			background-image: url('../images/radio.png');
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
 		&>div{
 			float: left;
 			width: 450px;
@@ -1701,6 +1739,7 @@ a.btn.btn-quick-view{
 		label{
 			padding-left: 0;
 			line-height: 20px;
+			font-weight: normal;
 		}
 		a{
 			text-decoration: none;
@@ -1752,17 +1791,13 @@ a.btn.btn-quick-view{
 			}
 		}
 	}
-	.bottom-info + span{
+	.order-inf{
+		float: left;
 		font-size: 14px;
 		color: #808385;
 		line-height: 16px;
 		width: 215px;
 		display: inline-block;
-		padding-left: 20px;
-	}
-	.order-inf{
-		float: left;
-		padding-left: 20px;
 		padding-top: 8px;
 	}
 }

@@ -84,8 +84,20 @@ $(document).ready(function(){
 			}, 350)
 		});
 	});
-});
 
+	// $(function(){
+	// 	// e.stopPropagation();
+	// 	var input = $('.order-sum input'),
+	// 		quantity = $('.order-sum input').val(),
+	// 		price = $('.order-sum .items-price').html(),
+	// 		result = quantity * price.replace(/\s+/g, '');
+
+	// 		input.oninput = function(){
+	// 			$('.sum-result').text(quantity);
+	// 		}
+	// });
+
+});
 $(document).ready(function(){
 	$("#filter .dropdown-menu").on('click', function(e) {
 		e.stopPropagation();

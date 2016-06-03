@@ -669,16 +669,12 @@ section.other-collections {
     font-size: 16px;
     margin-top: 30px;
     border: none;
-    background: -webkit-linear-gradient(90deg, #0099ff 0%, #00ccff 100%);
-    background: -moz-linear-gradient(90deg, #0099ff 0%, #00ccff 100%);
-    background: -o-linear-gradient(90deg, #0099ff 0%, #00ccff 100%);
-    background: -ms-linear-gradient(90deg, #0099ff 0%, #00ccff 100%);
-    background: linear-gradient(0deg, #0099ff 0%, #00ccff 100%);
+    background-color: #00baff;
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     transition: all 0.25s ease; }
     section.other-collections .btn-show-all:hover {
-      opacity: 0.8; }
+      background-color: #00ccff; }
 
 #delivery-tab h4 {
   font-size: 20px;
@@ -904,24 +900,29 @@ section.other-collections {
   color: #fff;
   padding: 0;
   font-size: 14px;
-  background: -webkit-linear-gradient(90deg, #0099ff 0%, #00ccff 100%);
-  background: -moz-linear-gradient(90deg, #0099ff 0%, #00ccff 100%);
-  background: -o-linear-gradient(90deg, #0099ff 0%, #00ccff 100%);
-  background: -ms-linear-gradient(90deg, #0099ff 0%, #00ccff 100%);
-  background: linear-gradient(0deg, #0099ff 0%, #00ccff 100%);
-  border: none; }
+  background-color: #00baff;
+  border: none;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
   .trash .btn-take-order:hover {
-    color: #fff; }
+    background-color: #00ccff;
+    color: #ffffff;
+    text-decoration: none; }
 .trash .btn-to-trash {
   display: inline-block;
   text-decoration: none;
-  opacity: 0.6;
   font-size: 14px;
-  box-shadow: none; }
+  box-shadow: none;
+  color: #808385;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease; }
   .trash .btn-to-trash:hover, .trash .btn-to-trash:focus {
     background-color: transparent;
     border-color: transparent;
-    text-decoration: underline; }
+    text-decoration: none;
+    color: #53585a; }
 .trash .btn-wrap {
   text-align: center;
   line-height: 50px;
