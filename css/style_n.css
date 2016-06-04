@@ -1074,27 +1074,27 @@ section.other-collections .btn-show-all:hover {
   font-family: 'PFAgoraSlabPro-Black';
 }
 
-#delivery-tab .delivery-icon, #delivery-tab .pickPoint-icon {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  float: right;
-}
-
-#delivery-tab .delivery-icon {
-  background: url(../images/delivery-icon.png) no-repeat center center;
-}
-
-#delivery-tab .pickPoint-icon {
-  background: url(../images/PickPoint.png) no-repeat center center;
-}
-
 #delivery-tab .price-title {
   padding-left: 0;
 }
 
 #delivery-tab .delivery-list h4 {
   margin-left: -15px;
+}
+
+.delivery-icon, .pickPoint-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  float: right;
+}
+
+.delivery-icon {
+  background: url(../images/delivery-icon.png) no-repeat center center;
+}
+
+.pickPoint-icon {
+  background: url(../images/PickPoint.png) no-repeat center center;
 }
 
 .rating-wrap {
@@ -1365,6 +1365,108 @@ section.other-collections .btn-show-all:hover {
   margin-top: 15px;
 }
 
+section.s-deliver {
+  margin-bottom: 110px;
+}
+
+section.s-deliver h3 {
+  text-align: center;
+  font-size: 45px;
+}
+
+section.s-deliver h3 a {
+  color: #00baff;
+  text-decoration: none;
+  border-bottom: 1px dashed #00baff;
+}
+
+section.s-deliver h3 + p {
+  text-align: center;
+  color: #808385;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+section.s-deliver .deliver-way {
+  padding-left: 70px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+section.s-deliver .deliver-way .way-icon {
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.s-deliver .deliver-way.way-self .way-icon {
+  background-image: url(../images/deliver-icon1.png);
+}
+
+section.s-deliver .deliver-way.way-courier .way-icon {
+  background-image: url(../images/deliver-icon2.png);
+}
+
+section.s-deliver .deliver-way.way-postmat .way-icon {
+  background-image: url(../images/deliver-icon3.png);
+}
+
+section.s-deliver .deliver-way .deliver-title {
+  font-size: 24px;
+  margin: 0 -15px;
+  border-bottom: 1px solid #ededed;
+}
+
+section.s-deliver .deliver-way .s-deliver-row {
+  border-bottom: 1px solid #ededed;
+  padding: 7px 0;
+}
+
+section.s-deliver .deliver-way .s-deliver-row b {
+  font-family: 'PFAgoraSlabPro-Black';
+}
+
+section.s-deliver .deliver-way .small-title {
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+section.s-deliver .deliver-way .small-title.color-red {
+  color: #fff;
+  background-color: #ff6600;
+}
+
+section.s-deliver .deliver-way .small-title.color-green {
+  color: #fff;
+  background-color: #33cc00;
+}
+
+section.s-deliver .delivery-icon, section.s-deliver .pickPoint-icon {
+  margin-right: 190px;
+}
+
+section.s-deliver .price-row .small-title {
+  float: left;
+}
+
+section.s-deliver .price-row a {
+  float: right;
+  color: #00baff;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
 @media (min-width: 1300px) {
   .container {
     width: 1230px;
@@ -1413,6 +1515,9 @@ section.other-collections .btn-show-all:hover {
   }
   section.other-collections .item-cover {
     height: 212.5px;
+  }
+  section.s-deliver .delivery-icon, section.s-deliver .pickPoint-icon {
+    margin-right: 70px;
   }
 }
 
@@ -1495,6 +1600,12 @@ section.other-collections .btn-show-all:hover {
   }
   #delivery-tab .price-title {
     padding-left: 15px;
+  }
+  .deliver-type {
+    margin-bottom: 10px;
+  }
+  section.s-deliver .delivery-icon, section.s-deliver .pickPoint-icon {
+    margin-right: 300px;
   }
 }
 
@@ -1597,6 +1708,25 @@ section.other-collections .btn-show-all:hover {
     max-width: 345px;
     margin: 0 auto;
   }
+  section.s-deliver {
+    padding: 0 15px;
+  }
+  section.s-deliver .s-deliver-row .price-row {
+    margin-top: 15px;
+  }
+  section.s-deliver .s-deliver-row .price-row .small-title, section.s-deliver .s-deliver-row .price-row a {
+    float: none;
+    display: inline-block;
+    width: 110px;
+    text-align: center;
+  }
+  section.s-deliver .delivery-icon, section.s-deliver .pickPoint-icon {
+    margin-right: 0;
+    float: none;
+    margin-left: 15px;
+    position: relative;
+    top: 7px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -1667,6 +1797,9 @@ section.other-collections .btn-show-all:hover {
   }
   .trash .dropdown-menu {
     width: 320px;
+  }
+  section.s-deliver h3 {
+    font-size: 35px;
   }
 }
 

@@ -34,6 +34,8 @@
 		padding: 0 15px !important
 	section.other-collections .item-cover
 		height: 212.5px
+	section.s-deliver .delivery-icon, section.s-deliver .pickPoint-icon
+		margin-right: 70px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -97,6 +99,10 @@
 				margin-left: 0
 		.price-title
 			padding-left: 15px
+	.deliver-type
+		margin-bottom: 10px
+	section.s-deliver .delivery-icon, section.s-deliver .pickPoint-icon
+		margin-right: 300px
 
 
 /* Small Devices, Tablets */
@@ -173,6 +179,21 @@
 	section.other-collections .item-cover
 		max-width: 345px
 		margin: 0 auto
+	section.s-deliver 
+		padding: 0 15px
+		.s-deliver-row .price-row
+			margin-top: 15px
+			.small-title, a 
+				float: none
+				display: inline-block
+				width: 110px
+				text-align: center
+		.delivery-icon, .pickPoint-icon
+			margin-right: 0
+			float: none
+			margin-left: 15px
+			position: relative
+			top: 7px
 
 
 
@@ -227,6 +248,8 @@
 		max-width: 20px
 	.trash .dropdown-menu
 		width: 320px
+	section.s-deliver h3
+		font-size: 35px
 
 @media only screen and (max-width : 380px)
 	.carousel-row .upload-btn
