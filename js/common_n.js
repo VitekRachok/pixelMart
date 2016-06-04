@@ -1,8 +1,24 @@
 $(document).ready(function () {
 
-	// Init home page carousel
+  // Init home page carousel
   var homeOwl = $("#home-carousel");
   homeOwl.owlCarousel({
+    items: 1,
+    nav: true,
+    navText: "",
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    //autoplaySpeed: 5000,
+    //autoplayTimeout: 1000,
+    autoplay: true,
+    autoplayHoverPause: true,
+    mouseDrag: false,
+    loop: true,
+  });
+
+	// Init instagram carousel
+  var insOwl = $("#ins-slider");
+  insOwl.owlCarousel({
     items: 1,
     nav: true,
     navText: "",

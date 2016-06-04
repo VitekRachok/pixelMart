@@ -85,21 +85,89 @@ $(document).ready(function(){
 		});
 	});
 
-	// $(function(){
-	// 	// e.stopPropagation();
-	// 	var input = $('.order-sum input'),
-	// 		quantity = $('.order-sum input').val(),
-	// 		price = $('.order-sum .items-price').html(),
-	// 		result = quantity * price.replace(/\s+/g, '');
-
-	// 		input.oninput = function(){
-	// 			$('.sum-result').text(quantity);
-	// 		}
-	// });
-
 });
+
 $(document).ready(function(){
 	$("#filter .dropdown-menu").on('click', function(e) {
 		e.stopPropagation();
 	});
+});
+
+$(document).ready(function(){
+
+	var navMenu = $('.nav-center, .contacts-header'),
+		navMenuBig = $('.navbar-big .nav-center, .navbar-big .contacts-header'),
+		navSearch = $('.nav-search'),
+		searchBlock = $('.search-block'),
+		searchInput = $('.search-input'),
+		searchList = $('.search-list');
+
+	navSearch.on('click', function(e){
+
+		e.preventDefault();
+		var thisEl = $(this);
+
+		thisEl.parents('.navbar').find(navMenu).animate({
+			'opacity': 0
+		},200)
+		setTimeout(function(){
+			thisEl.parents('.navbar').find(navMenu).css('display', 'none');
+		},200);
+
+		setTimeout(function(){
+			thisEl.parents('.navbar').find(searchBlock).css('display', 'block').animate({
+				'opacity': 1
+			},200)
+		},200);
+
+	})
+
+	searchInput.keyup(function(){
+		$(this).next(searchList).css('display', 'block').animate({
+			'opacity': 1
+		},200)
+	})
+
+	searchBlock.find('.close').on('click', function(){
+		(searchBlock && searchList).animate({
+			'opacity': 0
+		},200)
+		setTimeout(function(){
+			searchBlock.css('display', 'none');
+		},200);
+		setTimeout(function(){
+			navMenu.css('display', 'block').animate({
+					'opacity': 1
+				},200)
+		},200);
+	});
+
+	$(window).on('scroll load', function() {
+
+		var scrollX = $(this).scrollTop(),
+			navHeight = $('.navbar-big').height();
+
+		if(scrollX >= navHeight){
+			$('.navbar-big .search-block').css({
+				'display': 'none'
+			});
+			navMenuBig.css({
+				'display': 'block',
+				'opacity': 1
+			})
+		}
+	});
+});
+
+$(window).on('resize load', function() {
+
+	var bigImg = $('.instagram-img.big'),
+		smallImg = $('.instagram-img.small'),
+		bigImgHeigh = bigImg.height(),
+		smallImage = smallImg.find('img');
+
+		smallImg.height(bigImgHeigh/2-15);
+		smallImage.css({
+			'margin-top': (smallImg.height()-smallImage.height())/2
+		});
 });
