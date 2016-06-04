@@ -409,18 +409,7 @@ section.other-collections
 		font-size: 37px
 		font-family: 'PFAgoraSlabPro-Light'
 		margin-top: 0
-		margin-bottom: 20px
-	.item-cover
-		background-color: #ececec
-		height: 277.5px
-		text-align: center
-		position: relative
-		margin-bottom: 23px
-		img
-			position: absolute
-			@include centerer
-			max-width: 245px
-			max-height: 245px
+		margin-bottom: 30px
 	.title
 		font-size: 18px
 	.descr
@@ -445,6 +434,55 @@ section.other-collections
 		+transition(all $duration ease)
 		&:hover
 			background-color: #00ccff
+
+
+.pattern-item-cover
+	height: 277.5px
+	position: relative
+	margin-bottom: 23px
+	cursor: crosshair
+	&:hover
+		img.pattern-image
+			opacity: 0
+			visibility: hidden
+		a.view-pattern
+			opacity: 1
+			visibility: visible
+	img
+		max-width: 100%
+		max-height: 100%
+		&.pattern-image
+			position: absolute
+			top: 0
+			left: 0
+			opacity: 1
+			visibility: visible
+			+transition(all 0.5s ease)
+	.view-pattern-wrap
+		position: absolute
+		bottom: 18px
+		width: 100%
+		text-align: center
+	.view-pattern
+		width: 155px
+		height: 40px
+		line-height: 40px
+		background-color: #fff
+		border: 1px solid #fff
+		display: inline-block
+		font-size: 14px
+		color: rgba(83, 88, 90, .8)
+		font-family: 'PFAgoraSlabPro-Light'
+		border-radius: 4px
+		text-decoration: none		
+		+transition(all 0.25s ease)
+		+transition(opacity 0.5s ease)
+		opacity: 0
+		visibility: hidden
+		&:hover
+			background-color: darken(#fff, 5%)
+			border-color: darken(#fff, 5%)
+
 
 #delivery-tab
 	h4
