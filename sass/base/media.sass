@@ -19,6 +19,8 @@
 		img
 			max-width: 85%
 			max-height: 85%
+	.my-profile form.default-form label
+		margin-left: 110px
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
@@ -40,6 +42,12 @@
 		margin-left: 25px
 	section.contact-address .company-details
 		margin-left: 0
+	.my-profile form.default-form 
+		label
+			margin-left: 55px
+		.checkbox-style label
+			font-size: 12px
+			line-height: 22px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -211,7 +219,7 @@
 			width: 390px
 			height: 50px
 			line-height: 50px
-	.contact-info form
+	.default-form
 		max-width: 500px
 		margin: 0 auto
 		select, textarea
@@ -219,7 +227,19 @@
 	form.default-form label
 		padding-bottom: 0
 		margin-left: 15px
-
+	.profile-nav 
+		.user-info, ul
+			display: block
+			float: none
+		ul
+			border-bottom: 1px solid #e5e5e5
+			li a 
+				padding: 22px 15px
+	.profile-nav
+		height: auto
+	.my-profile form.default-form label
+		margin-left: 15px
+	
 
 
 
@@ -291,6 +311,18 @@
 			font-size: 12px
 	.address-col
 		width: 100%
+	.profile-nav .nav-wrap
+		display: block
+	.profile-nav ul 
+		border-bottom: none
+		li
+			float: none
+			display: block
+			margin-bottom: 1px
+	.btn-wrap
+		button
+			display: block
+			margin: 0 auto 15px !important
 
 
 @media only screen and (max-width : 380px)

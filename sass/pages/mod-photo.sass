@@ -183,37 +183,6 @@
 					left: 95px
 					border-top-color: #f2f3f4
 					border-top-width: 10px
-	.checkbox-style
-		margin: 10px 0
-		label
-			padding-left: 0
-			opacity: 1
-			color: #808385
-			display: inline-block
-		input[type="checkbox"]
-			opacity: 0
-			width: 16px
-			height: 16px
-			position: absolute
-			cursor: pointer
-			+ span.stylesheet
-				display: inline-block
-				width: 16px
-				height: 16px
-				margin-right: 5px
-				vertical-align: middle
-				position: relative
-				top: -2px
-				background: url(../images/checkbox-field.png) no-repeat center center
-		label
-			&:hover
-				color: #53585a
-				span.stylesheet
-					background: url(../images/checkbox-hover.png) no-repeat center center
-		input[type="checkbox"]:checked + span.stylesheet
-			background: url(../images/checkbox-checked.png) no-repeat center center
-			+ span
-				color: #53585a
 	.old-price, .new-price
 		font-family: 'PFAgoraSlabPro-Black'
 	.old-price
@@ -296,6 +265,40 @@
 		&:hover
 			background-color: #00baff
 			color: #ffffff
+
+
+.checkbox-style
+	margin: 10px 0
+	label
+		padding-left: 0
+		opacity: 1
+		color: #808385
+		display: inline-block !important
+	input[type="checkbox"]
+		opacity: 0
+		width: 16px
+		height: 16px
+		position: absolute
+		cursor: pointer
+		+ span.stylesheet
+			display: inline-block
+			width: 16px
+			height: 16px
+			margin-right: 5px
+			vertical-align: middle
+			position: relative
+			top: -2px
+			background: url(../images/checkbox-field.png) no-repeat center center
+	label
+		&:hover
+			color: #53585a
+			span.stylesheet
+				background: url(../images/checkbox-hover.png) no-repeat center center
+	input[type="checkbox"]:checked + span.stylesheet
+		background: url(../images/checkbox-checked.png) no-repeat center center
+		+ span
+			color: #53585a
+
 
 .mod-left-col
 	padding-right: 30px
