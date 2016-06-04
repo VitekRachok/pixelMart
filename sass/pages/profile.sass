@@ -96,3 +96,88 @@
 			color: rgba(83, 88, 90, .6)
 			&:hover
 				text-decoration: underline
+
+.order-history
+	margin-bottom: 110px
+	h5
+		font-size: 37px
+		font-family: 'PFAgoraSlabPro-Light'
+		margin: 45px 0
+		text-align: center
+	.panel
+		padding: 0 15px
+		border: 1px solid transparent
+		box-shadow: none
+		margin-bottom: 10px
+		&.open-panel
+			box-shadow: 0 0px 10px 1px #eee
+			border: 1px solid #eee
+		.panel-body
+			border-top: none !important
+	.panel-heading
+		padding: 0
+		background-color: transparent
+		border-bottom: 1px solid #e5e5e5
+		.panel-title
+			a 	
+				display: block
+				padding: 20px 0
+				text-decoration: none
+				font-size: 14px
+				position: relative
+				outline: none
+				&.collapsed
+					.slide-down
+						display: none
+					.slide-up
+						display: inline-block
+				.title-col
+					display: inline-block
+					width: 25%
+					float: left
+				.slide-up
+					display: none
+				.slide-wrap, .small-title
+					float: right
+				.order-date
+					margin-left: 15px
+				.order-number
+					font-size: 15px
+				.order-price
+					margin-left: 20px
+					font-family: 'PFAgoraSlabPro-Black'
+				.order-date, .order-number, .order-price, .small-title, .slide-wrap
+					height: 29px
+					line-height: 29px
+				.small-title
+					margin-right: 15px
+					&.color-green
+						color: #fff
+						background-color: #33cc00
+						border-color: #33cc00
+						padding: 0 20px
+						border-radius: 4px
+				.slide-wrap	
+					color: #00baff
+				.slide-down, .slide-up
+					&:hover
+						text-decoration: underline
+	ul.status-list
+		li
+			&:first-child
+				background-color: transparent
+				color: #53585a
+				margin: 0
+				padding: 0
+				border-radius: 0
+	.order-details
+		font-size: 14px
+		color: #00baff
+		margin: 23px 0
+	.other-info
+		font-size: 14px
+		margin-bottom: 55px
+		.text-dashed
+			border-bottom: 1px dashed #eee
+		b
+			font-family: 'PFAgoraSlabPro-Black'

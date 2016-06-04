@@ -1533,60 +1533,6 @@ section.s-order button.find-out-status:hover {
   border-color: #33c8ff;
 }
 
-section.s-order ul.status-list {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  text-align: left;
-}
-
-section.s-order ul.status-list li {
-  height: 36px;
-  line-height: 36px;
-  font-size: 14px;
-  border-bottom: 1px solid #ececec;
-}
-
-section.s-order ul.status-list li:first-child {
-  background-color: #33cc00;
-  color: #fff;
-  margin: 0 -10px;
-  padding: 0 10px;
-  border-radius: 4px;
-}
-
-section.s-order ul.status-list li:nth-child(2) {
-  opacity: 0.9;
-}
-
-section.s-order ul.status-list li:nth-child(3) {
-  opacity: 0.8;
-}
-
-section.s-order ul.status-list li:nth-child(4) {
-  opacity: 0.7;
-}
-
-section.s-order ul.status-list li:nth-child(5) {
-  opacity: 0.6;
-}
-
-section.s-order ul.status-list li:nth-child(6) {
-  opacity: 0.5;
-}
-
-section.s-order ul.status-list li:nth-child(7) {
-  opacity: 0.4;
-}
-
-section.s-order ul.status-list li .status-date {
-  float: left;
-}
-
-section.s-order ul.status-list li .status-type {
-  float: right;
-}
-
 section.contact-info {
   margin-bottom: 60px;
 }
@@ -1621,6 +1567,60 @@ section.contact-address .row {
 
 section.contact-address .phone-town {
   color: rgba(83, 88, 90, 0.8);
+}
+
+ul.status-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+ul.status-list li {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  border-bottom: 1px solid #ececec;
+}
+
+ul.status-list li:first-child {
+  background-color: #33cc00;
+  color: #fff;
+  margin: 0 -10px;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+ul.status-list li:nth-child(2) {
+  opacity: 0.9;
+}
+
+ul.status-list li:nth-child(3) {
+  opacity: 0.8;
+}
+
+ul.status-list li:nth-child(4) {
+  opacity: 0.7;
+}
+
+ul.status-list li:nth-child(5) {
+  opacity: 0.6;
+}
+
+ul.status-list li:nth-child(6) {
+  opacity: 0.5;
+}
+
+ul.status-list li:nth-child(7) {
+  opacity: 0.4;
+}
+
+ul.status-list li .status-date {
+  float: left;
+}
+
+ul.status-list li .status-type {
+  float: right;
 }
 
 form.default-form > .row {
@@ -1853,6 +1853,135 @@ form.default-form img {
 
 .my-profile form.default-form .edit-cansel:hover {
   text-decoration: underline;
+}
+
+.order-history {
+  margin-bottom: 110px;
+}
+
+.order-history h5 {
+  font-size: 37px;
+  font-family: 'PFAgoraSlabPro-Light';
+  margin: 45px 0;
+  text-align: center;
+}
+
+.order-history .panel {
+  padding: 0 15px;
+  border: 1px solid transparent;
+  box-shadow: none;
+  margin-bottom: 10px;
+}
+
+.order-history .panel.open-panel {
+  box-shadow: 0 0px 10px 1px #eee;
+  border: 1px solid #eee;
+}
+
+.order-history .panel .panel-body {
+  border-top: none !important;
+}
+
+.order-history .panel-heading {
+  padding: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.order-history .panel-heading .panel-title a {
+  display: block;
+  padding: 20px 0;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  outline: none;
+}
+
+.order-history .panel-heading .panel-title a.collapsed .slide-down {
+  display: none;
+}
+
+.order-history .panel-heading .panel-title a.collapsed .slide-up {
+  display: inline-block;
+}
+
+.order-history .panel-heading .panel-title a .title-col {
+  display: inline-block;
+  width: 25%;
+  float: left;
+}
+
+.order-history .panel-heading .panel-title a .slide-up {
+  display: none;
+}
+
+.order-history .panel-heading .panel-title a .slide-wrap, .order-history .panel-heading .panel-title a .small-title {
+  float: right;
+}
+
+.order-history .panel-heading .panel-title a .order-date {
+  margin-left: 15px;
+}
+
+.order-history .panel-heading .panel-title a .order-number {
+  font-size: 15px;
+}
+
+.order-history .panel-heading .panel-title a .order-price {
+  margin-left: 20px;
+  font-family: 'PFAgoraSlabPro-Black';
+}
+
+.order-history .panel-heading .panel-title a .order-date, .order-history .panel-heading .panel-title a .order-number, .order-history .panel-heading .panel-title a .order-price, .order-history .panel-heading .panel-title a .small-title, .order-history .panel-heading .panel-title a .slide-wrap {
+  height: 29px;
+  line-height: 29px;
+}
+
+.order-history .panel-heading .panel-title a .small-title {
+  margin-right: 15px;
+}
+
+.order-history .panel-heading .panel-title a .small-title.color-green {
+  color: #fff;
+  background-color: #33cc00;
+  border-color: #33cc00;
+  padding: 0 20px;
+  border-radius: 4px;
+}
+
+.order-history .panel-heading .panel-title a .slide-wrap {
+  color: #00baff;
+}
+
+.order-history .panel-heading .panel-title a .slide-down:hover, .order-history .panel-heading .panel-title a .slide-up:hover {
+  text-decoration: underline;
+}
+
+.order-history ul.status-list li:first-child {
+  background-color: transparent;
+  color: #53585a;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.order-history .order-details {
+  font-size: 14px;
+  color: #00baff;
+  margin: 23px 0;
+}
+
+.order-history .other-info {
+  font-size: 14px;
+  margin-bottom: 55px;
+}
+
+.order-history .other-info .text-dashed {
+  border-bottom: 1px dashed #eee;
+}
+
+.order-history .other-info b {
+  font-family: 'PFAgoraSlabPro-Black';
 }
 
 @media (min-width: 1300px) {
@@ -2175,6 +2304,22 @@ form.default-form img {
   .my-profile form.default-form label {
     margin-left: 15px;
   }
+  .order-history .panel-heading .panel-title a .title-col {
+    width: 100%;
+  }
+  .order-history .panel-heading .panel-title a .small-title {
+    display: inline-block;
+    float: none;
+    margin-top: 10px;
+  }
+  .order-history .panel-heading .panel-title a .order-date {
+    margin-left: 0;
+  }
+  .slide-wrap {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -2261,8 +2406,12 @@ form.default-form img {
     height: 40px;
     line-height: 40px;
   }
-  section.s-order ul.status-list li {
-    font-size: 12px;
+  ul.status-list li {
+    height: auto;
+  }
+  ul.status-list li .status-date, ul.status-list li .status-type {
+    float: none;
+    display: block;
   }
   .address-col {
     width: 100%;
@@ -2281,6 +2430,13 @@ form.default-form img {
   .btn-wrap button {
     display: block;
     margin: 0 auto 15px !important;
+  }
+  .full-480 {
+    width: 100%;
+  }
+  .order-history .panel-heading .panel-title a .order-price {
+    display: block;
+    margin-left: 0;
   }
 }
 

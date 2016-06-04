@@ -239,8 +239,18 @@
 		height: auto
 	.my-profile form.default-form label
 		margin-left: 15px
-	
-
+	.order-history .panel-heading .panel-title a .title-col
+		width: 100%
+	.order-history .panel-heading .panel-title a .small-title
+		display: inline-block
+		float: none
+		margin-top: 10px
+	.order-history .panel-heading .panel-title a .order-date
+		margin-left: 0
+	.slide-wrap
+		position: absolute
+		top: 15px
+		right: 10px
 
 
 @media only screen and (max-width : 680px)
@@ -265,6 +275,8 @@
 		margin-left: 15px
 		position: relative
 		top: 5px
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -307,8 +319,11 @@
 			width: 250px
 			height: 40px
 			line-height: 40px
-		ul.status-list li
-			font-size: 12px
+	ul.status-list li
+		height: auto
+		.status-date, .status-type
+			float: none
+			display: block
 	.address-col
 		width: 100%
 	.profile-nav .nav-wrap
@@ -323,6 +338,11 @@
 		button
 			display: block
 			margin: 0 auto 15px !important
+	.full-480
+		width: 100%
+	.order-history .panel-heading .panel-title a .order-price
+		display: block
+		margin-left: 0
 
 
 @media only screen and (max-width : 380px)
