@@ -36,6 +36,10 @@
 		height: 212.5px
 	section.s-deliver .delivery-icon, section.s-deliver .pickPoint-icon
 		margin-right: 70px
+	form.default-form label
+		margin-left: 25px
+	section.contact-address .company-details
+		margin-left: 0
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -103,6 +107,8 @@
 		margin-bottom: 10px
 	section.s-deliver .delivery-icon, section.s-deliver .pickPoint-icon
 		margin-right: 300px
+	section.contact-address .company-details
+		margin-bottom: 30px
 
 
 /* Small Devices, Tablets */
@@ -205,6 +211,15 @@
 			width: 390px
 			height: 50px
 			line-height: 50px
+	.contact-info form
+		max-width: 500px
+		margin: 0 auto
+		select, textarea
+			margin-top: 10px
+	form.default-form label
+		padding-bottom: 0
+		margin-left: 15px
+
 
 
 
@@ -259,7 +274,7 @@
 		max-width: 20px
 	.trash .dropdown-menu
 		width: 320px
-	section.s-deliver h3, section.s-order h3
+	section.s-deliver h3, section.s-order h3, section.contact-info h3
 		font-size: 35px
 	section.s-order 
 		ul.order-number li
@@ -274,6 +289,9 @@
 			line-height: 40px
 		ul.status-list li
 			font-size: 12px
+	.address-col
+		width: 100%
+
 
 @media only screen and (max-width : 380px)
 	.carousel-row .upload-btn

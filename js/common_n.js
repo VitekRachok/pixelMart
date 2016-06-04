@@ -97,5 +97,20 @@ $(document).ready(function () {
   	checkTrashScroll();
   })
 
+  $('#sub-contact-form').validate({
+    messages: {
+      userName: "Введите Ваше имя",
+      userEmail: {
+           required: "Введите електронную почту",
+           email: "Пожалуйста, введите корректную почту",
+      },
+      userMessage: "Введите свое сообщение",
+      userCode: "Введите код"
+    }
+
+  });
+
+
+
 
 })

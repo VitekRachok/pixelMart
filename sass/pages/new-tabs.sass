@@ -146,8 +146,77 @@ section
 				.status-type
 					float: right
 
+	&.contact-info
+		margin-bottom: 60px
+		h3
+			text-align: center
+			font-size: 45px
+			margin-bottom: 40px
+	&.contact-address
+		padding: 45px 0 110px
+		font-size: 14px
+		p 
+			font-size: 24px
+			margin-bottom: 20px
+		.company-details
+			margin-left: 95px
+			.detail-label
+				color: rgba(83, 88, 90, 0.6)
+		.row
+			padding: 3px 0
+		.phone-town
+			color: rgba(83, 88, 90, 0.8)
 
-
+			
+form.default-form
+	.row	
+		margin-top: 10px
+		margin-bottom: 10px
+	label
+		font-size: 14px
+		font-weight: 400
+		color: #808385
+		margin-left: 95px
+		margin-bottom: 0
+		padding: 14px 0
+		&.error
+			margin: 0
+			padding: 0
+			font-size: 12px
+			color: #cc0033
+	input, select, textarea
+		border: 1px solid #c8c8c8
+		border-radius: 4px
+		width: 100%
+		display: block
+		padding: 6px 12px
+		+transition(all 0.25s ease)
+		&:focus
+			border-color: #53585a
+			box-shadow: 0 0 0 1px #53585a
+	input, select
+		height: 50px
+	textarea
+		height: 80px
+		resize: none
+	select
+		+appearance(none)
+		background: url(../images/select-arrow.png) no-repeat 97% center
+	.send-contact-form
+		width: 100%
+		height: 50px
+		line-height: 50px
+		color: #fff
+		border-radius: 4px
+		background-color: #00baff
+		border: 1px solid #00baff
+		+transition(all 0.25s ease)
+		&:hover
+			background-color: lighten(#00baff, 10%)
+			border-color: lighten(#00baff, 10%)
+	img
+		max-width: 100%
+		height: 50px
 
 .no-padding-left
 	padding-left: 0
