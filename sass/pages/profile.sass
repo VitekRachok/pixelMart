@@ -1,0 +1,98 @@
+.profile-nav
+	border-bottom: 1px solid #e5e5e5
+	font-size: 14px
+	height: 66px
+	.nav-wrap
+		display: inline-block
+	.user-info
+		display: inline-block
+		float: left
+		padding: 17px 25px 17px 0
+		.user-name
+			margin-left: 10px
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		display: inline-block
+		float: left
+		li
+			float: left
+			a
+				color: #00baff
+				display: block
+				padding: 22px 20px
+				position: relative
+				text-decoration: none
+				+transition(all 0.25s ease)
+				&:hover
+					background-color: #f2f3f4
+			&.active
+				a 
+					color: #53585a
+					&:hover
+						background-color: transparent
+					&:after
+						content: ''
+						position: absolute
+						width: 100%
+						height: 2px
+						bottom: -1px
+						left: 0
+						background: #ff6600
+						background: -moz-linear-gradient(left, #ff6600 0%, #cc0033 100%)
+						background: -webkit-linear-gradient(left, #ff6600 0%, #cc0033 100%)
+						background: linear-gradient(to right, #ff6600 0%, #cc0033 100%)
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6600', endColorstr='#cc0033',GradientType=1 )
+
+
+.my-profile
+	margin-bottom: 110px
+	h5
+		font-size: 37px
+		font-family: 'PFAgoraSlabPro-Light'
+		margin: 45px 0
+		text-align: center
+	form.default-form 
+		label
+			margin-left: 130px
+		.checkbox-style
+			margin: 0
+			label
+				margin-left: 0
+		a 
+			display: inline-block
+			opacity: 1
+			+transition(all 0.25s ease)
+			&:hover
+				opacity: 0.8
+			img
+				width: 40px
+				height: 40px
+		.tie-soc
+			margin-left: 25px
+			margin-right: 5px
+			font-size: 14px
+			color: #808385
+		.btn-wrap
+			margin-top: 30px
+		.edit-save
+			width: 240px
+			height: 40px
+			font-size: 14px
+			color: #fff
+			background-color: #00baff
+			border: 1px solid #00baff
+			border-radius: 4px
+			margin-right: 15px
+			+transition(all 0.25s ease)
+			&:hover
+				background-color: lighten(#00baff, 10%)
+				border-color: lighten(#00baff, 10%)
+		.edit-cansel
+			background-color: transparent
+			border: none
+			font-size: 14px
+			color: rgba(83, 88, 90, .6)
+			&:hover
+				text-decoration: underline

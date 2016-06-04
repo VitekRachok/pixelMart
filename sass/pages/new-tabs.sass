@@ -1,0 +1,222 @@
+section
+	&.s-deliver
+		margin-bottom: 110px
+		h3
+			text-align: center
+			font-size: 45px
+			a 
+				color: #00baff
+				text-decoration: none
+				border-bottom: 1px dashed #00baff
+			+ p 
+				text-align: center
+				color: #808385
+				margin-bottom: 50px
+				margin-top: 10px
+		.deliver-way
+			padding-left: 70px
+			margin-bottom: 40px
+			position: relative
+			.way-icon
+				width: 33px
+				height: 33px
+				display: inline-block
+				background-position: center center
+				background-repeat: no-repeat
+				position: absolute
+				top: 0
+				left: 0
+			&.way-self
+				.way-icon	
+					background-image: url(../images/deliver-icon1.png)
+			&.way-courier
+				.way-icon
+					background-image: url(../images/deliver-icon2.png)
+			&.way-postmat
+				.way-icon
+					background-image: url(../images/deliver-icon3.png)					
+			.deliver-title
+				font-size: 24px
+				margin: 0 -15px
+				border-bottom: 1px solid #ededed
+			.s-deliver-row
+				border-bottom: 1px solid #ededed
+				padding: 7px 0
+				b 
+					font-family: 'PFAgoraSlabPro-Black'
+			.small-title
+				width: 110px
+				height: 25px
+				text-align: center
+				border-radius: 3px
+				&.color-red
+					color: #fff
+					background-color: #ff6600
+				&.color-green
+					color: #fff
+					background-color: #33cc00
+		.delivery-icon, .pickPoint-icon
+			margin-right: 190px
+		.price-row
+			.small-title
+				float: left
+			a 
+				float: right
+				color: #00baff
+				font-size: 14px
+				line-height: 25px
+	&.s-order
+		margin-bottom: 160px
+		text-align: center
+		h3
+			font-size: 45px
+			margin-bottom: 40px
+		.number-label, .mail-label
+			font-size: 23px
+		ul.order-number
+			padding: 0
+			margin: 0 0 30px 0
+			list-style-type: none
+			display: inline-block
+			li 
+				float: left
+				font-size: 40px
+				line-height: 60px
+				font-family: 'PFAgoraSlabPro-Black'
+				width: 50px
+				height: 60px
+				border: 1px solid #c8c8c8
+				border-radius: 4px
+				margin: 0 5px
+				&:first-child
+					margin-left: 0
+				&:last-child
+					margin-right: 0
+		input 
+			font-size: 18px
+			width: 470px
+			height: 60px
+			border: 1px solid #c8c8c8
+			text-align: center
+			line-height: 60px
+			border-radius: 4px
+			margin-bottom: 20px
+		button.find-out-status
+			width: 190px
+			height: 50px
+			color: #fff
+			background-color: #00baff
+			border: 1px solid #00baff
+			border-radius: 4px
+			margin-bottom: 45px
+			+transition(all 0.25s ease)
+			&:hover
+				background-color: lighten(#00baff, 10%)
+				border-color: lighten(#00baff, 10%)
+		ul.status-list
+			padding: 0
+			margin: 0
+			list-style-type: none
+			text-align: left
+			li
+				height: 36px
+				line-height: 36px
+				font-size: 14px
+				border-bottom: 1px solid #ececec
+				&:first-child
+					background-color: #33cc00
+					color: #fff
+					margin: 0 -10px
+					padding: 0 10px
+					border-radius: 4px
+				&:nth-child(2)
+					opacity: 0.9
+				&:nth-child(3)
+					opacity: 0.8
+				&:nth-child(4)
+					opacity: 0.7
+				&:nth-child(5)
+					opacity: 0.6
+				&:nth-child(6)
+					opacity: 0.5
+				&:nth-child(7)
+					opacity: 0.4
+				.status-date
+					float: left
+				.status-type
+					float: right
+
+	&.contact-info
+		margin-bottom: 60px
+		h3
+			text-align: center
+			font-size: 45px
+			margin-bottom: 40px
+	&.contact-address
+		padding: 45px 0 110px
+		font-size: 14px
+		p 
+			font-size: 24px
+			margin-bottom: 20px
+		.company-details
+			margin-left: 95px
+			.detail-label
+				color: rgba(83, 88, 90, 0.6)
+		.row
+			padding: 3px 0
+		.phone-town
+			color: rgba(83, 88, 90, 0.8)
+
+			
+form.default-form
+	> .row	
+		margin-top: 10px
+		margin-bottom: 10px
+	label
+		font-size: 14px
+		font-weight: 400
+		color: #808385
+		margin-left: 95px
+		margin-bottom: 0
+		padding: 14px 0
+		&.error
+			margin: 0
+			padding: 0
+			font-size: 12px
+			color: #cc0033
+	input, select, textarea
+		border: 1px solid #c8c8c8
+		border-radius: 4px
+		width: 100%
+		display: block
+		padding: 6px 12px
+		+transition(all 0.25s ease)
+		&:focus
+			border-color: #53585a
+			box-shadow: 0 0 0 1px #53585a
+	input, select
+		height: 50px
+	textarea
+		height: 80px
+		resize: none
+	select
+		+appearance(none)
+		background: url(../images/select-arrow.png) no-repeat 97% center
+	.send-contact-form
+		width: 100%
+		height: 50px
+		line-height: 50px
+		color: #fff
+		border-radius: 4px
+		background-color: #00baff
+		border: 1px solid #00baff
+		+transition(all 0.25s ease)
+		&:hover
+			background-color: lighten(#00baff, 10%)
+			border-color: lighten(#00baff, 10%)
+	img
+		max-width: 100%
+		height: 50px
+
+.no-padding-left
+	padding-left: 0
