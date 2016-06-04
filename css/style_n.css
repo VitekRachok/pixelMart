@@ -1463,6 +1463,130 @@ section.s-deliver .price-row a {
   line-height: 25px;
 }
 
+section.s-order {
+  margin-bottom: 160px;
+  text-align: center;
+}
+
+section.s-order h3 {
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+section.s-order .number-label, section.s-order .mail-label {
+  font-size: 23px;
+}
+
+section.s-order ul.order-number {
+  padding: 0;
+  margin: 0 0 30px 0;
+  list-style-type: none;
+  display: inline-block;
+}
+
+section.s-order ul.order-number li {
+  float: left;
+  font-size: 40px;
+  line-height: 60px;
+  font-family: 'PFAgoraSlabPro-Black';
+  width: 50px;
+  height: 60px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+section.s-order ul.order-number li:first-child {
+  margin-left: 0;
+}
+
+section.s-order ul.order-number li:last-child {
+  margin-right: 0;
+}
+
+section.s-order input {
+  font-size: 18px;
+  width: 470px;
+  height: 60px;
+  border: 1px solid #c8c8c8;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+section.s-order button.find-out-status {
+  width: 190px;
+  height: 50px;
+  color: #fff;
+  background-color: #00baff;
+  border: 1px solid #00baff;
+  border-radius: 4px;
+  margin-bottom: 45px;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+section.s-order button.find-out-status:hover {
+  background-color: #33c8ff;
+  border-color: #33c8ff;
+}
+
+section.s-order ul.status-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+section.s-order ul.status-list li {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  border-bottom: 1px solid #ececec;
+}
+
+section.s-order ul.status-list li:first-child {
+  background-color: #33cc00;
+  color: #fff;
+  margin: 0 -10px;
+  padding: 0 10px;
+  border-radius: 4px;
+}
+
+section.s-order ul.status-list li:nth-child(2) {
+  opacity: 0.9;
+}
+
+section.s-order ul.status-list li:nth-child(3) {
+  opacity: 0.8;
+}
+
+section.s-order ul.status-list li:nth-child(4) {
+  opacity: 0.7;
+}
+
+section.s-order ul.status-list li:nth-child(5) {
+  opacity: 0.6;
+}
+
+section.s-order ul.status-list li:nth-child(6) {
+  opacity: 0.5;
+}
+
+section.s-order ul.status-list li:nth-child(7) {
+  opacity: 0.4;
+}
+
+section.s-order ul.status-list li .status-date {
+  float: left;
+}
+
+section.s-order ul.status-list li .status-type {
+  float: right;
+}
+
 .no-padding-left {
   padding-left: 0;
 }
@@ -1727,6 +1851,20 @@ section.s-deliver .price-row a {
     position: relative;
     top: 7px;
   }
+  section.s-order {
+    padding: 0 15px;
+  }
+  section.s-order ul.order-number li {
+    font-size: 30px;
+    width: 40px;
+    height: 50px;
+    line-height: 50px;
+  }
+  section.s-order input {
+    width: 390px;
+    height: 50px;
+    line-height: 50px;
+  }
 }
 
 @media only screen and (max-width: 680px) {
@@ -1798,8 +1936,23 @@ section.s-deliver .price-row a {
   .trash .dropdown-menu {
     width: 320px;
   }
-  section.s-deliver h3 {
+  section.s-deliver h3, section.s-order h3 {
     font-size: 35px;
+  }
+  section.s-order ul.order-number li {
+    font-size: 25px;
+    width: 26px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 3px;
+  }
+  section.s-order input {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+  }
+  section.s-order ul.status-list li {
+    font-size: 12px;
   }
 }
 

@@ -65,6 +65,88 @@ section
 				color: #00baff
 				font-size: 14px
 				line-height: 25px
+	&.s-order
+		margin-bottom: 160px
+		text-align: center
+		h3
+			font-size: 45px
+			margin-bottom: 40px
+		.number-label, .mail-label
+			font-size: 23px
+		ul.order-number
+			padding: 0
+			margin: 0 0 30px 0
+			list-style-type: none
+			display: inline-block
+			li 
+				float: left
+				font-size: 40px
+				line-height: 60px
+				font-family: 'PFAgoraSlabPro-Black'
+				width: 50px
+				height: 60px
+				border: 1px solid #c8c8c8
+				border-radius: 4px
+				margin: 0 5px
+				&:first-child
+					margin-left: 0
+				&:last-child
+					margin-right: 0
+		input 
+			font-size: 18px
+			width: 470px
+			height: 60px
+			border: 1px solid #c8c8c8
+			text-align: center
+			line-height: 60px
+			border-radius: 4px
+			margin-bottom: 20px
+		button.find-out-status
+			width: 190px
+			height: 50px
+			color: #fff
+			background-color: #00baff
+			border: 1px solid #00baff
+			border-radius: 4px
+			margin-bottom: 45px
+			+transition(all 0.25s ease)
+			&:hover
+				background-color: lighten(#00baff, 10%)
+				border-color: lighten(#00baff, 10%)
+		ul.status-list
+			padding: 0
+			margin: 0
+			list-style-type: none
+			text-align: left
+			li
+				height: 36px
+				line-height: 36px
+				font-size: 14px
+				border-bottom: 1px solid #ececec
+				&:first-child
+					background-color: #33cc00
+					color: #fff
+					margin: 0 -10px
+					padding: 0 10px
+					border-radius: 4px
+				&:nth-child(2)
+					opacity: 0.9
+				&:nth-child(3)
+					opacity: 0.8
+				&:nth-child(4)
+					opacity: 0.7
+				&:nth-child(5)
+					opacity: 0.6
+				&:nth-child(6)
+					opacity: 0.5
+				&:nth-child(7)
+					opacity: 0.4
+				.status-date
+					float: left
+				.status-type
+					float: right
+
+
 
 
 .no-padding-left
