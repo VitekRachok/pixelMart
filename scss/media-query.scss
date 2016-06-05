@@ -241,7 +241,7 @@
 			.order-i-name{
 				text-align: center;
 			}
-			.form-group{
+			.form-group, .order-sum{
 				width: 100% !important;
 				text-align: center;
 			}
@@ -374,6 +374,15 @@
 		&:after{
 			right: 17px !important;
 		}
+	}
+	.search-items-input input{
+		font-size: 16px !important;
+		text-indent: 40px !important;
+	}
+	.search-items .search-items-input .input-group-btn button {
+		width: 60px;
+		font-size: 16px !important;
+		padding-left: 5px;
 	}
 
 }
