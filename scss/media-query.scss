@@ -370,6 +370,11 @@
 		margin-left: 15px;
 		margin-right: 15px;
 	}
+	.trash .dropdown-menu{
+		&:after{
+			right: 17px !important;
+		}
+	}
 
 }
 
