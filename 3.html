@@ -213,7 +213,7 @@
 			<li class="active">Страница товара</li>
 		</ol>
 	</div>
-	<div class="mod-photo-container">
+	<div class="mod-photo-container main-mod-carousel">
 		<div class="container">
 			<div class="photo-carousel-wrap">
 
@@ -659,7 +659,7 @@
 						<img class="bg-image" src="images/pattern/3-1.png" alt="">
 						<img class="pattern-image" src="images/pattern/pattern1.png" alt="">
 						<div class="view-pattern-wrap">
-							<a href="#" class="view-pattern">Быстрый просмотр</a>	
+							<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 						</div>
 					</div>
 					<p class="title">Хамелеон</p>
@@ -671,7 +671,7 @@
 						<img class="bg-image" src="images/pattern/3-2.png" alt="">
 						<img class="pattern-image" src="images/pattern/pattern2.png" alt="">
 						<div class="view-pattern-wrap">
-							<a href="#" class="view-pattern">Быстрый просмотр</a>	
+							<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 						</div>
 					</div>
 					<p class="title">Васильки макро</p>
@@ -683,7 +683,7 @@
 						<img class="bg-image" src="images/pattern/3-3.png" alt="">
 						<img class="pattern-image" src="images/pattern/pattern3.png" alt="">
 						<div class="view-pattern-wrap">
-							<a href="#" class="view-pattern">Быстрый просмотр</a>	
+							<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 						</div>
 					</div>
 					<p class="title">Лошадь чешет гриву</p>
@@ -695,7 +695,7 @@
 						<img class="bg-image" src="images/pattern/3-4.png" alt="">
 						<img class="pattern-image" src="images/pattern/pattern4.png" alt="">
 						<div class="view-pattern-wrap">
-							<a href="#" class="view-pattern">Быстрый просмотр</a>	
+							<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 						</div>
 					</div>
 					<p class="title">Дети рыбачат</p>
@@ -793,6 +793,161 @@
 					© Группа компаний Vsemaiki.ru. Информационная продукция, представленая на сайте, предназначена для людей от 18 лет и старше
 				</div>
 			</footer>
+		</div>
+	</div>
+
+
+
+
+
+	<div id="quick-view" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		<div class="modal-dialog modal-lg modal-width quick">
+			<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+					</button>
+				<div class="modal-body">
+					<div class="mod-photo-container">
+						<div class="container-fluid">
+							<div class="photo-carousel-wrap">
+
+								<div class="mod-carousel">
+
+									<div class="mod-carousel-item">
+										<img src="images/mod/type1.png" alt="">
+									</div>
+
+									<div class="mod-carousel-item">
+										<img src="images/mod/type2.png" alt="">
+									</div>
+
+									<div class="mod-carousel-item active">
+										<img src="images/mod/type3.png" alt="">
+									</div>
+
+									<div class="mod-carousel-item">
+										<img src="images/mod/type4.png" alt="">
+									</div>
+
+									<div class="mod-carousel-item">
+										<img src="images/mod/type5.png" alt="">
+									</div>
+
+									<div class="mod-carousel-item">
+										<img src="images/mod/type6.png" alt="">
+									</div>
+
+									<div class="mod-carousel-item">
+										<img src="images/mod/type7.png" alt="">
+									</div>
+
+									<div class="mod-carousel-item">
+										<img src="images/mod/type8.png" alt="">
+									</div>
+
+									<div class="mod-carousel-item">
+										<img src="images/mod/type9.png" alt="">
+									</div>
+
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="choose-image-section">
+								<div class="col-md-8 mod-left-col">
+									<div class="mod-main-photo">
+										<img src="images/mod/mod-photo.png" alt="">
+									</div>
+								</div>
+								<div class="col-md-4 mod-right-col">
+									<form action="" class="mod-form">
+										  <div class="form-group">
+										    <label>Тип картины</label>
+										    <select class="form-control">
+												  <option value="0" selected>Модульная картина</option>
+												  <option value="1">other value</option>
+												  <option value="2">other value</option>
+												  <option value="3">other value</option>
+												</select>
+										  </div>
+
+										  <div class="form-group">
+										  	<label>Размер, см</label>
+										  	<div class="radio-inline">
+												  <input type="radio" name="selectSize" id="size1" value="90-60">
+												  <label for="size1">90x60</label>
+												</div>
+												<div class="radio-inline">
+												  <input type="radio" name="selectSize" id="size2" value="120-90">
+												  <label for="size2">120x90</label>
+												</div>
+												<div class="radio-inline">
+												  <input type="radio" name="selectSize" id="size3" value="140-110">
+												  <label for="size3">140x110</label>
+												</div>
+												<div class="radio-inline">
+												  <input type="radio" name="selectSize" id="size4" value="160-120">
+												  <label for="size4">160x120</label>
+												</div>
+												<div class="radio-inline">
+												  <input type="radio" name="selectSize" id="size5" value="240-160">
+												  <label for="size5">240x160</label>
+												</div>
+										  </div>
+
+
+										  <div class="form-group">
+										    <label class="label-db">Материал</label>
+										    <span class="icon-info"><span class="more-info">Детальная инфо</span></span>
+										    <select class="form-control">
+												  <option value="0" selected>Сатиновый холст</option>
+												  <option value="1">other value</option>
+												  <option value="2">other value</option>
+												  <option value="3">other value</option>
+												</select>
+										  </div>
+
+										  <div class="form-group">
+										    <label>Дополнительные параметры</label>
+												<div class="checkbox checkbox-style">
+												  <label>
+												    <input type="checkbox" value="value1">
+												    <span class="stylesheet"></span>
+												    <span>Покрытие лаком +800 Р</span>
+												  </label>
+												  <span class="icon-info"><span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span></span>
+												</div>
+												<div class="checkbox checkbox-style">
+												  <label>
+												    <input type="checkbox" value="value2">
+												    <span class="stylesheet"></span>
+												    <span>Покрытие гелем +600 Р</span>
+												  </label>
+												  <span class="icon-info"><span class="more-info">Текст детальной информиции</span></span>
+												</div>
+										  </div>
+
+										  <div class="form-group price-group">
+												<span class="old-price">6480Р</span>
+												<span class="new-price">4090Р</span>
+										  </div>
+
+										  <button class="btn btn-add-to-cart">Добавить в корзину</button>
+										  <button class="btn btn-go-to-cart">Перейти в корзину</button>
+
+										  <div class="clearfix form-bottom-btns">
+										  	<a href="#" class="buy-one-click">Купить в 1 клик</a>
+										  	<a href="#" class="set-aside">Отложить товар</a>
+										  </div>
+										  <a href="#" class="btn in-detail">Подробнее о картине</a>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 

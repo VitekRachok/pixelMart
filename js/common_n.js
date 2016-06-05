@@ -58,36 +58,38 @@ $(document).ready(function () {
 	configSliderControls('.toggle-top-items');
 
 
-	// Module photo page: carousel init
-  var modOwl = $(".mod-carousel");
+  // Module photo page: carousel init
+  var modOwl = $(".main-mod-carousel .mod-carousel");
   modOwl.owlCarousel({
-  	responsive: {
-  		0: {
-  			items: 3
-  		},
-  		380: {
-  			items: 4
-  		},
-  		480: {
-  			items: 5
-  		},
-  		600: {
-  			items: 6
-  		},
-  		767: {
-  			items: 7
-  		},
-  		992: {
-  			items: 9
-  		}
-  	},
-    //items: 9,
+    responsive: {
+      0: {
+        items: 3
+      },
+      380: {
+        items: 4
+      },
+      480: {
+        items: 5
+      },
+      600: {
+        items: 6
+      },
+      767: {
+        items: 7
+      },
+      992: {
+        items: 9
+      }
+    },
     margin: 5,
     nav: true,
     navText: "",
     autoplayHoverPause: true,
     loop: true,
   });
+
+
+
 
   // carousel toggle active class
   function toggleActiveItem(elem) {
@@ -135,6 +137,41 @@ $(document).ready(function () {
   $('.panel-collapse').on('hide.bs.collapse', function () {
     $(this).parents('.panel').removeClass('open-panel');
   });
+
+  
+  // init owl-carousel in popup
+  $('#quick-view').on('shown.bs.modal', function (e) {
+      var modalOwl = $("#quick-view .mod-carousel");
+      modalOwl.owlCarousel({
+        responsive: {
+          0: {
+            items: 3
+          },
+          380: {
+            items: 4
+          },
+          480: {
+            items: 5
+          },
+          600: {
+            items: 6
+          },
+          767: {
+            items: 7
+          },
+          992: {
+            items: 9
+          }
+        },
+        margin: 5,
+        nav: true,
+        navText: "",
+        autoplayHoverPause: true,
+        loop: true,
+      });
+      $('.modal-open .photo-carousel-wrap').css('overflow', 'visible');
+  })  
+
 
 
 })
