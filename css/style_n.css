@@ -932,6 +932,7 @@ section.other-collections .btn-show-all:hover {
 
 .pattern-item-cover {
   height: 277.5px;
+  width: 277.5px;
   position: relative;
   margin-bottom: 23px;
   cursor: crosshair;
@@ -2028,6 +2029,7 @@ form.default-form img {
   }
   .other-collections .pattern-item-cover {
     height: 262.5px;
+    width: 262.5px;
   }
 }
 
@@ -2068,10 +2070,16 @@ form.default-form img {
   }
   .other-collections .pattern-item-cover {
     height: 212.5px;
+    width: 212.5px;
   }
   .landing-popular-items .pattern-item-cover {
     width: 290px;
     height: 190px;
+  }
+  .categorry-pattern-item .pattern-item-cover {
+    width: 228.5px;
+    height: 228.5px;
+    margin: 0 auto;
   }
 }
 
@@ -2172,6 +2180,10 @@ form.default-form img {
   .landing-popular-items .pattern-item-cover {
     width: 220px;
     height: 145px;
+  }
+  .categorry-pattern-item .pattern-item-cover {
+    width: 285px;
+    height: 285px;
   }
 }
 
