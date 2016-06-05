@@ -113,20 +113,28 @@ $(document).ready(function () {
   	checkTrashScroll();
   })
 
-  $('#sub-contact-form').validate({
-    messages: {
-      userName: "Введите Ваше имя",
-      userEmail: {
-           required: "Введите електронную почту",
-           email: "Пожалуйста, введите корректную почту",
-      },
-      userMessage: "Введите свое сообщение",
-      userCode: "Введите код"
-    }
+  if($('#sub-contact-form').length) {
+    $('#sub-contact-form').validate({
+      messages: {
+        userName: "Введите Ваше имя",
+        userEmail: {
+         required: "Введите електронную почту",
+         email: "Пожалуйста, введите корректную почту",
+       },
+       userMessage: "Введите свое сообщение",
+       userCode: "Введите код"
+     }
+   });
+  }
 
+
+  $('.panel-collapse').on('show.bs.collapse', function () {
+    $(this).parents('.panel').addClass('open-panel'); 
   });
 
-
+  $('.panel-collapse').on('hide.bs.collapse', function () {
+    $(this).parents('.panel').removeClass('open-panel');
+  });
 
 
 })
