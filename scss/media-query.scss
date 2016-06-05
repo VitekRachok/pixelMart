@@ -131,6 +131,12 @@
 			}
 		}
 	}
+	.info-help li{
+		margin-bottom: 9px;
+	}
+	.banner-head-wrap h2{
+		font-size: 44px !important;
+	}
 }
 @media (max-width: $small) { 
 
@@ -172,19 +178,15 @@
 		text-align: center;
 	}
 	.banner-wrap{
-		height: 200px;
-		a.btn{
-			left: -79px;
-			padding: 7px;
-			bottom: 7px;
-		}
-	}
-	.banner-wrap{
 		height: 150px;
 		a.btn{
+			left: -79px;
 			padding: 5px;
 			bottom: 2px; 
 		}
+	}
+	.banner-head-wrap h2{
+		font-size: 34px !important;
 	}
 	.can-be-us-col{
 		padding: 0 20px;
@@ -243,6 +245,13 @@
 				width: 100% !important;
 				text-align: center;
 			}
+		}
+	}
+	.info-help{
+		max-width: 450px;
+		margin: 0 auto 30px;
+		li{
+			margin-bottom: 0;
 		}
 	}
 
@@ -353,6 +362,13 @@
 		.bought-social-block{
 			padding-top: 20px;
 		}
+	}
+	.banner-head-wrap{
+		margin-top: 20px !important;
+		display: block;
+		width: auto;
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 
 }
