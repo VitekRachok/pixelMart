@@ -27,7 +27,7 @@
 				<div class="right-header-block">
 					<div class="contacts-header">
 						<a class="phone-header" href="tel:8 800 660 90 60">8 800 660 90 60</a>
-						<a href="" class="city" data-toggle="modal" data-target="#question-city">Новосибирск</a>
+						<a href="" class="city" data-toggle="modal" data-target="#choice-city">Новосибирск</a>
 					</div>
 					<div class="like-header">
 						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
@@ -91,7 +91,6 @@
 				</button>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav nav-center">
-						<li><a href="#">Создайте свою картину</a></li>
 						<li class="dropdown">
 							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Модульные картины <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -109,9 +108,9 @@
 							<a href="#">Поиск</a>
 						</li>
 					</ul>
-					<aside class="search-block">
+					<aside class="search-block desktop">
 						<span class="close"></span>
-						<input type="text" class="search-input" placeholder="Поиск">
+						<input type="text" class="search-input" autofocus placeholder="Введите ваш запрос">
 						<ul class="search-list">
 							<li><a href="#">порутчик ржевский</a></li>
 							<li><a href="#">порция радости</a></li>
@@ -137,7 +136,6 @@
 				<div class="right-header-block">
 					<div class="contacts-header">
 						<a class="phone-header" href="tel:8 800 660 90 60">8 800 660 90 60</a>
-						<span class="city">Новосибирск</span>
 					</div>
 					<div class="like-header">
 						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
@@ -202,7 +200,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					<ul class="nav navbar-nav nav-center">
 						<li class="dropdown">
-							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Создайте свою картину <b class="caret"></b></a>
+							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Модульные картины <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li class=""><a href="#">Часы</a></li>
 								<li class=""><a href="#">Шторы для ванны</a></li>
@@ -211,7 +209,6 @@
 								<li class=""><a href="#">Магниты</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Модульные картины</a></li>
 						<li><a href="#">Холсты</a></li>
 						<li><a href="#">Плакаты</a></li>
 						<li><a href="#">Постеры</a></li>
@@ -219,9 +216,9 @@
 							<a href="#">Поиск</a>
 						</li>
 					</ul>
-					<aside class="search-block">
+					<aside class="search-block desktop">
 						<span class="close"></span>
-						<input type="text" class="search-input" placeholder="Поиск">
+						<input type="text" class="search-input" autofocus placeholder="Введите ваш запрос">
 						<ul class="search-list">
 							<li><a href="#">порутчик ржевский</a></li>
 							<li><a href="#">порция радости</a></li>
@@ -236,7 +233,7 @@
 	</nav>
 	<aside class="search-block mini">
 		<span class="close"></span>
-		<input type="text" class="search-input" placeholder="Поиск">
+		<input type="text" class="search-input" placeholder="Введите ваш запрос">
 		<ul class="search-list">
 			<li><a href="#">порутчик ржевский</a></li>
 			<li><a href="#">порция радости</a></li>
@@ -251,6 +248,108 @@
 			<div class="col-sm-8 col-md-9">
 				<div class="order-list">
 					<h2 class="orer-heading">Ваш заказ</h2>
+					<div class="order-item">
+						<div class="order-item-img-wrap">
+							<img class="order-img" src="images/cat-it6.png" alt="">
+						</div>
+						<div class="order-item-info">
+							<form action="" class="mod-form">
+								<h3 class="order-i-name">
+									Модульная картина «Порш»
+									<span><a href="#" class="order-delete"><img src="images/trash-order.png" alt=""></a>
+									<a href="#" class="set-aside"><img src="images/set-aside-heart.png" alt=""></a></span>
+								</h3>
+								<div class="form-group">
+									<label class="size">Размер, см</label>
+									<select class="form-control turnintodropdown">
+											<option value="0" selected>120x90</option>
+											<option value="1">other value</option>
+											<option value="2">other value</option>
+											<option value="3">other value</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label>Дополнительные параметры</label>
+									<div class="checkbox checkbox-style">
+										<label>
+											<input type="checkbox" value="value1">
+											<span class="stylesheet"></span>
+											<span>Покрытие лаком +800 Р</span>
+										</label>
+										<span class="icon-info"><span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span></span>
+									</div>
+									<div class="checkbox checkbox-style">
+										<label>
+											<input type="checkbox" value="value2">
+											<span class="stylesheet"></span>
+											<span>Покрытие гелем +600 Р</span>
+										</label>
+										<span class="icon-info"><span class="more-info">Текст 	детальной информиции</span></span>
+									</div>
+								</div>
+								<div class="order-sum">
+									Количество<br/>
+									<input type="text" class="sum">
+									x
+									<span class="items-price">4 600</span>
+									<span class="currency"> P</span>
+									=
+									<span class="sum-result">4600 Р</span>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="order-item">
+						<div class="order-item-img-wrap">
+							<img class="order-img" src="images/cat-it6.png" alt="">
+						</div>
+						<div class="order-item-info">
+							<form action="" class="mod-form">
+								<h3 class="order-i-name">
+									Модульная картина «Порш»
+									<span><a href="#" class="order-delete"><img src="images/trash-order.png" alt=""></a>
+									<a href="#" class="set-aside"><img src="images/set-aside-heart.png" alt=""></a></span>
+								</h3>
+								<div class="form-group">
+									<label class="size">Размер, см</label>
+									<select class="form-control">
+											<option value="0" selected>120x90</option>
+											<option value="1">other value</option>
+											<option value="2">other value</option>
+											<option value="3">other value</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label>Дополнительные параметры</label>
+									<div class="checkbox checkbox-style">
+										<label>
+											<input type="checkbox" value="value1">
+											<span class="stylesheet"></span>
+											<span>Покрытие лаком +800 Р</span>
+										</label>
+										<span class="icon-info"><span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span></span>
+									</div>
+									<div class="checkbox checkbox-style">
+										<label>
+											<input type="checkbox" value="value2">
+											<span class="stylesheet"></span>
+											<span>Покрытие гелем +600 Р</span>
+										</label>
+										<span class="icon-info"><span class="more-info">Текст 	детальной информиции</span></span>
+									</div>
+								</div>
+								<div class="order-sum">
+									Количество<br/>
+									<input type="text" class="sum">
+									x
+									<span class="items-price">4 600</span>
+									<span class="currency"> P</span>
+									=
+									<span class="sum-result">4600 Р</span>
+								</div>
+							</form>
+						</div>
+					</div>
 					<div class="order-item">
 						<div class="order-item-img-wrap">
 							<img class="order-img" src="images/cat-it6.png" alt="">
@@ -352,6 +451,9 @@
 								<div class="input-group-btn">
 									<button class="btn btn-default" type="button">Применить</button>
 								</div>
+							</div>
+							<div class="input-group active">
+								<input type="text" class="form-control" value="Со скидкой 20% по промокоду PXLMRT" aria-label="..." placeholder="">
 							</div>
 						</div>
 						<a href="#" class="btn btn-default place-order">Оформить заказ</a>
@@ -482,6 +584,66 @@
 	</div>
 
 
+	<!-- MODAL CONFIRM CITY -->
+
+	<div id="question-city" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<p>
+						Ваш город <span id="modal-city">Новосибирск</span>?
+						<a href="#" class="city-confirm btn btn-default" type="button" data-dismiss="modal" aria-label="Close">Да, всё верно</a>
+						<a class="choose-another-city" href="#">Нет, выбрать другой город</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- MODAL CONFIRM CITY END-->
+
+<!-- MODAL CHOICE CITY-->
+
+<div id="choice-city" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header background">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Выберите ваш город</h4>
+			</div>
+			<div class="modal-body">
+				<form id="auto-comlete" class="" action="">
+					<input id="city-res">
+				</form>
+				<div class="choice-manually">
+					<p>или выберите из списка</p>
+					<ul>
+						<li><a href="#">Москва</a></li>
+						<li><a href="#">Санкт-Петербург</a></li>
+						<li><a href="#">Новосибирск</a></li>
+						<li><a href="#">Екатеренбург</a></li>
+						<li><a href="#">Нижний Новгород</a></li>
+						<li><a href="#">Уфа</a></li>
+						<li><a href="#">Красноярск</a></li>
+						<li><a href="#">Казань</a></li>
+						<li><a href="#">Самара</a></li>
+						<li><a href="#">Челябинск</a></li>
+						<li><a href="#">Омск</a></li>
+						<li><a href="#">Ростов-на-Дону</a></li>
+						<li><a href="#">Пермь</a></li>
+						<li><a href="#">Волгоград</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- MODAL CHOICE CITY END-->
+
+<!-- MODAL BUY ONE CLICK -->
+
 	<div class="modal fade" id="buy-one-cl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -497,7 +659,7 @@
 						</fieldset>
 						<fieldset class="form-group">
 							<label for="">Телефон</label>
-							<input type="text" placeholder="+7 (___) ___ -__-__">
+							<input class="mask" type="text" placeholder="+7 (___) ___ -__-__">
 						</fieldset>
 						<fieldset class="form-group">
 							<label for=""></label>
@@ -509,6 +671,8 @@
 			</div>
 		</div>
 	</div>
+
+<!-- MODAL BUY ONE CLICK END -->
 
 
 	<div class="modal fade" id="bought" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -562,6 +726,8 @@
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="https://use.fontawesome.com/d6d1c30920.js"></script>
+	<script type="text/javascript" src="libs/maskTel/mask.js"></script>
+	<script type='text/javascript' src='js/select.js'></script>
 
 	<script src="js/custom.js"></script>
 	<script src="js/common_n.js"></script>

@@ -27,7 +27,7 @@
 				<div class="right-header-block">
 					<div class="contacts-header">
 						<a class="phone-header" href="tel:8 800 660 90 60">8 800 660 90 60</a>
-						<a href="" class="city" data-toggle="modal" data-target="#question-city">Новосибирск</a>
+						<a href="" class="city" data-toggle="modal" data-target="#choice-city">Новосибирск</a>
 					</div>
 					<div class="like-header">
 						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
@@ -91,7 +91,6 @@
 				</button>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav nav-center">
-						<li><a href="#">Создайте свою картину</a></li>
 						<li class="dropdown">
 							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Модульные картины <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -109,9 +108,9 @@
 							<a href="#">Поиск</a>
 						</li>
 					</ul>
-					<aside class="search-block">
+					<aside class="search-block desktop">
 						<span class="close"></span>
-						<input type="text" class="search-input" placeholder="Поиск">
+						<input type="text" class="search-input" autofocus placeholder="Введите ваш запрос">
 						<ul class="search-list">
 							<li><a href="#">порутчик ржевский</a></li>
 							<li><a href="#">порция радости</a></li>
@@ -137,7 +136,6 @@
 				<div class="right-header-block">
 					<div class="contacts-header">
 						<a class="phone-header" href="tel:8 800 660 90 60">8 800 660 90 60</a>
-						<span class="city">Новосибирск</span>
 					</div>
 					<div class="like-header">
 						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
@@ -202,7 +200,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					<ul class="nav navbar-nav nav-center">
 						<li class="dropdown">
-							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Создайте свою картину <b class="caret"></b></a>
+							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Модульные картины <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li class=""><a href="#">Часы</a></li>
 								<li class=""><a href="#">Шторы для ванны</a></li>
@@ -211,7 +209,6 @@
 								<li class=""><a href="#">Магниты</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Модульные картины</a></li>
 						<li><a href="#">Холсты</a></li>
 						<li><a href="#">Плакаты</a></li>
 						<li><a href="#">Постеры</a></li>
@@ -219,9 +216,9 @@
 							<a href="#">Поиск</a>
 						</li>
 					</ul>
-					<aside class="search-block">
+					<aside class="search-block desktop">
 						<span class="close"></span>
-						<input type="text" class="search-input" placeholder="Поиск">
+						<input type="text" class="search-input" autofocus placeholder="Введите ваш запрос">
 						<ul class="search-list">
 							<li><a href="#">порутчик ржевский</a></li>
 							<li><a href="#">порция радости</a></li>
@@ -236,7 +233,7 @@
 	</nav>
 	<aside class="search-block mini">
 		<span class="close"></span>
-		<input type="text" class="search-input" placeholder="Поиск">
+		<input type="text" class="search-input" placeholder="Введите ваш запрос">
 		<ul class="search-list">
 			<li><a href="#">порутчик ржевский</a></li>
 			<li><a href="#">порция радости</a></li>
@@ -367,7 +364,16 @@
 			</h2>
 			<div class="col-sm-offset-2 col-sm-8 clearfix">
 				<div class="input-group search-items-input">
-					<input type="text" class="form-control" placeholder="найдите свой">
+					<span class="search-w-wrap">
+						<input type="text" class="form-control" placeholder="найдите свой">
+						<ul class="search-words">
+							<li><a href="#">порутчик ржевский</a></li>
+							<li><a href="#">порция радости</a></li>
+							<li><a href="#">пороки</a></li>
+							<li><a href="#">поршни</a></li>
+							<li><a href="#">порш</a></li>
+						</ul>
+					</span>
 					<span class="input-group-btn">
 						<button class="btn btn-default" type="button">искать</button>
 					</span>
@@ -410,8 +416,10 @@
 					<div class="col-sm-4">
 						<div class="popular-items">
 							<div class="pattern-item-cover">
-								<img class="bg-image" src="images/pattern/1-1.png" alt="">
-								<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								<a class="bg-image-link" href="#">
+									<img class="bg-image" src="images/pattern/1-1.png" alt="">
+									<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								</a>
 								<div class="view-pattern-wrap">
 									<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 								</div>
@@ -428,8 +436,10 @@
 					<div class="col-sm-4">
 						<div class="popular-items">
 							<div class="pattern-item-cover">
-								<img class="bg-image" src="images/pattern/1-2.png" alt="">
-								<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								<a class="bg-image-link" href="#">
+									<img class="bg-image" src="images/pattern/1-2.png" alt="">
+									<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								</a>
 								<div class="view-pattern-wrap">
 									<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 								</div>
@@ -446,8 +456,10 @@
 					<div class="col-sm-4">
 						<div class="popular-items">
 							<div class="pattern-item-cover">
-								<img class="bg-image" src="images/pattern/1-3.png" alt="">
-								<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								<a class="bg-image-link" href="#">
+									<img class="bg-image" src="images/pattern/1-3.png" alt="">
+									<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								</a>
 								<div class="view-pattern-wrap">
 									<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 								</div>
@@ -466,8 +478,10 @@
 					<div class="col-sm-4">
 						<div class="popular-items">
 							<div class="pattern-item-cover">
-								<img class="bg-image" src="images/pattern/1-4.png" alt="">
-								<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								<a class="bg-image-link" href="#">
+									<img class="bg-image" src="images/pattern/1-4.png" alt="">
+									<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								</a>
 								<div class="view-pattern-wrap">
 									<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 								</div>
@@ -484,8 +498,10 @@
 					<div class="col-sm-4">
 						<div class="popular-items">
 							<div class="pattern-item-cover">
-								<img class="bg-image" src="images/pattern/1-5.png" alt="">
-								<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								<a class="bg-image-link" href="#">
+									<img class="bg-image" src="images/pattern/1-5.png" alt="">
+									<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								</a>
 								<div class="view-pattern-wrap">
 									<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 								</div>
@@ -502,8 +518,10 @@
 					<div class="col-sm-4">
 						<div class="popular-items">
 							<div class="pattern-item-cover">
-								<img class="bg-image" src="images/pattern/1-6.png" alt="">
-								<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								<a class="bg-image-link" href="#">
+									<img class="bg-image" src="images/pattern/1-6.png" alt="">
+									<img class="pattern-image" src="images/pattern/pattern380x250.png" alt="">
+								</a>
 								<div class="view-pattern-wrap">
 									<a href="#" class="view-pattern" data-toggle="modal" data-target="#quick-view">Быстрый просмотр</a>	
 								</div>
@@ -651,8 +669,9 @@
 				<div class="col-sm-3">
 					<div class="why-we-item">
 						<p class="estimate">
-							Сомневаетесь в выборе?<br />
-							Оцените наши преимущества!
+							<!-- Сомневаетесь в выборе?<br />
+							Оцените наши преимущества! -->
+							<span style="color:#f0661b;"> </span><span style="color:#ee651c;">С</span><span style="color:#ec641d;">о</span><span style="color:#e9631e;">м</span><span style="color:#e7621f;">н</span><span style="color:#e5611f;">е</span><span style="color:#e36020;">в</span><span style="color:#e15f21;">а</span><span style="color:#de5e22;">е</span><span style="color:#dc5d23;">т</span><span style="color:#da5c24;">е</span><span style="color:#db5827;">с</span><span style="color:#dd5529;">ь</span><span style="color:#de512c;"> </span><span style="color:#e04d2e;">в</span><span style="color:#e14a31;"> </span><span style="color:#e34633;">в</span><span style="color:#e44236;">ы</span><span style="color:#e63f38;">б</span><span style="color:#e73b3b;">о</span><span style="color:#e73739;">р</span><span style="color:#e83337;">е</span><span style="color:#e82f35;">?</span><br /><span style="color:#e82b33;">О</span><span style="color:#e92730;">ц</span><span style="color:#e9232e;">е</span><span style="color:#e91f2c;">н</span><span style="color:#e91b2a;">и</span><span style="color:#ea1728;">т</span><span style="color:#ea1326;">е</span><span style="color:#e8152e;"> </span><span style="color:#e61736;">н</span><span style="color:#e41a3e;">а</span><span style="color:#e21c46;">ш</span><span style="color:#e01e4d;">и</span><span style="color:#de2055;"> </span><span style="color:#dc235d;">п</span><span style="color:#da2565;">р</span><span style="color:#d8276d;">е</span><span style="color:#db2474;">и</span><span style="color:#de207a;">м</span><span style="color:#e11d81;">у</span><span style="color:#e41a87;">щ</span><span style="color:#e7178e;">е</span><span style="color:#ea1395;">с</span><span style="color:#ed109b;">т</span><span style="color:#f00da2;">в</span><span style="color:#f309a8;">а</span><span style="color:#f606af;">!</span>
 						</p>
 					</div>
 				</div>
@@ -761,7 +780,7 @@
 	</div>
 
 
-
+<!-- MODAL QUICK VIEW -->
 
 	<div id="quick-view" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 		<div class="modal-dialog modal-lg modal-width quick">
@@ -826,8 +845,8 @@
 								<div class="col-md-4 mod-right-col">
 									<form action="" class="mod-form">
 										  <div class="form-group">
-										    <label>Тип картины</label>
-										    <select class="form-control">
+											<label>Тип картины</label>
+											<select class="form-control">
 												  <option value="0" selected>Модульная картина</option>
 												  <option value="1">other value</option>
 												  <option value="2">other value</option>
@@ -836,60 +855,69 @@
 										  </div>
 
 										  <div class="form-group">
-										  	<label>Размер, см</label>
-										  	<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size1" value="90-60">
-												  <label for="size1">90x60</label>
-												</div>
-												<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size2" value="120-90">
-												  <label for="size2">120x90</label>
-												</div>
-												<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size3" value="140-110">
-												  <label for="size3">140x110</label>
-												</div>
-												<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size4" value="160-120">
-												  <label for="size4">160x120</label>
-												</div>
-												<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size5" value="240-160">
-												  <label for="size5">240x160</label>
-												</div>
+											<label class="size">Размер, см</label>
+											<select class="form-control turnintodropdown">
+													<option value="0" selected>90x60</option>
+													<option value="1">120x90</option>
+													<option value="2">140x110</option>
+													<option value="3">160x120</option>
+													<option value="4">240x160</option>
+											</select>
 										  </div>
 
-
 										  <div class="form-group">
-										    <label class="label-db">Материал</label>
-										    <span class="icon-info"><span class="more-info">Детальная инфо</span></span>
-										    <select class="form-control">
+											<label class="label-db">Материал</label>
+											<span class="icon-info detail"><span class="more-info">Детальная инфо</span></span>
+											<select class="form-control">
 												  <option value="0" selected>Сатиновый холст</option>
 												  <option value="1">other value</option>
 												  <option value="2">other value</option>
 												  <option value="3">other value</option>
 												</select>
 										  </div>
+										  <div class="dropdown option-modal">
+											<a class="dropdown-toggle" id="option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											  Дополнительные параметры
+											</a>
+											<ul class="dropdown-menu" aria-labelledby="option">
+											  <div class="checkbox checkbox-style">
+												<label>
+												  <input type="checkbox" value="value1">
+												  <span class="stylesheet"></span>
+												  <span>Покрытие лаком +800 Р</span>
+												</label>
+												<span class="icon-info"><span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span></span>
+											  </div>
+											  <div class="checkbox checkbox-style">
+												<label>
+												  <input type="checkbox" value="value2">
+												  <span class="stylesheet"></span>
+												  <span>Покрытие гелем +600 Р</span>
+												</label>
+												<span class="icon-info"><span class="more-info">Текст детальной информиции</span></span>
+											  </div>
+											</ul>
+										  </div>
 
-										  <div class="form-group">
-										    <label>Дополнительные параметры</label>
+										 <!--  <div class="form-group">
+											<label>Дополнительные параметры</label>
 												<div class="checkbox checkbox-style">
 												  <label>
-												    <input type="checkbox" value="value1">
-												    <span class="stylesheet"></span>
-												    <span>Покрытие лаком +800 Р</span>
+													<input type="checkbox" value="value1">
+													<span class="stylesheet"></span>
+													<span>Покрытие лаком +800 Р</span>
 												  </label>
 												  <span class="icon-info"><span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span></span>
 												</div>
 												<div class="checkbox checkbox-style">
 												  <label>
-												    <input type="checkbox" value="value2">
-												    <span class="stylesheet"></span>
-												    <span>Покрытие гелем +600 Р</span>
+													<input type="checkbox" value="value2">
+													<span class="stylesheet"></span>
+													<span>Покрытие гелем +600 Р</span>
 												  </label>
 												  <span class="icon-info"><span class="more-info">Текст детальной информиции</span></span>
 												</div>
-										  </div>
+										  </div> -->
 
 										  <div class="form-group price-group">
 												<span class="old-price">6480Р</span>
@@ -900,8 +928,8 @@
 										  <button class="btn btn-go-to-cart">Перейти в корзину</button>
 
 										  <div class="clearfix form-bottom-btns">
-										  	<a href="#" class="buy-one-click">Купить в 1 клик</a>
-										  	<a href="#" class="set-aside">Отложить товар</a>
+											<a href="#" class="buy-one-click">Купить в 1 клик</a>
+											<a href="#" class="set-aside">Отложить товар</a>
 										  </div>
 										  <a href="#" class="btn in-detail">Подробнее о картине</a>
 									</form>
@@ -914,7 +942,7 @@
 		</div>
 	</div>
 
-
+<!-- MODAL QUICK VIEW END -->
 
 
 
@@ -934,9 +962,9 @@
 		</div>
 	</div>
 
-
 <!-- MODAL CONFIRM CITY END-->
-<!-- MODAL CHOICE CITY END-->
+
+<!-- MODAL CHOICE CITY-->
 
 <div id="choice-city" class="modal fade" tabindex="-1" role="dialog">
 	<div class="modal-dialog" role="document">
@@ -976,7 +1004,75 @@
 
 <!-- MODAL CHOICE CITY END-->
 
+<!-- MODAL BUY ONE CLICK -->
 
+	<div class="modal fade" id="buy-one-cl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header background">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Быстрое оформление заказа</h4>
+				</div>
+				<div class="modal-body">
+					<form id="" class="" action="">
+						<fieldset class="form-group">
+							<label for="">Имя</label>
+							<input type="text" placeholder="">
+						</fieldset>
+						<fieldset class="form-group">
+							<label for="">Телефон</label>
+							<input class="mask" type="text" placeholder="+7 (___) ___ -__-__">
+						</fieldset>
+						<fieldset class="form-group">
+							<label for=""></label>
+							<button type="submit" class="btn btn-default">Заказать</button>
+						</fieldset>
+					</form>
+					<p>Оператор свяжется с вами в течение 5 минут в рабочее время чтобы оформить заказ</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- MODAL BUY ONE CLICK END -->
+
+<!-- Modal PRODUCT INFO-->
+	<div class="modal fade" id="product-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Информация о товаре</h4>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-4">
+								<img class="img-responsive" src="images/cat-show1.png" alt="">
+							</div>
+							<div class="col-sm-4">
+								<h4>Описание</h4>
+								<p>
+									Сублимационная печать — печать при которой краска под высокой температурой переходит с сублимационной бумаги на окрашиваему поверхность. В отличие от других способов печати позволяет наносить на поверхность фотографические изображения с высоким качеством. Технология позволяет получить яркие цвета устойчивые к воздействию окружающей среды. Использование данной технологии позволяет нам создавать изображения на следующих товарах: посуда, часы, фартуки, сумки, коврики для мыши.
+								</p>
+							</div>
+							<div class="col-sm-4">
+								<h4>Описание</h4>
+								<p>
+									Изображение нанесенное методом сублимации очень стойкое к истиранию, но все же необходимо следовать рекомендациям:
+									Посуда; Не рекомендуется чистка абразивными материалами (металличеосие щетки и тл) и мытье в посудомоечных машинах.
+									Текстиль: ручная стирка, но допускается стирка в стиральной машине в щадящем режиме при температуре воды до 3О°С. допускается гладить изделие только с обратной стороны, ни в коем случае не гладьте по изображению. Перед стиркой необходимо вывернуть изделие наизнанку! 
+									И никакого отбелеватия!
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- MODAL PRODUCT INFO END-->
 
 
 
@@ -993,6 +1089,8 @@
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="https://use.fontawesome.com/d6d1c30920.js"></script>
+	<script type="text/javascript" src="libs/maskTel/mask.js"></script>
+	<script type='text/javascript' src='js/select.js'></script>
 
 	<script src="js/custom.js"></script>
 	<script src="js/common_n.js"></script>

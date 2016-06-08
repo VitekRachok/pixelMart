@@ -41,7 +41,6 @@
 		right: -20px
 		background: (url(../images/mod/mod-right.png)) no-repeat center center
 
-
 .gray-bg
 	background-color: #f2f3f4
 .choose-image-section
@@ -114,6 +113,7 @@
 		max-width: 360px
 		.form-group
 			margin-bottom: 20px
+			position: relative
 		label
 			font-weight: 400
 			font-size: 14px
@@ -121,7 +121,13 @@
 			display: block
 			&.label-db
 				display: inline-block
-		select
+		.trigger
+			text-align: left
+			text-indent: 10px
+			line-height: 36px
+			text-decoration: none !important
+			display: block
+			color: #53585a
 			border: 2px solid #53585a
 			border-radius: 4px
 			height: 40px
@@ -193,8 +199,8 @@
 			content: ''
 			position: absolute
 			width: 100%
-			height: 1px
-			top: 50%
+			height: 2px
+			top: 36%
 			left: 0
 			background-color: #53585a
 	.new-price
@@ -260,12 +266,96 @@
 		color: #00baff
 		font-size: 16px
 		width: 100%
-		margin-top: 35px
+		margin-top: 10px
 		+transition(all $duration ease)
 		&:hover
 			background-color: #00baff
 			color: #ffffff
-
+.modal-width.quick
+	.form-group
+		margin-bottom: 10px
+	.option-modal
+		.dropdown-toggle
+			text-decoration: none
+			color: #00baff
+			cursor: pointer
+		.dropdown-menu
+			margin: 0
+			border: 2px solid #53585A
+			width: 100%
+			padding: 0px 10px
+.form-group
+	margin-bottom: 20px
+	position: relative
+label
+	font-weight: 400
+	font-size: 14px
+	opacity: 0.6
+	display: block
+	&.label-db
+		display: inline-block
+.trigger
+	text-align: left
+	text-indent: 10px
+	line-height: 36px
+	text-decoration: none !important
+	display: block
+	color: #53585a
+	border: 2px solid #53585a
+	border-radius: 4px
+	height: 40px
+	+appearance(none)
+	background: url(../images/select-arrow.png) no-repeat 95% center
+	&:hover
+		color: #53585a !important
+	&:focus
+		box-shadow: none
+.ordering
+	.trigger
+		border: 1px solid #c8c8c8
+		height: 45px
+		line-height: 45px
+		max-width: 450px
+		width: 100%
+		float: left
+		display: block
+	.activetrigger
+		border: 1px solid #c8c8c8
+		height: 45px
+		line-height: 45px
+		max-width: 450px
+		width: 100%
+		float: left
+		display: block
+	.dropcontainer
+		clear: both
+		position: relative
+		left: 150px
+		top: -6px
+		ul
+			max-width: 450px
+			border: 1px solid #c8c8c8
+#sub-contact-form
+	.trigger,
+	.activetrigger
+		height: 50px
+		line-height: 50px
+		border: 1px solid #c8c8c8
+	.dropdownvisible
+		border: 1px solid #c8c8c8
+		max-width: 585px
+.my-profile
+	.trigger,
+	.activetrigger
+		width: 100%
+		border: 1px solid #c8c8c8
+		height: 50px
+		line-height: 50px
+	.dropdownvisible
+		border: 1px solid #c8c8c8
+		max-width: 585px
+		a
+			display: block !important
 
 .checkbox-style
 	margin: 10px 0
@@ -302,8 +392,10 @@
 
 .mod-left-col
 	padding-right: 30px
+	.mod-main-photo
+		padding-top: 20px
 .mod-right-col
-	padding-left: 0
+	padding: 0
 
 section.about-item
 	.bottom-line
@@ -444,7 +536,6 @@ section.other-collections
 	width: 277.5px
 	position: relative
 	margin-bottom: 23px
-	cursor: crosshair
 	&:hover
 		img.pattern-image
 			opacity: 0
@@ -455,6 +546,7 @@ section.other-collections
 	img
 		max-width: 100%
 		max-height: 100%
+		cursor: pointer
 		&.pattern-image
 			position: absolute
 			top: 0

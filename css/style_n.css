@@ -320,7 +320,8 @@ body {
     padding: 25px 20px;
     max-width: 360px; }
     .choose-image-section .mod-form .form-group {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      position: relative; }
     .choose-image-section .mod-form label {
       font-weight: 400;
       font-size: 14px;
@@ -328,7 +329,13 @@ body {
       display: block; }
       .choose-image-section .mod-form label.label-db {
         display: inline-block; }
-    .choose-image-section .mod-form select {
+    .choose-image-section .mod-form .trigger {
+      text-align: left;
+      text-indent: 10px;
+      line-height: 36px;
+      text-decoration: none !important;
+      display: block;
+      color: #53585a;
       border: 2px solid #53585a;
       border-radius: 4px;
       height: 40px;
@@ -338,7 +345,7 @@ body {
       -o-appearance: none;
       appearance: none;
       background: url(../images/select-arrow.png) no-repeat 95% center; }
-      .choose-image-section .mod-form select:focus {
+      .choose-image-section .mod-form .trigger:focus {
         box-shadow: none; }
     .choose-image-section .mod-form .radio-inline {
       position: relative;
@@ -409,8 +416,8 @@ body {
       content: "";
       position: absolute;
       width: 100%;
-      height: 1px;
-      top: 50%;
+      height: 2px;
+      top: 36%;
       left: 0;
       background-color: #53585a; }
   .choose-image-section .new-price {
@@ -480,13 +487,104 @@ body {
     color: #00baff;
     font-size: 16px;
     width: 100%;
-    margin-top: 35px;
+    margin-top: 10px;
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     transition: all 0.25s ease; }
     .choose-image-section .in-detail:hover {
       background-color: #00baff;
       color: #ffffff; }
+
+.modal-width.quick .form-group {
+  margin-bottom: 10px; }
+.modal-width.quick .option-modal .dropdown-toggle {
+  text-decoration: none;
+  color: #00baff;
+  cursor: pointer; }
+.modal-width.quick .option-modal .dropdown-menu {
+  margin: 0;
+  border: 2px solid #53585A;
+  width: 100%;
+  padding: 0px 10px; }
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative; }
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.6;
+  display: block; }
+  label.label-db {
+    display: inline-block; }
+
+.trigger {
+  text-align: left;
+  text-indent: 10px;
+  line-height: 36px;
+  text-decoration: none !important;
+  display: block;
+  color: #53585a;
+  border: 2px solid #53585a;
+  border-radius: 4px;
+  height: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: url(../images/select-arrow.png) no-repeat 95% center; }
+  .trigger:hover {
+    color: #53585a !important; }
+  .trigger:focus {
+    box-shadow: none; }
+
+.ordering .trigger {
+  border: 1px solid #c8c8c8;
+  height: 45px;
+  line-height: 45px;
+  max-width: 450px;
+  width: 100%;
+  float: left;
+  display: block; }
+.ordering .activetrigger {
+  border: 1px solid #c8c8c8;
+  height: 45px;
+  line-height: 45px;
+  max-width: 450px;
+  width: 100%;
+  float: left;
+  display: block; }
+.ordering .dropcontainer {
+  clear: both;
+  position: relative;
+  left: 150px;
+  top: -6px; }
+  .ordering .dropcontainer ul {
+    max-width: 450px;
+    border: 1px solid #c8c8c8; }
+
+#sub-contact-form .trigger,
+#sub-contact-form .activetrigger {
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #c8c8c8; }
+#sub-contact-form .dropdownvisible {
+  border: 1px solid #c8c8c8;
+  max-width: 585px; }
+
+.my-profile .trigger,
+.my-profile .activetrigger {
+  width: 100%;
+  border: 1px solid #c8c8c8;
+  height: 50px;
+  line-height: 50px; }
+.my-profile .dropdownvisible {
+  border: 1px solid #c8c8c8;
+  max-width: 585px; }
+  .my-profile .dropdownvisible a {
+    display: block !important; }
 
 .checkbox-style {
   margin: 10px 0; }
@@ -521,9 +619,11 @@ body {
 
 .mod-left-col {
   padding-right: 30px; }
+  .mod-left-col .mod-main-photo {
+    padding-top: 20px; }
 
 .mod-right-col {
-  padding-left: 0; }
+  padding: 0; }
 
 section.about-item .bottom-line {
   background-color: #f2f3f4; }
@@ -663,8 +763,7 @@ section.other-collections {
   height: 277.5px;
   width: 277.5px;
   position: relative;
-  margin-bottom: 23px;
-  cursor: crosshair; }
+  margin-bottom: 23px; }
   .pattern-item-cover:hover img.pattern-image {
     opacity: 0;
     visibility: hidden; }
@@ -673,7 +772,8 @@ section.other-collections {
     visibility: visible; }
   .pattern-item-cover img {
     max-width: 100%;
-    max-height: 100%; }
+    max-height: 100%;
+    cursor: pointer; }
     .pattern-item-cover img.pattern-image {
       position: absolute;
       top: 0;
@@ -1037,25 +1137,16 @@ section.s-order {
     margin-bottom: 40px; }
   section.s-order .number-label, section.s-order .mail-label {
     font-size: 23px; }
-  section.s-order ul.order-number {
-    padding: 0;
-    margin: 0 0 30px 0;
-    list-style-type: none;
-    display: inline-block; }
-    section.s-order ul.order-number li {
-      float: left;
-      font-size: 40px;
-      line-height: 60px;
-      font-family: "PFAgoraSlabPro-Black";
-      width: 50px;
-      height: 60px;
-      border: 1px solid #c8c8c8;
-      border-radius: 4px;
-      margin: 0 5px; }
-      section.s-order ul.order-number li:first-child {
-        margin-left: 0; }
-      section.s-order ul.order-number li:last-child {
-        margin-right: 0; }
+  section.s-order .number-input-group input {
+    display: inline-block;
+    font-size: 40px;
+    width: 50px;
+    height: 60px;
+    font-family: "PFAgoraSlabPro-Black";
+    border: 1px solid #c8c8c8;
+    border-radius: 4px;
+    margin: 0 5px;
+    margin-bottom: 30px; }
   section.s-order input {
     font-size: 18px;
     width: 470px;
@@ -1205,7 +1296,10 @@ form.default-form img {
 .profile-nav {
   border-bottom: 1px solid #e5e5e5;
   font-size: 14px;
-  height: 66px; }
+  height: 66px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.05); }
   .profile-nav .nav-wrap {
     display: inline-block; }
   .profile-nav .user-info {
@@ -1274,6 +1368,8 @@ form.default-form img {
     .my-profile form.default-form a img {
       width: 40px;
       height: 40px; }
+  .my-profile form.default-form a.no-active {
+    opacity: 0.5; }
   .my-profile form.default-form .tie-soc {
     margin-left: 25px;
     margin-right: 5px;
@@ -1340,6 +1436,8 @@ form.default-form img {
         display: inline-block;
         width: 25%;
         float: left; }
+      .order-history .panel-heading .panel-title a .title-col:first-child {
+        color: #00baff; }
       .order-history .panel-heading .panel-title a .slide-up {
         display: none; }
       .order-history .panel-heading .panel-title a .slide-wrap, .order-history .panel-heading .panel-title a .small-title {
@@ -1414,7 +1512,13 @@ form.default-form img {
 
   .landing-popular-items .pattern-item-cover {
     width: 304px;
-    height: 200px; } }
+    height: 200px; }
+
+  #sub-contact-form .dropdownvisible {
+    max-width: 555px; }
+
+  .my-profile .dropdownvisible {
+    max-width: 555px; } }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .carousel-row .carousel-toggle {
@@ -1458,7 +1562,17 @@ form.default-form img {
   .categorry-pattern-item .pattern-item-cover {
     width: 228.5px;
     height: 228.5px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .ordering .dropcontainer {
+    left: 0;
+    top: 0; }
+
+  #sub-contact-form .dropdownvisible {
+    max-width: 455px; }
+
+  .my-profile .dropdownvisible {
+    max-width: 455px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .carousel-row .toggle-row {
@@ -1547,7 +1661,13 @@ form.default-form img {
 
   .categorry-pattern-item .pattern-item-cover {
     width: 285px;
-    height: 285px; } }
+    height: 285px; }
+
+  #sub-contact-form .dropdownvisible {
+    max-width: 470px; }
+
+  .my-profile .dropdownvisible {
+    max-width: 470px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   .toggle-row {
@@ -1705,7 +1825,13 @@ form.default-form img {
 
   .landing-popular-items .pattern-item-cover {
     width: 380px;
-    height: 250px; } }
+    height: 250px; }
+
+  #sub-contact-form .dropdownvisible {
+    max-width: 500px; }
+
+  .my-profile .dropdownvisible {
+    max-width: 500px; } }
 @media only screen and (max-width: 680px) {
   .carousel-row .carousel-inner img {
     width: 74% !important;

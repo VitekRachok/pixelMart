@@ -27,7 +27,7 @@
 				<div class="right-header-block">
 					<div class="contacts-header">
 						<a class="phone-header" href="tel:8 800 660 90 60">8 800 660 90 60</a>
-						<a href="" class="city" data-toggle="modal" data-target="#question-city">Новосибирск</a>
+						<a href="" class="city" data-toggle="modal" data-target="#choice-city">Новосибирск</a>
 					</div>
 					<div class="like-header">
 						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
@@ -91,7 +91,6 @@
 				</button>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav nav-center">
-						<li><a href="#">Создайте свою картину</a></li>
 						<li class="dropdown">
 							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Модульные картины <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -109,9 +108,9 @@
 							<a href="#">Поиск</a>
 						</li>
 					</ul>
-					<aside class="search-block">
+					<aside class="search-block desktop">
 						<span class="close"></span>
-						<input type="text" class="search-input" placeholder="Поиск">
+						<input type="text" class="search-input" autofocus placeholder="Введите ваш запрос">
 						<ul class="search-list">
 							<li><a href="#">порутчик ржевский</a></li>
 							<li><a href="#">порция радости</a></li>
@@ -137,7 +136,6 @@
 				<div class="right-header-block">
 					<div class="contacts-header">
 						<a class="phone-header" href="tel:8 800 660 90 60">8 800 660 90 60</a>
-						<span class="city">Новосибирск</span>
 					</div>
 					<div class="like-header">
 						<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
@@ -202,7 +200,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 					<ul class="nav navbar-nav nav-center">
 						<li class="dropdown">
-							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Создайте свою картину <b class="caret"></b></a>
+							<a class="px-active" href="#" class="dropdown-toggle" data-toggle="dropdown">Модульные картины <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li class=""><a href="#">Часы</a></li>
 								<li class=""><a href="#">Шторы для ванны</a></li>
@@ -211,7 +209,6 @@
 								<li class=""><a href="#">Магниты</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Модульные картины</a></li>
 						<li><a href="#">Холсты</a></li>
 						<li><a href="#">Плакаты</a></li>
 						<li><a href="#">Постеры</a></li>
@@ -219,9 +216,9 @@
 							<a href="#">Поиск</a>
 						</li>
 					</ul>
-					<aside class="search-block">
+					<aside class="search-block desktop">
 						<span class="close"></span>
-						<input type="text" class="search-input" placeholder="Поиск">
+						<input type="text" class="search-input" autofocus placeholder="Введите ваш запрос">
 						<ul class="search-list">
 							<li><a href="#">порутчик ржевский</a></li>
 							<li><a href="#">порция радости</a></li>
@@ -236,7 +233,7 @@
 	</nav>
 	<aside class="search-block mini">
 		<span class="close"></span>
-		<input type="text" class="search-input" placeholder="Поиск">
+		<input type="text" class="search-input" placeholder="Введите ваш запрос">
 		<ul class="search-list">
 			<li><a href="#">порутчик ржевский</a></li>
 			<li><a href="#">порция радости</a></li>
@@ -269,7 +266,7 @@
 						<label for="contact-theme">Выберите тему обращения</label>
 					</div>
 					<div class="col-md-6 col-sm-8">
-						<select id="contact-theme" name="selectTheme">
+						<select id="contact-theme" class="form-control" name="selectTheme">
 							<option value="1">Value 1</option>
 							<option value="2">Value 2</option>
 							<option value="3">Value 3</option>
@@ -598,6 +595,8 @@
 	<script src="libs/owl.carousel/owl.carousel.min.js"></script>
 	<script src="https://use.fontawesome.com/d6d1c30920.js"></script>
 	<script src="libs/validate/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="libs/maskTel/mask.js"></script>
+	<script type='text/javascript' src='js/select.js'></script>
 
 	<script src="js/custom.js"></script>
 	<script src="js/common_n.js"></script>

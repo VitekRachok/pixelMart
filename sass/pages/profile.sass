@@ -2,6 +2,9 @@
 	border-bottom: 1px solid #e5e5e5
 	font-size: 14px
 	height: 66px
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.05)
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.05)
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.05)
 	.nav-wrap
 		display: inline-block
 	.user-info
@@ -60,7 +63,7 @@
 			margin: 0
 			label
 				margin-left: 0
-		a 
+		a
 			display: inline-block
 			opacity: 1
 			+transition(all 0.25s ease)
@@ -69,6 +72,8 @@
 			img
 				width: 40px
 				height: 40px
+		a.no-active
+			opacity: .5
 		.tie-soc
 			margin-left: 25px
 			margin-right: 5px
@@ -135,6 +140,8 @@
 					display: inline-block
 					width: 25%
 					float: left
+				.title-col:first-child
+					color: #00baff
 				.slide-up
 					display: none
 				.slide-wrap, .small-title

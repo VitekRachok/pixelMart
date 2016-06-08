@@ -37,11 +37,7 @@ $(function() {
 		"Омск",
 		"Ростов-на-Дону",
 		"Пермь",
-		"Волгоград",
-		"java",
-		"java",
-		"java",
-		"java"
+		"Волгоград"
 	],
 	appTo = $('#auto-comlete');
 	$("#city-res" ).autocomplete({
@@ -53,36 +49,69 @@ $(function() {
 			}
 	});
 	$('.ui-helper-hidden-accessible').hide();
+
+	$('.choice-manually a').on('click', function(e){
+		e.preventDefault();
+		var contents = $(this).html();
+
+		$(this).parents('.modal-body').find('#city-res').val(contents);
+		$("#choice-city").modal('hide');
+	})
 });
 
+$(document).ready(function(){
+
+	$('.jump').on('input propertychange', function(e) {
+		var elem = $(e.target),
+			value = elem.val(),
+			caret = elem.caret(),
+			newValue = value.replace(/[^0-9]/g, ''),
+			valueDiff = value.length - newValue.length;
+
+		if (valueDiff) {
+			elem
+				.val(newValue)
+				.caret(caret.start - valueDiff, caret.end - valueDiff);
+		}
+
+	});
+
+});
 
 $(document).ready(function(){
-	$(function(e){
-		$(".choose-another-city").click(function(e) {
-			e.preventDefault();
-			$("#question-city").modal('hide');
-			setTimeout(function(){
-				$("#choice-city").modal('show');
-			}, 400)
-		});
-	});
+
+	// $(function(e){
+	// 	$(".choose-another-city").click(function(e) {
+	// 		e.preventDefault();
+	// 		$("#question-city").modal('hide');
+	// 		$('#question-city').on('hidden.bs.modal', function (e) {
+	// 			$("#choice-city").modal('show');
+	// 		})
+	// 	});
+	// });
 	$(function(e){
 		$(".buy-one-click").click(function(e) {
 			e.preventDefault();
 			$("#quick-view").modal('hide');
 			setTimeout(function(){
 				$("#buy-one-cl").modal('show');
-			}, 350)
+			}, 400);
 		});
 	});
 	$(function(e){
-		$(".in-detail").click(function(e) {
+		$(".detail").click(function(e) {
 			e.preventDefault();
 			$("#quick-view").modal('hide');
 			setTimeout(function(){
 				$("#product-info").modal('show');
-			}, 350)
+			}, 400)
 		});
+	});
+
+	//MASK
+
+	jQuery(function($){
+		$(".mask").mask("+ 9 (999) 999-99-99");
 	});
 
 });
@@ -98,9 +127,12 @@ $(document).ready(function(){
 	var navMenu = $('.nav-center, .contacts-header'),
 		navMenuBig = $('.navbar-big .nav-center, .navbar-big .contacts-header'),
 		navSearch = $('.nav-search'),
-		searchBlock = $('.search-block'),
+		searchBlockDesktop = $('.search-block.desktop'),
+		searchBlockMini = $('.search-block.mini'),
 		searchInput = $('.search-input'),
 		searchList = $('.search-list');
+
+		//SHOW SEARCH BLOCK IN HEADER
 
 	navSearch.on('click', function(e){
 
@@ -115,25 +147,22 @@ $(document).ready(function(){
 		},200);
 
 		setTimeout(function(){
-			thisEl.parents('.navbar').find(searchBlock).css('display', 'block').animate({
+			thisEl.parents('.navbar').find(searchBlockDesktop).css('display', 'block').animate({
 				'opacity': 1
 			},200)
+			thisEl.parents('.navbar').find(searchInput).focus();
 		},200);
 
-	})
+	});
 
-	searchInput.keyup(function(){
-		$(this).next(searchList).css('display', 'block').animate({
-			'opacity': 1
-		},200)
-	})
+	//HIDE SEARCH BLOCK IN HEADER
 
-	searchBlock.find('.close').on('click', function(){
-		(searchBlock && searchList).animate({
+	searchBlockDesktop.find('.close').on('click', function(){
+		(searchBlockDesktop).animate({
 			'opacity': 0
 		},200)
 		setTimeout(function(){
-			searchBlock.css('display', 'none');
+			searchBlockDesktop.css('display', 'none');
 		},200);
 		setTimeout(function(){
 			navMenu.css('display', 'block').animate({
@@ -141,6 +170,70 @@ $(document).ready(function(){
 				},200)
 		},200);
 	});
+
+	//SHOW SEARCH LIST
+
+	$('.search-block input').focus(function(){
+
+		var focusEl = $(this).parent().find(searchList);
+
+		focusEl.css({
+			display: 'block'
+		}).animate({
+			opacity: 1
+		},100)
+		$(this).focusout(function() {
+			focusEl.animate({
+				opacity: 0
+			},100);
+			setTimeout(function(){
+				focusEl.css({
+					display: 'none'
+				})
+			},100);
+		})
+	})
+
+	function showElement(showEl){
+		showEl.css({
+			display: 'block'
+		});
+	}
+
+	function hideElement(hideEl){
+		hideEl.css({
+			display: 'none'
+		})
+	}
+
+	//SHOW AND HIDE SEARCH LIST IN MOBILE 
+
+	$('.search-block.mini input').focus(function(){
+
+		var element = searchBlockMini.find('.close');
+
+		showElement(element);
+
+		$(this).focusout(function(){
+			hideElement(element)
+		})
+
+	});
+
+	//SHOW AND HIDE SEARCH LIST IN ALL PAGE
+
+	$('.search-w-wrap input').focus(function(){
+
+		var element = $(this).parent().find('.search-words');
+
+		showElement(element);
+
+		$(this).focusout(function(){
+			hideElement(element);
+		})
+	})
+
+	//HIDE SEARCH BLOK ON SCROLL
 
 	$(window).on('scroll load', function() {
 
@@ -158,6 +251,8 @@ $(document).ready(function(){
 		}
 	});
 });
+
+//INSTAGRAM GRID
 
 $(window).on('resize load', function() {
 
