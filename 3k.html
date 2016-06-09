@@ -914,8 +914,8 @@
 								<div class="col-md-4 mod-right-col">
 									<form action="" class="mod-form">
 										  <div class="form-group">
-										    <label>Тип картины</label>
-										    <select class="form-control">
+											<label>Тип картины</label>
+											<select class="form-control">
 												  <option value="0" selected>Модульная картина</option>
 												  <option value="1">other value</option>
 												  <option value="2">other value</option>
@@ -924,59 +924,48 @@
 										  </div>
 
 										  <div class="form-group">
-										  	<label>Размер, см</label>
-										  	<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size1" value="90-60">
-												  <label for="size1">90x60</label>
-												</div>
-												<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size2" value="120-90">
-												  <label for="size2">120x90</label>
-												</div>
-												<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size3" value="140-110">
-												  <label for="size3">140x110</label>
-												</div>
-												<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size4" value="160-120">
-												  <label for="size4">160x120</label>
-												</div>
-												<div class="radio-inline">
-												  <input type="radio" name="selectSize" id="size5" value="240-160">
-												  <label for="size5">240x160</label>
-												</div>
+											<label class="size">Размер, см</label>
+											<select class="form-control turnintodropdown">
+													<option value="0" selected>90x60</option>
+													<option value="1">120x90</option>
+													<option value="2">140x110</option>
+													<option value="3">160x120</option>
+													<option value="4">240x160</option>
+											</select>
 										  </div>
 
-
 										  <div class="form-group">
-										    <label class="label-db">Материал</label>
-										    <span class="icon-info"><span class="more-info">Детальная инфо</span></span>
-										    <select class="form-control">
+											<label class="label-db">Материал</label>
+											<span class="icon-info detail"><span class="more-info">Детальная инфо</span></span>
+											<select class="form-control">
 												  <option value="0" selected>Сатиновый холст</option>
 												  <option value="1">other value</option>
 												  <option value="2">other value</option>
 												  <option value="3">other value</option>
 												</select>
 										  </div>
-
-										  <div class="form-group">
-										    <label>Дополнительные параметры</label>
-												<div class="checkbox checkbox-style">
-												  <label>
-												    <input type="checkbox" value="value1">
-												    <span class="stylesheet"></span>
-												    <span>Покрытие лаком +800 Р</span>
-												  </label>
-												  <span class="icon-info"><span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span></span>
-												</div>
-												<div class="checkbox checkbox-style">
-												  <label>
-												    <input type="checkbox" value="value2">
-												    <span class="stylesheet"></span>
-												    <span>Покрытие гелем +600 Р</span>
-												  </label>
-												  <span class="icon-info"><span class="more-info">Текст детальной информиции</span></span>
-												</div>
+										  <div class="dropdown option-modal">
+											<a class="dropdown-toggle" id="option" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+											  Дополнительные параметры
+											</a>
+											<ul class="dropdown-menu" aria-labelledby="option">
+											  <div class="checkbox checkbox-style">
+												<label>
+												  <input type="checkbox" value="value1">
+												  <span class="stylesheet"></span>
+												  <span>Покрытие лаком +800 Р</span>
+												</label>
+												<span class="icon-info"><span class="more-info">Текст детальной информиции длинный!!!!!!!!!!!</span></span>
+											  </div>
+											  <div class="checkbox checkbox-style">
+												<label>
+												  <input type="checkbox" value="value2">
+												  <span class="stylesheet"></span>
+												  <span>Покрытие гелем +600 Р</span>
+												</label>
+												<span class="icon-info"><span class="more-info">Текст детальной информиции</span></span>
+											  </div>
+											</ul>
 										  </div>
 
 										  <div class="form-group price-group">
@@ -988,8 +977,8 @@
 										  <button class="btn btn-go-to-cart">Перейти в корзину</button>
 
 										  <div class="clearfix form-bottom-btns">
-										  	<a href="#" class="buy-one-click">Купить в 1 клик</a>
-										  	<a href="#" class="set-aside">Отложить товар</a>
+											<a href="#" class="buy-one-click">Купить в 1 клик</a>
+											<a href="#" class="set-aside">Отложить товар</a>
 										  </div>
 										  <a href="#" class="btn in-detail">Подробнее о картине</a>
 									</form>
@@ -1001,7 +990,6 @@
 			</div>
 		</div>
 	</div>
-
 
 	<div class="modal fade" id="buy-one-cl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
