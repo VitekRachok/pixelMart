@@ -1806,7 +1806,8 @@ a.btn.btn-quick-view{
 	margin-bottom: -60px;
 	border-top: 1px solid #e5e5e5;
 	border-bottom: 1px solid #e5e5e5;
-	a.btn-info{
+	a.btn{
+		color: #ffffff;
 		padding: 13px 67px;
 		font-size: 16px;
 		background-color: $blue;
@@ -1816,8 +1817,12 @@ a.btn.btn-quick-view{
 		@include transition(background-color, .2s);
 		&:hover{
 			background-color: $blue-hover;
+			color: #ffffff;
 		}
 	}
+}
+.catalog-page-pagination.no-margin{
+	margin-bottom: 0;
 }
 .pagination-list{
 	float: left;
@@ -2573,13 +2578,298 @@ a.btn.btn-quick-view{
 	}
 }
 
-
-
-
-
-
-
-
+.reviews-header{
+	font-size: 44px;
+	margin-bottom: 20px;
+}
+.add-reviews-wrap-top{
+	margin-bottom: 60px;
+}
+.add-reviews-btn{
+	color: #ffffff;
+	padding: 0;
+	width: 280px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	background-color: $blue;
+	border: 0;
+	@include transition(background-color, .2s);
+	&:hover{
+		background-color: $blue-hover;
+		color: #ffffff;
+	}
+}
+.login-service-wrap{
+	float: right;
+}
+.service-btn{
+	width: 90px;
+	height: 50px;
+	line-height: 50px;
+	color: #ffffff;
+	display: inline-block;
+	border-radius: 4px;
+	font-size: 12px;
+	text-decoration: none !important;
+	text-align: right;
+	background-repeat: no-repeat;
+	background-position: 19px center;
+	@include transition(background-color, .2s);
+	&:hover{
+		color: #ffffff;
+	}
+	.service-counter{
+		display: inline-block;
+		width: 40px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+	}
+}
+.service-btn.vk{
+	background-color: rgba(45,125,194, 1);
+	background-image: url('../images/vk-icon-mini.png');
+	&:hover{
+		background-color: rgba(45,125,194, .9);
+	}
+	.service-counter{
+		border-left: 1px solid #5797ce;
+	}
+}
+.service-btn.ok{
+	background-color: rgba(255, 153, 0, 1);
+	background-image: url('../images/ok-icon-mini.png');
+	&:hover{
+		background-color: rgba(255, 153, 0, .9);
+	}
+	.service-counter{
+		border-left: 1px solid #ffad33;
+	}
+}
+.service-btn.fb{
+	background-color: rgba(93, 130, 209, 1);
+	background-image: url('../images/fb-icon-mini.png');
+	&:hover{
+		background-color: rgba(93, 130, 209, .9);
+	}
+	.service-counter{
+		border-left: 1px solid #7d9bda;
+	}
+}
+.reviews-col{
+	.reviews-list{
+		li{
+			margin-bottom: 60px;
+		}
+		.reviews-wrap{
+			position: relative;
+			border: 1px solid #ffe6c1;
+			border-radius: 9px;
+			padding: 20px;
+			display: inline-block;
+			@include transition(border-color, .2s);
+			&:hover{
+				border-color: #ffad33;
+			}
+			&:after{
+				position: absolute;
+				content: '';
+				bottom: 20px;
+				left: -13px;
+				width: 13px;
+				height: 11px;
+				background-image: url('../images/reviews-ic.png');
+				background-repeat: no-repeat;
+			}
+			.author-info{
+				line-height: 30px;
+			}
+			.review-author{
+				color: #ff9900;
+				font-family: 'Conv_PFAgoraSlabPro-Medium';
+				font-size: 16px;
+				display: inline-block;
+			}
+			.review-rating{
+				position: relative;
+				display: inline-block;
+				top: 1px;
+				left: 2px;
+				width: 73px;
+				height: 13px;
+				background-image: url('../images/rating-sprite.png');
+				background-repeat: no-repeat;
+				background-position-y: -52px;
+				overflow: hidden;
+			}
+			.reviews{
+				font-size: 16px;
+			}
+			.view-photo{
+				color: $blue-hover;
+				text-decoration: none;
+				// display: block;
+			}
+			time{
+				display: block;
+				font-size: 12px;
+				color: #c6c7c8;
+			}
+		}
+	}
+}
+.count-reviews-col{
+	.count-reviews-list{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		.count-reviews{
+			border: 1px solid #eaeaea;
+			border-radius: 9px;
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+		.product-img{
+			height: 100px;
+		}
+		.reviews-count{
+			font-size: 12px;
+			color: #808385;
+			display: inline-block;
+			float: right;
+		}
+		.count-rating{
+			position: relative;
+			display: inline-block;
+			top: 2px;
+			width: 73px;
+			height: 13px;
+			background-image: url('../images/rating-sprite.png');
+			background-repeat: no-repeat;
+			background-position-y: -52px;
+			overflow: hidden;
+		}
+	}
+}
+.add-reviews-wrap-bottom{
+	padding-top: 40px;
+	background-color: #f2f3f4;
+	.add-reviews-header{
+		margin-left: 170px;
+		margin-bottom: 45px;
+		font-size: 32px;
+		font-family: 'Conv_PFAgoraSlabPro-Light';
+	}
+}
+.add-reviews-form{
+	margin-bottom: 80px;
+	.form-group{
+		&>label{
+			width: 165px;
+			height: 50px;
+			line-height: 50px;
+			color: #808385;
+			font-size: 14px;
+			margin-bottom: 0;
+			float: left;
+		}
+		.rating-wrap{
+			.rating{
+				line-height: 50px;
+				height: 50px;
+				&>label:before{
+					margin: 0 5px;
+					font-size: 2.5em;
+				}
+			}
+		}
+		input{
+			height: 50px;
+			line-height: 50px;
+			font-size: 18px;
+			padding: 0 20px;
+			border: 1px solid #c8c8c8;
+			border-radius: 5px;
+			max-width: 300px;
+		}
+		textarea{
+			height: 80px;
+			border: 1px solid #c8c8c8;
+			border-radius: 5px;
+			box-shadow: none;
+			resize: none;
+			max-width: 600px;
+			float: left;
+		}
+		.textarea-label-right{
+			position: relative;
+			max-width: 200px;
+			// display: block;
+			color: #808385;
+			font-size: 14px;
+			line-height: 18px;
+			float: left;
+			top: 12px;
+			margin-left: 20px;
+		}
+	}
+	.upload-file{
+		margin-left: 165px;
+		&:after{
+			position: relative;
+			content: '';
+			clear: both;
+			display: block;
+		}
+		input{
+			display: none;
+		}
+		label{
+			font-weight: 400;
+			position: relative;
+			width: 160px;
+			height: 45px;
+			line-height: 45px;
+			font-size: 14px;
+			color: $blue;
+			left: 0;
+			top: 0;
+			float: left;
+			background-color: #fff;
+			border-radius: 4px;
+			text-align: center;
+			cursor: pointer;
+			opacity: 1;
+		}
+		.upload-caption{
+			position: relative;
+			font-size: 14px;
+			color: #808385;
+			display: block;
+			float: left;
+			top: 6px;
+			margin-left: 20px;
+			line-height: 18px;
+		}
+	}
+	a[type="submit"]{
+		text-decoration: none;
+		color: #ffffff;
+		background-color: $blue;
+		padding: 0;
+		width: 300px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 16px;
+		margin-top: 10px;
+		margin-left: 165px;
+		@include transition(background-color, .2s);
+		&:hover{
+			background-color: $blue-hover;
+		}
+	}
+}
 
 
 

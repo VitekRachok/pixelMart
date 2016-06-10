@@ -22,6 +22,18 @@
 	}
  }
 
+@media (max-width: 1300px) {
+	.add-reviews-form .form-group .textarea-label-right{
+		max-width: 100%;
+		padding-left: 0;
+		margin-left: 165px;
+		top: 4px;
+	}
+	.add-reviews-form .form-group textarea{
+		max-width: 500px;
+	}
+}
+
 @media (max-width: 1240px) {
 	.nav-center li {
 		padding: 0 7px;
@@ -204,9 +216,6 @@
 		float: none !important;
 		margin: auto !important;
 	}
-	// .order-item-info{
-	// 	width: 50% !important;
-	// }
 	.right-order-list{
 		max-width: 400px;
 	}
@@ -253,6 +262,29 @@
 		li{
 			margin-bottom: 0;
 		}
+	}
+	.add-reviews-wrap{
+		text-align: center;
+	}
+	.add-reviews-wrap .login-service-wrap{
+		float: none;
+		margin: 30px auto;
+	}
+	.add-reviews-wrap{
+		margin-bottom: 30px;
+	}
+	.add-reviews-form .form-group .textarea-label-right{
+		max-width: 300px;
+	}
+	.add-reviews-form .form-group textarea {
+		max-width: 300px;
+	}
+	.upload-caption{
+		float: none;
+		clear: both;
+		margin: 0 !important;
+		max-width: 300px;
+		padding-top: 10px;
 	}
 
 }
@@ -384,6 +416,56 @@
 		font-size: 16px !important;
 		padding-left: 5px;
 	}
+	.add-reviews-header{
+		text-align: center;
+		margin: 0 !important;
+	}
+	.catalog-page-pagination a.btn{
+		float: none;
+		margin: 0 0 10px;
+	}
+	.add-reviews-form{
+		text-align: center;
+		.rating-wrap .rating{
+			max-width: 215px;
+			margin: 0 auto;
+		}
+		.rating.hover-stars{
+			float: none;
+		}
+		.textarea-label-right{
+			margin-left: 0 !important;
+			float: none !important;
+			max-width: 300px;
+			display: inline-block;
+		}
+		.form-group{
+			text-align: center;
+			margin-bottom: 10px;
+			&>label{
+				float: none;
+				width: 100%;
+				height: 30px;
+				line-height: 30px;
+			}
+		}
+		.form-group textarea{
+			float: none;
+			margin: 0 auto;
+		}
+		.upload-file {
+			margin: 0px auto;
+			max-width: 300px;
+			label{
+				height: 45px;
+				line-height: 45px;
+			}
+		}
+		a[type="submit"]{
+			margin: 10px auto 0;
+		}
+	}
+	
 
 }
 
