@@ -2442,6 +2442,45 @@ a.btn.btn-quick-view {
     .add-reviews-form a[type="submit"]:hover {
       background-color: #00ccff; }
 
+.shipping-address h5 {
+  font-size: 37px;
+  font-family: "PFAgoraSlabPro-Light";
+  margin: 45px 0;
+  text-align: center; }
+.shipping-address .panel {
+  border: none; }
+.shipping-address .panel.open-panel {
+  box-shadow: 0 0px 10px 1px #eee;
+  border: 1px solid #eee; }
+  .shipping-address .panel.open-panel .slide-up {
+    display: none; }
+  .shipping-address .panel.open-panel .address-info {
+    display: none; }
+.shipping-address .collapsed .slide-down {
+  display: none; }
+.shipping-address .panel.open-panel .panel-heading {
+  border-bottom: 0; }
+.shipping-address .panel-heading {
+  background-color: #ffffff;
+  padding: 26px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid #e5e5e5; }
+  .shipping-address .panel-heading .panel-title {
+    height: 15px; }
+  .shipping-address .panel-heading .address-info {
+    font-size: 14px; }
+    .shipping-address .panel-heading .address-info .del-address-info {
+      color: #00baff;
+      text-decoration: none;
+      margin-left: 20px; }
+  .shipping-address .panel-heading .panel-control {
+    text-decoration: none;
+    color: #00baff;
+    font-size: 14px;
+    float: right; }
+.shipping-address .panel-body {
+  border-top: 0 !important; }
+
 ::-webkit-input-placeholder {
   color: #53585a !important; }
 

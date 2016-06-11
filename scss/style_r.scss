@@ -2870,7 +2870,63 @@ a.btn.btn-quick-view{
 		}
 	}
 }
-
+.shipping-address{
+	h5{
+		font-size: 37px;
+		font-family: "PFAgoraSlabPro-Light";
+		margin: 45px 0;
+		text-align: center;
+	}
+	.panel{
+		border: none;
+	}
+	.panel.open-panel{
+		box-shadow: 0 0px 10px 1px #eee;
+		border: 1px solid #eee;
+		.slide-up{
+			display: none;
+		}
+		.address-info{
+			display: none;
+		}
+	}
+	.collapsed{
+		.slide-down{
+			display: none;
+		}
+	}
+	.panel.open-panel{
+		.panel-heading{
+			border-bottom: 0;
+		}
+	}
+	.panel-heading{
+		background-color: #ffffff;
+		padding: 26px 0;
+		margin: 0 20px;
+		border-bottom: 1px solid #e5e5e5;
+		.panel-title{
+			height: 15px;
+		}
+		.address-info{
+			font-size: 14px;
+			.del-address-info{
+				color: $blue;
+				text-decoration: none;
+				margin-left: 20px;
+			}
+		}
+		.panel-control{
+			text-decoration: none;
+			color: $blue;
+			font-size: 14px;
+			float: right;
+		}
+	}
+	.panel-body{
+		border-top: 0 !important;
+	}
+}
 
 
 
