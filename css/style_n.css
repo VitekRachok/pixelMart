@@ -266,10 +266,9 @@ body {
   .choose-image-section .input-file-wrap {
     position: relative; }
     .choose-image-section .input-file-wrap input {
-      opacity: 0; }
+      display: none; }
     .choose-image-section .input-file-wrap label {
       font-weight: 400;
-      position: absolute;
       width: 100%;
       height: 100%;
       left: 0;
@@ -320,12 +319,11 @@ body {
     padding: 25px 20px;
     max-width: 360px; }
     .choose-image-section .mod-form .form-group {
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       position: relative; }
     .choose-image-section .mod-form label {
       font-weight: 400;
       font-size: 14px;
-      opacity: 0.6;
       display: block; }
       .choose-image-section .mod-form label.label-db {
         display: inline-block; }
@@ -495,13 +493,13 @@ body {
       background-color: #00baff;
       color: #ffffff; }
 
-.modal-width.quick .form-group {
+.mod-form .form-group {
   margin-bottom: 10px; }
-.modal-width.quick .option-modal .dropdown-toggle {
+.mod-form .option-modal .dropdown-toggle {
   text-decoration: none;
   color: #00baff;
   cursor: pointer; }
-.modal-width.quick .option-modal .dropdown-menu {
+.mod-form .option-modal .dropdown-menu {
   margin: 0;
   border: 2px solid #53585A;
   width: 100%;
@@ -1746,6 +1744,10 @@ form.default-form img {
   .choose-image-section .input-file-wrap label {
     width: 90%;
     left: 5%; }
+
+  .photo-edit-wrap label {
+    margin: 0 auto 20px;
+    left: auto !important; }
 
   .nav-tabs > li {
     float: none;
